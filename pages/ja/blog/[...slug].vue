@@ -89,4 +89,6 @@ useHead({
   ],
 })
 
+console.log('test')
+
 </script>
