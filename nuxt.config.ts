@@ -7,6 +7,13 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@pinia/nuxt",
   ],
+  css: ['./assets/css/main.css'],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
   // storybook: {
   //   url: 'http://localhost:6006',
   //   storybookRoute: '/__storybook__',
