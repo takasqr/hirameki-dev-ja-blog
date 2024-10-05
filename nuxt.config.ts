@@ -4,7 +4,6 @@ export default defineNuxtConfig({
   modules: [
     "@nuxt/content",
     // "@nuxtjs/storybook",
-    "@nuxt/image",
     "@pinia/nuxt",
   ],
   css: ['./assets/css/main.css'],
