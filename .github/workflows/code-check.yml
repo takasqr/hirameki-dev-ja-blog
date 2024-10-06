@@ -27,8 +27,6 @@ jobs:
 
       - name: ci
         run: |
-          cd frontend
-          cd hirameki-dev
           npm ci
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
