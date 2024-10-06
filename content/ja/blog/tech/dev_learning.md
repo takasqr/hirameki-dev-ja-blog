@@ -5,7 +5,7 @@ slug: dev_learning
 category: dev
 createDate: 2024/02/29
 updated: 
-cover: '/thumbnail/dev_learning.jpg'
+cover: '/thumbnail/ja/blog/tech/dev_learning.jpg'
 alt: １年間で何行コードを書いたのか
 recommend: true
 ---
