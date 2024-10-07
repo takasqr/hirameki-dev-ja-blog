@@ -18,3 +18,8 @@ dist
 
 # VSCode
 .vscode/
+
+# Playwright
+playwright-report
+
+test-results
