@@ -35,21 +35,15 @@ jobs:
         run: |
           npm run typecheck
 
-      # - name: typecheck
-      #   run: |
-      #     cd frontend
-      #     cd hirameki-dev
-      #     npm run typecheck
+      - name: typecheck
+        run: |
+          npm run typecheck
           
-      # - name: test:unit
-      #   run: |
-      #     cd frontend
-      #     cd hirameki-dev
-      #     npm run test:unit
+      - name: test:unit
+        run: |
+          npm run test:unit
 
-      # - name: testt:e2e
-      #   run: |
-      #     cd frontend
-      #     cd hirameki-dev
-      #     npx playwright install
-      #     npm run test:e2e
+      - name: testt:e2e
+        run: |
+          npx playwright install
+          npm run test:e2e
