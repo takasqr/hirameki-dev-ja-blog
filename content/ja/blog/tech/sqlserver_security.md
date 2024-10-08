@@ -8,6 +8,7 @@ updated:
 cover: '/thumbnail/sqlserver_security.jpg'
 alt: SQL Server のセキュリティ対策
 recommend: true
+homepage: true
 ---
 SQL Server でのセキュリティ対策を紹介します。
 

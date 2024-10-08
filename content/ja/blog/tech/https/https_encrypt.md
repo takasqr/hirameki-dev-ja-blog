@@ -8,6 +8,7 @@ updated:
 cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_80_bold:https の headers などの情報はどこまで暗号化されるのか？,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
 alt: https の headers などの情報はどこまで暗号化されるのか？
 recommend: true
+homepage: true
 ---
 
 

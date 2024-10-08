@@ -8,6 +8,7 @@ updated:
 cover: '/thumbnail/vuejs_ddd_mvvm.jpg'
 alt: Vue で MVVM + ドメイン駆動開発
 recommend: true
+homepage: true
 ---
 
 Vue で MVVM + ドメイン駆動開発 を実践した時の記録です。

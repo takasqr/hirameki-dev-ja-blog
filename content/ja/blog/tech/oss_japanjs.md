@@ -8,6 +8,7 @@ updated:
 cover: '/thumbnail/oss_japanjs.jpg'
 alt: ツリーシェイキングな JavaScript ライブラリを作った話
 recommend: true
+homepage: true
 ---
 
 ## 何を作ったのか？
