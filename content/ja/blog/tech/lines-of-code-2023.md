@@ -1,13 +1,14 @@
 ---
 title: １年間で何行コードを書いたのか
 description: １年間で何行コードを書いたのか集計してみたので、やり方を紹介します。
-slug: dev_learning
+slug: lines-of-code-2023
 category: dev
 createDate: 2024/02/29
 updated: 
 cover: '/thumbnail/ja/blog/tech/dev_learning.jpg'
 alt: １年間で何行コードを書いたのか
 recommend: true
+homepage: true
 ---
 
 ## どうやって集計するのか
