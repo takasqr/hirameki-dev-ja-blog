@@ -28,6 +28,7 @@ jobs:
       - name: ci
         run: |
           npm ci
+          npm run dev:prepare
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
