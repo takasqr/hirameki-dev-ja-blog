@@ -1,4 +1,4 @@
-type TimeLine = {
+export type TimeLine = {
   id: number
   content: string
   date: string

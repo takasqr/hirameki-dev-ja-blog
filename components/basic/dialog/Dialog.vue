@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <TransitionRoot as="template" :show="isOpen">
     <Dialog as="div" class="relative z-10" @close="close({ isConfirmed: null })">

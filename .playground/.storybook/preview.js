@@ -1,5 +1,3 @@
-
-
 const preview = {
   parameters: {
     actions: { argTypesRegex: "^on[A-Z].*" },
@@ -11,5 +9,5 @@ const preview = {
     },
   },
 };
-c
+
 export default preview;

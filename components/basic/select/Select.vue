@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <Listbox as="div" v-model="selected">
     <ListboxLabel class="block text-sm font-medium leading-6 text-gray-900">{{ title }}</ListboxLabel>

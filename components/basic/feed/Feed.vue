@@ -30,6 +30,7 @@
 
 <script setup lang="ts">
 import { defineProps, type PropType } from 'vue';
+import type { TimeLine } from './TimeLine'
 
 defineProps({
   timeline: {

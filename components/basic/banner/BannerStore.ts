@@ -21,7 +21,7 @@ export const BannerStore = defineStore('banner', () => {
   const getOkButtonText = computed(() => _okButtonText)
   const getPersistent = computed(() => _persistent)
 
-  function open({ title, contentText, okButtonText = 'OK', cancelButtonText = '', persistent = false, completion = null }: { title: string; contentText: string; okButtonText?: string; cancelButtonText?: string; persistent?: boolean; completion?: ((isConfirmed: boolean | null) => void) | null }) {
+  function open({ title, contentText, okButtonText = 'OK', persistent = false, completion = null }: { title: string; contentText: string; okButtonText?: string; persistent?: boolean; completion?: ((isConfirmed: boolean | null) => void) | null }) {
 
     _title.value = title
     _contentText.value = contentText

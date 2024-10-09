@@ -1,7 +1,7 @@
 import { type Preview, setup } from '@storybook/vue3'
 // import { type Preview, setup, VueRenderer } from '@storybook/vue3'
 // import { withThemeByClassName } from '@storybook/addon-themes';
-import { type App } from 'vue';
+import type { App } from 'vue';
 
 // Tailwind を読み込む
 import '../assets/css/main.css'

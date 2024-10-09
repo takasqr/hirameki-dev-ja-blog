@@ -1,7 +1,8 @@
 // Replace vue3 with vue if you are using Storybook for Vue 2
 import type { Meta, StoryObj } from '@storybook/vue3';
-
 import Accordion from './Accordion.vue';
+
+type AccordionProps = InstanceType<typeof Accordion>['$props'];
 
 const meta: Meta<typeof Accordion> = {
   component: Accordion,
@@ -16,7 +17,7 @@ type Story = StoryObj<typeof Accordion>;
  * to learn how to use render functions.
  */
 export const Primary: Story = {
-  render: (args: any) => ({
+  render: (args: AccordionProps) => ({
     setup() {
       return {
         ...args
