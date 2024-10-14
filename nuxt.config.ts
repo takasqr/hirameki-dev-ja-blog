@@ -13,6 +13,16 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  content: {
+    contentHead: false,
+    highlight: {
+      theme: {
+        default: 'github-dark',
+        dark: 'github-dark'
+      },
+      preload: ['json', 'js', 'ts', 'html', 'css', 'vue', 'diff', 'shell', 'markdown', 'yaml', 'bash', 'ini', 'c', 'cpp', 'sql']
+    }
+  },
   // storybook: {
   //   url: 'http://localhost:6006',
   //   storybookRoute: '/__storybook__',
