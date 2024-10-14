@@ -101,11 +101,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 const lang = 'ja'
 
 const navigation = [
-  { name: 'トップページ', href: `/${lang}` },
-  { name: '更新履歴', href: `/${lang}/history` },
-  { name: 'プライバシー', href: `/${lang}/privacy/` },
-  { name: '利用規約', href: `https://hirameki.dev/${lang}/terms/` },
-  { name: 'ログイン', href: `https://hirameki.dev/${lang}/signin/` },
+  // { name: 'ログイン', href: `https://hirameki.dev/${lang}/signin/` },
   { name: 'お問い合わせ', href: `https://hirameki.dev/${lang}/contact/` },
 ]
 
