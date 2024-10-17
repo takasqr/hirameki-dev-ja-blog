@@ -1,44 +1,42 @@
-import { fileURLToPath } from 'node:url'
-import { defineConfig, devices } from '@playwright/test'
-import type { ConfigOptions } from '@nuxt/test-utils/playwright'
-import dotenv from 'dotenv'
+import { defineConfig, devices } from '@playwright/test';
 
-dotenv.config()
-
-const devicesToTest = [
-  'Desktop Chrome',
-  // Test against other common browser engines.
-  // 'Desktop Firefox',
-  // 'Desktop Safari',
-  // Test against mobile viewports.
-  // 'Pixel 5',
-  // 'iPhone 12',
-  // Test against branded browsers.
-  // { ...devices['Desktop Edge'], channel: 'msedge' },
-  // { ...devices['Desktop Chrome'], channel: 'chrome' },
-] satisfies Array<string | typeof devices[string]>
-
-export default defineConfig<ConfigOptions>({
-  timeout: 600000,
+export default defineConfig({
+  // Look for test files in the "tests" directory, relative to this configuration file.
   testDir: './test/e2e',
-  /* Run tests in files in parallel */
+
+  // Run all tests in parallel.
   fullyParallel: true,
-  /* Fail the build on CI if you accidentally left test.only in the source code. */
+
+  // Fail the build on CI if you accidentally left test.only in the source code.
   forbidOnly: !!process.env.CI,
-  /* Retry on CI only */
+
+  // Retry on CI only.
   retries: process.env.CI ? 2 : 0,
-  /* Opt out of parallel tests on CI. */
+
+  // Opt out of parallel tests on CI.
   workers: process.env.CI ? 1 : undefined,
-  /* Reporter to use. See https://playwright.dev/docs/test-reporters */
+
+  // Reporter to use
   reporter: 'html',
-  /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
+
   use: {
-    /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
+    // Base URL to use in actions like `await page.goto('/')`.
+    baseURL: 'http://localhost:3000/ja/blog/',
+
+    // Collect trace when retrying the failed test.
     trace: 'on-first-retry',
-    /* Nuxt configuration options */
-    nuxt: {
-      rootDir: fileURLToPath(new URL('.', import.meta.url)),
-    },
   },
-  projects: devicesToTest.map(p => typeof p === 'string' ? ({ name: p, use: devices[p] }) : p),
-})
+  // Configure projects for major browsers.
+  projects: [
+    {
+      name: 'chromium',
+      use: { ...devices['Desktop Chrome'] },
+    },
+  ],
+  // Run your local dev server before starting the tests.
+  webServer: {
+    command: 'npm run dev',
+    url: 'http://localhost:3000/ja/blog/',
+    reuseExistingServer: !process.env.CI,
+  },
+});
