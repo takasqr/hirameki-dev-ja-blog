@@ -2,7 +2,7 @@
   <div class="bg-white">
     <NuxtLayout>
       <main>
-        <ArticleList :articles="articles" />
+        <ArticleList :articles="articlesData" />
       </main>
     </NuxtLayout>
   </div>
@@ -29,6 +29,7 @@ const { data: articles } = await useAsyncData(asyncDataKey, async () => {
 
   // ParsedContent を Article にマッピング
   return rawContent.map(content => ({
+    _path: content._path,
     title: content.title,
     description: content.description,
     cover: content.cover,
@@ -36,4 +37,6 @@ const { data: articles } = await useAsyncData(asyncDataKey, async () => {
     createDate: content.createDate,
   }) as unknown as Article)
 })
+
+const articlesData = articles.value ?? []
 </script>
