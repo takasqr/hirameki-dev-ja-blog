@@ -1,4 +1,4 @@
-type Article = {
+export type Article = {
   _path: string
   title: string
   createDate: string
