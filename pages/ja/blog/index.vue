@@ -23,7 +23,7 @@ const path = '/ja/blog/'
 
 const { data: articles } = await useAsyncData(asyncDataKey, async () => {
   const rawContent = await queryContent(withTrailingSlash(path))
-    .where({ _partial: false, recommend: true })
+    .where({ _partial: false })
     .sort({ date: -1 })
     .find()
 
