@@ -22,7 +22,7 @@
 
 <script setup lang="ts">
 import { ref, defineProps, type PropType } from 'vue'
-import { textAreaSizes } from './TextAreaSize';
+import type { TextAreaSize } from './TextAreaSize'
 import type { ClassObject } from '../../types/ClassObject';
 import { deepMergeClassObject } from '../../util';
 
@@ -53,9 +53,8 @@ const props = defineProps({
     default: 3
   },
   size: {
-    type: String as PropType<string>,
+    type: String as PropType<TextAreaSize>,
     default: 'base',
-    validator: (sizeValue: string): boolean => textAreaSizes.includes(sizeValue),
   },
   name: {
     type: String as PropType<string>

@@ -28,9 +28,9 @@
 
 <script setup lang="ts">
 import { ref, defineProps, type PropType } from 'vue'
-import { textFieldSizes } from './TextFIeldSize';
 import type { ClassObject } from '../../types/ClassObject';
 import { deepMergeClassObject } from '../../util';
+import type { TextFieldSize } from './TextFieldSize'
 
 const props = defineProps({
   value: {
@@ -55,9 +55,8 @@ const props = defineProps({
     type: Array as PropType<ValidationRule[]>
   },
   size: {
-    type: String as PropType<string>,
+    type: String as PropType<TextFieldSize>,
     default: 'base',
-    validator: (sizeValue: string): boolean => textFieldSizes.includes(sizeValue),
   },
   name: {
     type: String as PropType<string>

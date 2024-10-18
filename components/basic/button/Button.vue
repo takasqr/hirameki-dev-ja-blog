@@ -40,7 +40,7 @@
 
 <script setup lang="ts">
 import { defineProps, ref, type PropType } from 'vue';
-import { buttonSizes } from './ButtonSize'
+import type { ButtonSize } from './ButtonSize'
 import type { ClassObject } from '../../types/ClassObject';
 import { deepMergeClassObject } from '../../util';
 
@@ -57,9 +57,8 @@ const props = defineProps({
     default: false
   },
   size: {
-    type: String,
+    type: String as PropType<ButtonSize>,
     default: 'base',
-    validator: (value: string): boolean => buttonSizes.includes(value)
   },
   classes: {
     type: Object as PropType<ClassObject>,

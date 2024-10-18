@@ -13,6 +13,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  // @ts-ignore
   content: {
     contentHead: false,
     highlight: {
