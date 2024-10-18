@@ -73,9 +73,9 @@ const defaultClasses: ClassObject = {
 // 深くマージする関数
 function deepMerge(target: ClassObject, source: ClassObject): ClassObject {
   for (const key in source) {
-    if (source[key] instanceof Object && key in target) {
-      target[key] = deepMerge(target[key], source[key]);
-    } else {
+    if (source[key] instanceof Object && source[key] !== undefined && target[key] !== undefined) {
+      target[key] = deepMerge(target[key] as ClassObject, source[key] as ClassObject);
+    } else if (source[key] !== undefined) {
       target[key] = source[key];
     }
   }
