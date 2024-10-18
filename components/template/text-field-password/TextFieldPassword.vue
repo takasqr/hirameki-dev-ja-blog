@@ -1,10 +1,10 @@
 <template>
   <TextField
+   autocomplete="current-password"
+   type="password"
+   :required="true"
    @change="change($event)"
    @input="input($event)"
-   type="password"
-   autocomplete="current-password"
-   :required="true"
   />
 </template>
 

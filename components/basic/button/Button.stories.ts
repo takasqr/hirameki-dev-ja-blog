@@ -1,8 +1,9 @@
 // Replace vue3 with vue if you are using Storybook for Vue 2
 import type { Meta, StoryObj } from '@storybook/vue3';
-
 import Button from './Button.vue';
 import CopySolidIcon from '../../icon/copy/CopySolidIcon.vue'
+
+type ButtonProps = InstanceType<typeof Button>['$props']
 
 const meta: Meta<typeof Button> = {
   component: Button,
@@ -17,7 +18,7 @@ type Story = StoryObj<typeof Button>;
  * to learn how to use render functions.
  */
 export const Primary: Story = {
-  render: (args: any) => ({
+  render: (args: ButtonProps) => ({
     setup() {
       return {
         ...args

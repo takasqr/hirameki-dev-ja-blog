@@ -1,7 +1,8 @@
 // Replace vue3 with vue if you are using Storybook for Vue 2
 import type { Meta, StoryObj } from '@storybook/vue3';
-
 import CopyButton from './CopyButton.vue';
+
+type CopyButtonProps = InstanceType<typeof CopyButton>['$props']
 
 const meta: Meta<typeof CopyButton> = {
   component: CopyButton,
@@ -16,7 +17,7 @@ type Story = StoryObj<typeof CopyButton>;
  * to learn how to use render functions.
  */
 export const Primary: Story = {
-  render: (args: any) => ({
+  render: (args: CopyButtonProps) => ({
     setup() {
       return {
         ...args,

@@ -27,7 +27,7 @@
         ]"
       >
         <div v-for="item in items" :key="item.name">
-          <p v-if="item.onClick" @click="clickItem(item.onClick)" class="block p-2 hover:text-indigo-600">{{ item.name }}</p>
+          <p v-if="item.onClick" class="block p-2 hover:text-indigo-600" @click="clickItem(item.onClick)">{{ item.name }}</p>
           <a v-else :href="item.href" class="block p-2 hover:text-indigo-600">{{ item.name }}</a>
         </div>
       </PopoverPanel>
@@ -37,7 +37,7 @@
 
 <script setup lang="ts">
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue'
-import { type PropType } from 'vue';
+import type { PropType } from 'vue';
 import type { MenuOption } from './MenuOption';
 import type { ClassObject } from '../../types/ClassObject';
 import { deepMergeClassObject } from '../../util';
@@ -48,7 +48,8 @@ const props = defineProps({
     required: true
   },
   menuClass: {
-    type: String as PropType<string>
+    type: String as PropType<string>,
+    default: ''
   },
   classes: {
     type: Object as PropType<ClassObject>,

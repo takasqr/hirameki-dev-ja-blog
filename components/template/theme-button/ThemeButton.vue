@@ -1,9 +1,9 @@
 <template>
-  <Menu :items="menuItems" menuClass="right-0 z-20" class="flex items-center">
+  <Menu :items="menuItems" menu-class="right-0 z-20" class="flex items-center">
     <div>
-      <SunRegularIcon :class="classes.icon?.base" v-if="currentTheme === ThemeMode.Light"></SunRegularIcon>
-      <MoonRegularIcon :class="classes.icon?.base" v-else-if="currentTheme === ThemeMode.Dark" ></MoonRegularIcon>
-      <DesktopRegularIcon :class="classes.icon?.base" v-else></DesktopRegularIcon>
+      <SunRegularIcon v-if="currentTheme === ThemeMode.Light" :class="classes.icon?.base"/>
+      <MoonRegularIcon v-else-if="currentTheme === ThemeMode.Dark" :class="classes.icon?.base" />
+      <DesktopRegularIcon v-else :class="classes.icon?.base"/>
     </div>
   </Menu>
 </template>

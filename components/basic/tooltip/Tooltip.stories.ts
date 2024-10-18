@@ -1,8 +1,9 @@
 // Replace vue3 with vue if you are using Storybook for Vue 2
 import type { Meta, StoryObj } from '@storybook/vue3';
-
 import Tooltip from './Tooltip.vue';
 import Button from '../button/Button.vue'
+
+type TooltipProps = InstanceType<typeof Tooltip>['$props']
 
 const meta: Meta<typeof Tooltip> = {
   component: Tooltip,
@@ -18,7 +19,7 @@ type Story = StoryObj<typeof Tooltip>;
  */
 
 export const Primary: Story = {
-  render: (args: any) => ({
+  render: (args: TooltipProps) => ({
     setup() {
       return {
         ...args,

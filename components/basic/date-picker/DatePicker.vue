@@ -2,18 +2,18 @@
   <div class="mt-10 text-center">
     <div :class="['flex items-center', mergedClasses.text?.color]">
       <button
-        @click="previousMonth"
         type="button"
         class="-m-1.5 flex flex-none items-center justify-center p-1.5 text-gray-400 hover:text-gray-500"
+        @click="previousMonth"
       >
         <span class="sr-only">Previous month</span>
         <ChevronLeftIcon class="h-5 w-5" aria-hidden="true" />
       </button>
       <div class="flex-auto text-sm font-semibold">{{ currentYear + '年 ' + currentMonth + '月' }}</div>
       <button
-        @click="nextMonth"
         type="button"
         class="-m-1.5 flex flex-none items-center justify-center p-1.5 text-gray-400 hover:text-gray-500"
+        @click="nextMonth"
       >
         <span class="sr-only">Next month</span>
         <ChevronRightIcon class="h-5 w-5" aria-hidden="true" />
@@ -29,8 +29,7 @@
     <div class="isolate mt-2 grid grid-cols-7 gap-px rounded-lg bg-gray-200 text-sm shadow ring-1 ring-gray-200">
       <button
        v-for="(day, dayIdx) in days" 
-       :key="day.date" @click="changeDatePicker(day)"
-       type="button"
+       :key="day.date" type="button"
        :disabled="day.disabled ? true : false"
        :class="[
         'py-1.5 hover:bg-gray-100 focus:z-10',
@@ -44,7 +43,8 @@
         dayIdx === 6 && 'rounded-tr-lg',
         dayIdx === days.length - 7 && 'rounded-bl-lg',
         dayIdx === days.length - 1 && 'rounded-br-lg',
-      ]">
+      ]"
+       @click="changeDatePicker(day)">
         <time
           :datetime="day.date"
           :class="[
@@ -59,10 +59,10 @@
     </div>
   </div>
   <input
-   hidden
    ref="input"
+   hidden
    @change="changeInput($event)"
-  />
+  >
 </template>
 
 <script setup lang="ts">
@@ -132,7 +132,7 @@ const defaultClasses: ClassObject = {
 const mergedClasses = props.classes ? deepMergeClassObject(defaultClasses, props.classes) : defaultClasses;
 
 const input = ref<HTMLElement | null>(null)
-const daysOfTheWeek = ref<String[]>([])
+const daysOfTheWeek = ref<string[]>([])
 
 // emit を定義
 const emit = defineEmits<{
@@ -210,10 +210,10 @@ function generateCalendarDays({ year, month, locale, selectedDates }: { year: nu
   const lastDayOfMonth = dayjs(new Date(year, monthIndex + 1, 0));
 
   // 前月の最後の月曜日から始まるように調整
-  let startDay = firstDayOfMonth.subtract((firstDayOfMonth.weekday() + 6) % 7, 'day');
+  const startDay = firstDayOfMonth.subtract((firstDayOfMonth.weekday() + 6) % 7, 'day');
 
   // 次月の最初の日曜日で終わるように調整
-  let endDay = lastDayOfMonth.add(7 - lastDayOfMonth.weekday(), 'day');
+  const endDay = lastDayOfMonth.add(7 - lastDayOfMonth.weekday(), 'day');
 
   for (let d = dayjs(startDay); d.isBefore(endDay) || d.isSame(endDay, 'day'); d = d.add(1, 'day')) {
 

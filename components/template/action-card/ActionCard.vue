@@ -17,7 +17,7 @@ interface Props {
   title: string
 }
 
-const props = defineProps<Props>()
+defineProps<Props>()
 
 // 複数のスロットを扱うには名前付きスロットを使う
 // https://ja.vuejs.org/guide/components/slots.html#named-slots

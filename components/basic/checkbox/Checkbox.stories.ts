@@ -1,7 +1,8 @@
 // Replace vue3 with vue if you are using Storybook for Vue 2
 import type { Meta, StoryObj } from '@storybook/vue3';
-
 import Checkbox from './Checkbox.vue';
+
+type CheckboxProps = InstanceType<typeof Checkbox>['$props']
 
 const meta: Meta<typeof Checkbox> = {
   component: Checkbox,
@@ -23,7 +24,7 @@ export const Primary: Story = {
 };
 
 export const WithTitle: Story = {
-  render: (args: any) => ({
+  render: (args: CheckboxProps) => ({
     setup() {
       return {
         ...args

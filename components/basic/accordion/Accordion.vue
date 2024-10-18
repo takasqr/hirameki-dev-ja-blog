@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <dl class="mt-10 space-y-6 divide-y divide-gray-900/10">
-    <Disclosure as="div" v-for="content in contents" :key="content.title" class="pt-6" v-slot="{ open }">
+    <Disclosure v-for="content in contents" :key="content.title" v-slot="{ open }" as="div" class="pt-6">
       <dt>
         <DisclosureButton
           :class="[

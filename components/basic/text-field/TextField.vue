@@ -9,19 +9,19 @@
       :id="id"
       :name="name"
       :value="value"
-      @change="changeValue($event)"
-      @input="inputValue($event)"
-      :type="type"
+      :placeholder="placeholder"
+      :required="required"
+      :autocomplete="autocomplete"
       :class="[
         textSize,
         mergedClasses.content?.input?.base,
         mergedClasses.content?.input?.backgroundColor,
         mergedClasses.content?.input?.color,
       ]"
-      :placeholder="placeholder"
-      :autocomplete="autocomplete"
-      :required="required"
-    />
+      :type="type"
+      @change="changeValue($event)"
+      @input="inputValue($event)"
+    >
   </div>
   <p v-if="errorMassage.length > 0" :class="mergedClasses.errorMessage?.base">{{ errorMassage }}</p>
 </template>
@@ -57,7 +57,7 @@ const props = defineProps({
   size: {
     type: String as PropType<string>,
     default: 'base',
-    validator: (sizeValue: any): boolean => textFieldSizes.includes(sizeValue),
+    validator: (sizeValue: string): boolean => textFieldSizes.includes(sizeValue),
   },
   name: {
     type: String as PropType<string>

@@ -1,7 +1,8 @@
 // Replace vue3 with vue if you are using Storybook for Vue 2
 import type { Meta, StoryObj } from '@storybook/vue3';
-
 import Divider from './Divider.vue';
+
+type DividerProps = InstanceType<typeof Divider>['$props']
 
 const meta: Meta<typeof Divider> = {
   component: Divider,
@@ -16,7 +17,7 @@ type Story = StoryObj<typeof Divider>;
  * to learn how to use render functions.
  */
 export const Primary: Story = {
-  render: (args: any) => ({
+  render: (args: DividerProps) => ({
     setup() {
       return {
         ...args

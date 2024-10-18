@@ -25,7 +25,7 @@
 
       <div class="relative flex items-center space-x-3 bg-white">
         <div class="flex-shrink-0">
-          <img class="h-10 w-10 rounded-full" :src="person.imageUrl" alt="" />
+          <img class="h-10 w-10 rounded-full" :src="person.imageUrl" alt="" >
         </div>
         <div class="min-w-0 flex-1">
           <a href="#" class="focus:outline-none">
@@ -47,14 +47,12 @@
 
 <script setup lang="ts">
 import Card from '../../basic/card/Card.vue';
-import Menu from '../../basic/menu/Menu.vue'
-import { ChevronDownIcon } from '@heroicons/vue/20/solid'
 
 interface Props {
   title: string
 }
 
-const props = defineProps<Props>()
+defineProps<Props>()
 
 // 複数のスロットを扱うには名前付きスロットを使う
 // https://ja.vuejs.org/guide/components/slots.html#named-slots

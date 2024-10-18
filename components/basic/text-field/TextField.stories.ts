@@ -1,7 +1,8 @@
 // Replace vue3 with vue if you are using Storybook for Vue 2
 import type { Meta, StoryObj } from '@storybook/vue3';
-
 import TextField from './TextField.vue';
+
+type TextFieldProps = InstanceType<typeof TextField>['$props']
 
 const meta: Meta<typeof TextField> = {
   component: TextField,
@@ -16,7 +17,7 @@ type Story = StoryObj<typeof TextField>;
  * to learn how to use render functions.
  */
 export const Primary: Story = {
-  render: (args: any) => ({
+  render: (args: TextFieldProps) => ({
     setup() {
       return {
         ...args
@@ -68,7 +69,7 @@ export const WithPlaceholder: Story = {
 };
 
 export const WithError: Story = {
-  render: (args: any) => ({
+  render: (args: TextFieldProps) => ({
     setup() {
       return {
         ...args,
@@ -79,7 +80,7 @@ export const WithError: Story = {
   }),
   args: {
     rules: [
-      (value: any) => value.length <= 5 || 'Max 5 characters',
+      (value: string) => value.length <= 5 || 'Max 5 characters',
     ],
   },
 };

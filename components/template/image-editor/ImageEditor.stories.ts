@@ -1,7 +1,8 @@
 // Replace vue3 with vue if you are using Storybook for Vue 2
 import type { Meta, StoryObj } from '@storybook/vue3';
-
 import ImageEditor from './ImageEditor.vue';
+
+type ImageEditorProps = InstanceType<typeof ImageEditor>['$props']
 
 const meta: Meta<typeof ImageEditor> = {
   component: ImageEditor,
@@ -16,7 +17,7 @@ type Story = StoryObj<typeof ImageEditor>;
  * to learn how to use render functions.
  */
 export const Primary: Story = {
-  render: (args: any) => ({
+  render: (args: ImageEditorProps) => ({
     setup() {
       return {
         ...args,
@@ -26,6 +27,5 @@ export const Primary: Story = {
     template: '<div class="text-center w-full"><ImageEditor :text="text"></ImageEditor></div>',
   }),
   args: {
-    text: 'コピー用テキスト'
   }
 };

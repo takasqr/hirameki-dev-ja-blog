@@ -1,7 +1,8 @@
 // Replace vue3 with vue if you are using Storybook for Vue 2
 import type { Meta, StoryObj } from '@storybook/vue3';
-
 import AppBar from './AppBar.vue';
+
+type AppBarProps = InstanceType<typeof AppBar>['$props']
 
 const meta: Meta<typeof AppBar> = {
   component: AppBar,
@@ -16,7 +17,7 @@ type Story = StoryObj<typeof AppBar>;
  * to learn how to use render functions.
  */
 export const Primary: Story = {
-  render: (args: any) => ({
+  render: (args: AppBarProps) => ({
     setup() {
       return {
         ...args

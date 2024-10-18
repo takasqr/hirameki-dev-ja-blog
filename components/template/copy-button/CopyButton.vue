@@ -1,8 +1,8 @@
 <template>
   <Tooltip v-model:is-react="showTooltip" reactive-text="コピーしました" hover-text="クリップボードにコピー">
     <Button @click="click">
-      <CopyRegularIcon v-if="!isCopy"></CopyRegularIcon>
-      <CopySolidIcon v-else ></CopySolidIcon>
+      <CopyRegularIcon v-if="!isCopy"/>
+      <CopySolidIcon v-else />
     </Button>
   </Tooltip>
 </template>

@@ -4,7 +4,7 @@
       <ul role="list" class="-mx-2 space-y-1">
         <li v-for="item in navigationItems" :key="item.name">
 
-          <SecondaryButton block v-if="item.onClick" @click="clickNavigation(item.onClick)">
+          <SecondaryButton v-if="item.onClick" block @click="clickNavigation(item.onClick)">
             <component :is="item.icon" :class="[item.current ? 'text-indigo-600' : 'text-gray-400 group-hover:text-indigo-600', 'h-6 w-6 shrink-0 inline mx-2']" aria-hidden="true" />
             {{ item.name }}
           </SecondaryButton>
@@ -12,25 +12,23 @@
           <div v-else class="flex">
             <div class="hover:bg-gray-50">
               <component
-                v-if="item.isOpen === false"
                 :is="ChevronRightIcon"
+                v-if="item.isOpen === false"
+                :class="[
+                  'text-gray-400 hover:text-indigo-600',
+                  'h-6 w-6 shrink-0 inline mx-2 my-2'
+                ]"
                 @click="openSubItems(item)"
-                :class="[
-                  'text-gray-400 hover:text-indigo-600',
-                  'h-6 w-6 shrink-0 inline mx-2 my-2'
-                ]"
-              >
-              </component>
+              />
               <component
-                v-if="item.isOpen === true"
                 :is="ChevronDownIcon"
-                @click="closeSubItems(item)"
+                v-if="item.isOpen === true"
                 :class="[
                   'text-gray-400 hover:text-indigo-600',
                   'h-6 w-6 shrink-0 inline mx-2 my-2'
                 ]"
-              >
-              </component>
+                @click="closeSubItems(item)"
+              />
             </div>
 
             <a
@@ -49,7 +47,7 @@
               />
               {{ item.name }}
             </a>
-            <span v-else @click="toggleSubItems(item)" :class="[item.current ? 'bg-gray-50 text-indigo-600' : 'text-gray-700 hover:text-indigo-600 hover:bg-gray-50', 'group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold']">
+            <span v-else :class="[item.current ? 'bg-gray-50 text-indigo-600' : 'text-gray-700 hover:text-indigo-600 hover:bg-gray-50', 'group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold']" @click="toggleSubItems(item)">
               <component :is="item.icon" :class="[item.current ? 'text-indigo-600' : 'text-gray-400 group-hover:text-indigo-600', 'h-6 w-6 shrink-0']" aria-hidden="true" />
               {{ item.name }}
             </span>
@@ -58,12 +56,13 @@
           <template v-if="item.subItems && item.isOpen === true">
             <ul role="list" class="mx-4 space-y-1">
               <li v-for="subItem in item.subItems" :key="subItem.name">
-                <SecondaryButton block v-if="subItem.onClick" @click="clickNavigation(subItem.onClick)">
+                <SecondaryButton v-if="subItem.onClick" block @click="clickNavigation(subItem.onClick)">
                   <component :is="subItem.icon" :class="[subItem.current ? 'text-indigo-600' : 'text-gray-400 group-hover:text-indigo-600', 'h-6 w-6 shrink-0 inline mx-2']" aria-hidden="true" />
                   {{ subItem.name }}
                 </SecondaryButton>
 
-                <a v-else
+                <a
+                  v-else
                   :href="subItem.href"
                   :class="[
                     subItem.current ? 'bg-gray-50 text-indigo-600' : 'text-gray-700 hover:text-indigo-600 hover:bg-gray-50',

@@ -17,7 +17,7 @@ export type ClassObject = {
   icon?: ClassObject;
   button?: ClassObject;
   input?: ClassObject;
-  [key: string]: any; // インデックスシグネチャの追加
+  [key: string]: string | ClassObject | undefined; // インデックスシグネチャの追加
 }
 
 // export type ClassObject = {

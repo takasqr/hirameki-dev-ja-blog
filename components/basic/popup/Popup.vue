@@ -13,7 +13,7 @@
               <div :class="{ 'flex-grow': full }" class="">
                 <div class="relative">
                   <div class="absolute top-0 right-0">
-                    <XmarkSolidIcon @click="forceClose"></XmarkSolidIcon>
+                    <XmarkSolidIcon @click="forceClose"/>
                   </div>
       
                   <slot />
@@ -28,7 +28,7 @@
 </template>
 
 <script setup lang="ts">
-import { type PropType } from 'vue'
+import type { PropType } from 'vue'
 import { Dialog, DialogPanel, TransitionChild, TransitionRoot } from '@headlessui/vue'
 import { PopupStore } from './PopupStore'
 import XmarkSolidIcon from '../../icon/xmark/XmarkSolidIcon.vue';

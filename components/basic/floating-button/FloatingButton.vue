@@ -9,8 +9,8 @@
 </template>
 
 <script setup lang="ts">
-import { type PropType } from 'vue';
-import { type ClassObject } from '../../types/ClassObject';
+import type { PropType } from 'vue';
+import type { ClassObject } from '../../types/ClassObject';
 
 defineProps({
   classes: {

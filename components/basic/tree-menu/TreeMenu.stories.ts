@@ -1,6 +1,5 @@
 // Replace vue3 with vue if you are using Storybook for Vue 2
 import type { Meta, StoryObj } from '@storybook/vue3';
-
 import TreeMenu from './TreeMenu.vue';
 import {
   HomeIcon,
@@ -12,6 +11,8 @@ import {
   BookOpenIcon,
   MinusIcon
 } from '@heroicons/vue/24/outline'
+
+type TreeMenuProps = InstanceType<typeof TreeMenu>['$props']
 
 const meta: Meta<typeof TreeMenu> = {
   component: TreeMenu,
@@ -26,7 +27,7 @@ type Story = StoryObj<typeof TreeMenu>;
  * to learn how to use render functions.
  */
 export const Primary: Story = {
-  render: (args: any) => ({
+  render: (args: TreeMenuProps) => ({
     setup() {
       return {
         ...args

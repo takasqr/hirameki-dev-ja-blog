@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/no-mutating-props -->
 <script setup lang="ts">
 import { ref, type PropType } from 'vue'
 import Card from '../../basic/card/Card.vue'
@@ -107,11 +108,11 @@ const shuffleArray = (array) => {
             <TextField
               :value="item"
               @input="editValue(index, $event)"
-            ></TextField>
+            />
           </div>
 
           <button :disabled="minusDisabled" @click="clickMinus(index)">
-            <MinusSolidIcon class="flex-none m-2"></MinusSolidIcon>
+            <MinusSolidIcon class="flex-none m-2"/>
           </button>
         </div>
 
@@ -120,7 +121,7 @@ const shuffleArray = (array) => {
             <SecondaryButton block @click="clickAllShuffleButton">{{ shuffleButtonText }}</SecondaryButton>
           </div>
           <button :disabled="plusDisabled" @click="clickPlus()">
-            <PlusSolidIcon class="flex-none m-2"></PlusSolidIcon>
+            <PlusSolidIcon class="flex-none m-2"/>
           </button>
         </div>        
       </div>

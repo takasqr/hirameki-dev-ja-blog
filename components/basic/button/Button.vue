@@ -15,7 +15,7 @@
       { 'w-full': block, 'opacity-30': disabled }
     ]"
   >
-    <slot></slot>
+    <slot/>
   </button>
 
   <a
@@ -34,7 +34,7 @@
     ]"
     class="inline-block"
   >
-    <slot></slot>
+    <slot/>
   </a>
 </template>
 
@@ -59,7 +59,7 @@ const props = defineProps({
   size: {
     type: String,
     default: 'base',
-    validator: (value: any): boolean => buttonSizes.includes(value)
+    validator: (value: string): boolean => buttonSizes.includes(value)
   },
   classes: {
     type: Object as PropType<ClassObject>,

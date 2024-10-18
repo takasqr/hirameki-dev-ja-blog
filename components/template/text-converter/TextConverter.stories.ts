@@ -1,7 +1,8 @@
 // Replace vue3 with vue if you are using Storybook for Vue 2
 import type { Meta, StoryObj } from '@storybook/vue3';
-
 import TextConverter from './TextConverter.vue';
+
+type TextConverterProps = InstanceType<typeof TextConverter>['$props']
 
 const meta: Meta<typeof TextConverter> = {
   component: TextConverter,
@@ -16,7 +17,7 @@ type Story = StoryObj<typeof TextConverter>;
  * to learn how to use render functions.
  */
 export const Primary: Story = {
-  render: (args: any) => ({
+  render: (args: TextConverterProps) => ({
     setup() {
       return {
         ...args
@@ -32,7 +33,7 @@ export const Primary: Story = {
 };
 
 export const WithPlaceholder: Story = {
-  render: (args: any) => ({
+  render: (args: TextConverterProps) => ({
     setup() {
       return {
         ...args
@@ -50,7 +51,7 @@ export const WithPlaceholder: Story = {
 };
 
 export const WithValue: Story = {
-  render: (args: any) => ({
+  render: (args: TextConverterProps) => ({
     setup() {
       return {
         ...args

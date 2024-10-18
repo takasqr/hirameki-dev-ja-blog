@@ -4,6 +4,8 @@ import { ref, watchEffect } from "vue"
 import Select from './Select.vue';
 import type { SelectOption } from './SelectOption';
 
+type SelectProps = InstanceType<typeof Select>['$props']
+
 const meta: Meta<typeof Select> = {
   component: Select,
 };
@@ -25,7 +27,7 @@ const selected: SelectOption = { key: 'coffee', name: 'コーヒー' }
  * to learn how to use render functions.
  */
  export const Primary: Story = {
-  render: (args: any) => ({
+  render: (args: SelectProps) => ({
     setup() {
       // `selected`を直接使うのではなく、`modelValue`を経由して初期値を設定
       const modelValue = ref(args.modelValue);

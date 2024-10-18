@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <Step :steps="steps"></Step>
+  <Step :steps="steps"/>
 
   <template v-for="stepContent in steps">
     <template v-if="currentStep === stepContent.number">
@@ -12,7 +12,7 @@
 <script setup lang="ts">
 import { ref, watch, defineProps } from 'vue';
 import Step from '../../basic/step/Step.vue'
-import { type StepContent } from '../../basic/step/StepContent';
+import type { StepContent } from '../../basic/step/StepContent';
 import type { StepStatus } from '../../basic/step/StepStatus';
 
 const props = defineProps({

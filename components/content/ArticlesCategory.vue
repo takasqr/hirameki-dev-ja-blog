@@ -6,6 +6,7 @@ import type { Article } from '../types/Article';
 const props = defineProps({
   category: {
     type: String,
+    required: true
   }
 })
 

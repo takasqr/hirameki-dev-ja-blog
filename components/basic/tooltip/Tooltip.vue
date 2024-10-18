@@ -17,9 +17,11 @@ const isShowTooltip = ref(false)
 const props = defineProps({
   reactiveText: {
     type: String,
+    default: ''
   },
   hoverText: {
     type: String,
+    required: true
   },
   isReact: {
     type: Boolean,

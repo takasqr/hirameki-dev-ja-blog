@@ -3,6 +3,8 @@ import type { Meta, StoryObj } from '@storybook/vue3';
 import dayjs from 'dayjs';
 import DatePicker from './DatePicker.vue';
 
+type DatePickerProps = InstanceType<typeof DatePicker>['$props']
+
 const meta: Meta<typeof DatePicker> = {
   component: DatePicker,
 };
@@ -16,7 +18,7 @@ type Story = StoryObj<typeof DatePicker>;
  * to learn how to use render functions.
  */
 export const Primary: Story = {
-  render: (args: any) => ({
+  render: (args: DatePickerProps) => ({
     setup() {
       return {
         ...args
@@ -35,7 +37,7 @@ export const Primary: Story = {
 };
 
 export const Range: Story = {
-  render: (args: any) => ({
+  render: (args: DatePickerProps) => ({
     setup() {
       return {
         ...args
@@ -56,7 +58,7 @@ export const Range: Story = {
 };
 
 export const OldMonth: Story = {
-  render: (args: any) => ({
+  render: (args: DatePickerProps) => ({
     setup() {
       return {
         ...args

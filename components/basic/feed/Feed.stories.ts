@@ -1,8 +1,9 @@
 // Replace vue3 with vue if you are using Storybook for Vue 2
 import type { Meta, StoryObj } from '@storybook/vue3';
 import { CheckIcon, HandThumbUpIcon, UserIcon } from '@heroicons/vue/20/solid'
-
 import Feed from './Feed.vue';
+
+type FeedProps = InstanceType<typeof Feed>['$props']
 
 const meta: Meta<typeof Feed> = {
   component: Feed,
@@ -17,7 +18,7 @@ type Story = StoryObj<typeof Feed>;
  * to learn how to use render functions.
  */
 export const Primary: Story = {
-  render: (args: any) => ({
+  render: (args: FeedProps) => ({
     setup() {
       return {
         ...args,

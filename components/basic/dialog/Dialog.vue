@@ -22,12 +22,12 @@
                   </div>
                 </div>
               </div>
-              <div class="mt-5 sm:mt-6" v-if="cancelButtonText.length == 0">
+              <div v-if="cancelButtonText.length == 0" class="mt-5 sm:mt-6">
                 <PrimaryButton type="button" class="inline-flex w-full justify-center rounded-md px-3 py-2 text-sm font-semibold shadow-sm" @click="close({ isConfirmed: true })">{{ okButtonText }}</PrimaryButton>
               </div>
 
-              <div class="mt-5 grid grid-flow-row-dense grid-cols-2 gap-3 sm:mt-6" v-else>
-                <SecondaryButton type="button" class="inline-flex w-full justify-center rounded-md px-3 py-2 text-sm font-semibold shadow-sm" ref="cancelButtonRef" @click="close({ isConfirmed: false })">{{ cancelButtonText }}</SecondaryButton>
+              <div v-else class="mt-5 grid grid-flow-row-dense grid-cols-2 gap-3 sm:mt-6">
+                <SecondaryButton ref="cancelButtonRef" type="button" class="inline-flex w-full justify-center rounded-md px-3 py-2 text-sm font-semibold shadow-sm" @click="close({ isConfirmed: false })">{{ cancelButtonText }}</SecondaryButton>
                 <PrimaryButton type="button" class="inline-flex w-full justify-center rounded-md px-3 py-2 text-sm font-semibold shadow-sm" @click="close({ isConfirmed: true })">{{ okButtonText }}</PrimaryButton>
               </div>
             </DialogPanel>

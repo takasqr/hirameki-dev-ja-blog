@@ -1,12 +1,12 @@
 <template>
   <TextField
-   @change="change($event)"
-   @input="input($event)"
    id="email"
-   name="email"
    type="email"
+   name="email"
    autocomplete="email"
    :required="true"
+   @change="change($event)"
+   @input="input($event)"
   />
 </template>
 

@@ -18,19 +18,18 @@
                 </div>
               </TransitionChild>
               <div class="flex grow flex-col gap-y-5 overflow-y-auto bg-white px-6 pb-2">
-                <div class="flex h-4 shrink-0 items-center">
-                </div>
+                <div class="flex h-4 shrink-0 items-center"/>
                 <nav class="flex flex-1 flex-col">
                   <ul role="list" class="flex flex-1 flex-col gap-y-7">
                     <li>
                       <ul role="list" class="-mx-2 space-y-1">
-                        <TreeMenu :navigation-items="navigationTop"></TreeMenu>
+                        <TreeMenu :navigation-items="navigationTop"/>
                       </ul>
                     </li>
 
                     <li class="-mx-6 mt-auto px-6 py-2">
                       <ul role="list" class="-mx-2 space-y-1">
-                        <TreeMenu :navigation-items="navigationBottom"></TreeMenu>
+                        <TreeMenu :navigation-items="navigationBottom"/>
                       </ul>
                     </li>
 
@@ -54,14 +53,14 @@
           <ul role="list" class="flex flex-1 flex-col gap-y-7">
             <li>
               <ul role="list" class="-mx-2 space-y-1">
-                <TreeMenu :navigation-items="navigationTop"></TreeMenu>
+                <TreeMenu :navigation-items="navigationTop"/>
               </ul>
             </li>
 
 
             <li class="-mx-6 mt-auto p-6 px-2">
               <ul role="list" class="mx-2 space-y-1">
-                <TreeMenu :navigation-items="navigationBottom"></TreeMenu>
+                <TreeMenu :navigation-items="navigationBottom"/>
               </ul>
             </li>
           </ul>
@@ -69,7 +68,7 @@
       </div>
     </div>
 
-    <AppBar @open="sidebarOpen = true" :title="title"></AppBar>
+    <AppBar :title="title" @open="sidebarOpen = true"/>
 
     <main class="lg:pl-72">
       <div class="">

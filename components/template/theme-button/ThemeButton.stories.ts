@@ -1,7 +1,8 @@
 // Replace vue3 with vue if you are using Storybook for Vue 2
 import type { Meta, StoryObj } from '@storybook/vue3';
-
 import ThemeButton from './ThemeButton.vue';
+
+type ThemeButton = InstanceType<typeof ThemeButton>['$props']
 
 const meta: Meta<typeof ThemeButton> = {
   component: ThemeButton,
@@ -16,7 +17,7 @@ type Story = StoryObj<typeof ThemeButton>;
  * to learn how to use render functions.
  */
 export const Primary: Story = {
-  render: (args: any) => ({
+  render: (args: ThemeButton) => ({
     setup() {
       return {
         ...args,

@@ -6,9 +6,9 @@
       <TextArea
        :value="modelValue"
        :rows="8"
-       @input="convert"
        :placeholder="placeholderInput"
-      ></TextArea>
+       @input="convert"
+      />
     </div>
 
     <div>
@@ -32,8 +32,7 @@ const resultText = ref('')
 
 // emit を定義
 const emit = defineEmits<{
-  (e: 'convert', value: string): void,
-  (e: 'update:modelValue', value: string): void
+  (e: 'convert' | 'update:modelValue', value: string): void,
 }>()
 
 const props = defineProps({
@@ -43,12 +42,15 @@ const props = defineProps({
   },
   placeholderInput: {
     type: String,
+    required: true
   },
   placeholderResult: {
-    type: String
+    type: String,
+    required: true
   },
   modelValue: {
-    type: String
+    type: String,
+    required: true
   }
 })
 

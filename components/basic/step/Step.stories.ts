@@ -1,8 +1,9 @@
 // Replace vue3 with vue if you are using Storybook for Vue 2
 import type { Meta, StoryObj } from '@storybook/vue3';
-
 import Step from './Step.vue';
-import { type StepContent } from './StepContent'
+import type { StepContent } from './StepContent'
+
+type StepProps = InstanceType<typeof Step>['$props']
 
 const meta: Meta<typeof Step> = {
   component: Step,
@@ -26,7 +27,7 @@ const steps: StepContent[] = [
 ]
 
 export const Primary: Story = {
-  render: (args: any) => ({
+  render: (args: StepProps) => ({
     setup() {
       return {
         ...args,

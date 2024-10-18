@@ -21,8 +21,7 @@
                     </div>
                     <slot />
                   </div>
-                  <div class="relative mt-6 flex-1 px-4 sm:px-6">
-                  </div>
+                  <div class="relative mt-6 flex-1 px-4 sm:px-6"/>
                 </div>
               </DialogPanel>
             </TransitionChild>

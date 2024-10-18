@@ -6,15 +6,15 @@
       :name="name"
       :rows=String(rows)
       :value="value"
-      @change="changeValue($event)"
-      @input="inputValue($event)"
       :class="[
         textSize,
         mergedClasses.content?.input?.base,
         mergedClasses.content?.input?.color,
       ]"
-     :placeholder="placeholder"
-     :required="required"
+      :placeholder="placeholder"
+      :required="required"
+     @change="changeValue($event)"
+     @input="inputValue($event)"
     />
   </div>
   <p v-if="errorMassage.length > 0" class="mt-1 ml-1 text-sm text-red-600">{{ errorMassage }}</p>
@@ -55,7 +55,7 @@ const props = defineProps({
   size: {
     type: String as PropType<string>,
     default: 'base',
-    validator: (sizeValue: any): boolean => textAreaSizes.includes(sizeValue),
+    validator: (sizeValue: string): boolean => textAreaSizes.includes(sizeValue),
   },
   name: {
     type: String as PropType<string>

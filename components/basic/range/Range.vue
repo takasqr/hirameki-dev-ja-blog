@@ -98,7 +98,7 @@ const emit = defineEmits<{
 
 function increment() {
   if (Number(modelValue.value) < props.max) {
-    let number = Number(modelValue.value)
+    const number = Number(modelValue.value)
     modelValue.value = (number + props.step).toString()
     emitCustomEvent(modelValue.value)
     emit('update:modelValue', Number(modelValue.value))
@@ -107,7 +107,7 @@ function increment() {
 
 function decrement() {
   if (Number(modelValue.value) > props.min) {
-    let number = Number(modelValue.value)
+    const number = Number(modelValue.value)
     modelValue.value =  (number - props.step).toString()
     emitCustomEvent(modelValue.value)
     emit('update:modelValue', Number(modelValue.value))

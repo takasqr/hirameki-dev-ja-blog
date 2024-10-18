@@ -1,7 +1,8 @@
 // Replace vue3 with vue if you are using Storybook for Vue 2
 import type { Meta, StoryObj } from '@storybook/vue3';
-
 import Card from './Card.vue';
+
+type CardProps = InstanceType<typeof Card>['$props']
 
 const meta: Meta<typeof Card> = {
   component: Card,
@@ -16,7 +17,7 @@ type Story = StoryObj<typeof Card>;
  * to learn how to use render functions.
  */
 export const Primary: Story = {
-  render: (args: any) => ({
+  render: (args: CardProps) => ({
     setup() {
       return {
         ...args

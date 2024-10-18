@@ -1,7 +1,7 @@
 <template>
   <v-stage :config="configKonva">
     <v-layer>
-      <v-circle :config="configCircle"></v-circle>
+      <v-circle :config="configCircle"/>
     </v-layer>
   </v-stage>
 </template>

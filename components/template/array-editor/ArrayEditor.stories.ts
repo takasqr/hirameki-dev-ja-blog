@@ -1,7 +1,8 @@
 // Replace vue3 with vue if you are using Storybook for Vue 2
 import type { Meta, StoryObj } from '@storybook/vue3';
-
 import ArrayEditor from './ArrayEditor.vue';
+
+type ArrayEditorProps = InstanceType<typeof ArrayEditor>['$props']
 
 const meta: Meta<typeof ArrayEditor> = {
   component: ArrayEditor,
@@ -16,7 +17,7 @@ type Story = StoryObj<typeof ArrayEditor>;
  * to learn how to use render functions.
  */
 export const Primary: Story = {
-  render: (args: any) => ({
+  render: (args: ArrayEditorProps) => ({
     setup() {
       return {
         ...args

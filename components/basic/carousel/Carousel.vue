@@ -2,14 +2,14 @@
 <template>
   <div class="carousel">
     <div class="carousel-inner" :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
-      <slot></slot>
+      <slot/>
     </div>
 
-    <SecondaryButton @click="prev" class="prev-btn opacity-50">
+    <SecondaryButton class="prev-btn opacity-50" @click="prev">
       <component :is="ChevronLeftIcon" class="h-5" aria-hidden="true" />
     </SecondaryButton>
 
-    <SecondaryButton @click="next" class="next-btn opacity-50">
+    <SecondaryButton class="next-btn opacity-50" @click="next">
       <component :is="ChevronRightIcon" class="h-5" aria-hidden="true" />
     </SecondaryButton>
 
