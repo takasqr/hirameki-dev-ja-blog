@@ -17,13 +17,7 @@
           class="text-gray-500"
         >{{ props.article.createDate }}</time>
         <a
-          v-if="article.lang"
-          :href="'/' + props.article.lang + '/' + props.article.category"
-          class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
-        >{{ props.article.category }}</a>
-        <a
-          v-else
-          :href="'/ja/' + props.article.category"
+          :href="categoryPath"
           class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
         >{{ props.article.category }}</a>
       </div>
@@ -41,6 +35,7 @@
 
 <script setup lang="ts">
 import type { Article } from '../../types/Article'
+import { cleanDoubleSlashes } from 'ufo'
 
 const props = defineProps({
   article: {
@@ -53,5 +48,13 @@ const props = defineProps({
       return false
     },
   },
+})
+
+const categoryPath = computed(() => {
+  if (props.article.lang) {
+    return cleanDoubleSlashes('/' + props.article.lang + '/' + props.article.categoryBasePath + props.article.category)
+  } else {
+    return cleanDoubleSlashes('/ja/' + props.article.categoryBasePath + props.article.category)
+  }
 })
 </script>

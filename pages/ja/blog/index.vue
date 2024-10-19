@@ -34,6 +34,7 @@ const { data: articles } = await useAsyncData(asyncDataKey, async () => {
     description: content.description,
     cover: content.cover,
     category: content.category,
+    categoryBasePath: '/blog/tech/',
     createDate: content.createDate,
   }) as unknown as Article)
 })

@@ -5,5 +5,6 @@ export type Article = {
   description: string
   cover: string
   category: string
+  categoryBasePath: string
   badges?: { bg: string, text: string, content: string }[]
 }
