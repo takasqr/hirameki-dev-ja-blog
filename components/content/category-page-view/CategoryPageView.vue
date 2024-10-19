@@ -1,5 +1,11 @@
 <template>
-  <ArticleList :articles="articlesData" />
+  <div class="prose lg:prose-xl">
+    <h1>{{ category }}</h1>
+  </div>
+  
+  <div class="mt-8">
+    <ArticleList :articles="articlesData" />
+  </div>  
 </template>
 
 <script setup lang="ts">
