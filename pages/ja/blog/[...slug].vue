@@ -18,7 +18,7 @@
 </template>
 
 <script setup lang="ts">
-import ArticlesCategory from '../../../components/content/ArticlesCategory.vue';
+import ArticlesCategory from '../../../components/content/articles-category/ArticlesCategory.vue';
 import { useHead } from '@unhead/vue'
 
 definePageMeta({
