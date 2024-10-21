@@ -2,7 +2,7 @@
 title: NUXTで作ったWebサイトの表示速度を高速化する
 description: nuxtとvuetifyで作ったこのサイトですが、出来上がった時はあまり表示速度が速くありませんでした。Lighthouseでスコアを測ったらパフォーマンスのスコアが37でした。。。遅い。。少しずつ改善してきて、今では前よりだいぶ速くなってきました。Lighthouseのパフォーマンスのスコアも70まで上がりました。
 slug: nuxtjs_speed_up
-category: nuxt
+category: nuxtjs
 createDate: 2021/08/11
 updated: 2021/08/29
 cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_80_bold:NUXTで作ったWebサイトの表示速度を高速化する,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'

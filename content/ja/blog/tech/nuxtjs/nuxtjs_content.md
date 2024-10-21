@@ -2,7 +2,7 @@
 title: 【サンプル有】@nuxt/contentを1ページでざっくり理解する
 description: NUXTのコンテンツ管理用のモジュールです。/contentの中にmarkdownファイルを置くと、vueコンポーネントの中で取り出して表示したりできます。ブログやドキュメントページと相性がいいと思います。
 slug: nuxtjs_content
-category: nuxt
+category: nuxtjs
 createDate: 2021/08/12
 updated: 
 cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_80_bold:【サンプル有】nuxt contentを1ページでざっくり理解する,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'

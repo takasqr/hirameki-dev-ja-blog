@@ -2,7 +2,7 @@
 title: 【サンプル有】@nuxt/i18nで多言語対応する
 description: NUXTのコンテンツ多言語対応用のモジュールです。このモジュールを使うことで日本語、英語など複数の言語に対応したサイトをNUXTで作ることができます。公式サイトに「Integration with vue-i18n」とあるので、Vueの多言語対応モジュールであるvue-i18nをもとに作られているようです。
 slug: nuxtjs_i18n
-category: nuxt
+category: nuxtjs
 createDate: 2021/08/20
 updated: 
 cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_80_bold:【サンプル有】nuxt i18nで多言語対応する,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'

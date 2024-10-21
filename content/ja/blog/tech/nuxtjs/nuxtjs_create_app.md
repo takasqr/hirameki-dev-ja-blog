@@ -2,7 +2,7 @@
 title: 【Nuxt】create-nuxt-appをインストールして始める
 description: Nuxtはcreate-nuxt-appを使うことで、簡単にプロジェクトを作成して、デバッグを始めることができます。今回はcreate-nuxt-appを使ってRecatのプロジェクトを立ち上げる方法を紹介します。
 slug: nuxtjs_create_app
-category: nuxt
+category: nuxtjs
 createDate: 2021/10/29
 updated: 
 cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_80_bold:【Nuxt】create-nuxt-appをインストールして始める,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'

@@ -2,7 +2,7 @@
 title: NUXTの開発環境をVSCodeとDockerで作る
 description: Nuxtの開発環境をVSCodeのVisual Studio Code Remoteを使って作ったので紹介します。Firebaseも一緒にインストールします。この方法で開発環境を構築すると、Dockerを使うのでWindows、Mac、LinuxどのOSでも同じ環境を作ることができます。
 slug: nuxtjs_development
-category: nuxt
+category: nuxtjs
 createDate: 2021/09/15
 updated: 2021/10/02
 cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_80_bold:NUXTの開発環境をVSCodeとDockerで作る,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'

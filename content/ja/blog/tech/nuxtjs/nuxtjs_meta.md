@@ -2,7 +2,7 @@
 title: 【サンプル有】Nuxtでhead内にmetaタグを出力する2つの方法
 description: Nuxtでmetaタグを出力する2つの方法を紹介します。nuxt.config.jsに設定します。nuxt.config.jsに書いたmetaタグは基本的に全てのページで出力されます。なので、どのページでも出力したいmetaタグはnuxt.config.jsに書きます。
 slug: nuxtjs_meta
-category: nuxt
+category: nuxtjs
 createDate: 2021/09/29
 updated: 
 cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_80_bold:【サンプル有】Nuxtでhead内にmetaタグを出力する,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
