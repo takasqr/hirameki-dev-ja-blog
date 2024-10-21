@@ -141,7 +141,7 @@ const navigation = {
     { name: 'プロフィール', href: '/ja/about' },
   ],
   legal: [
-    { name: 'プライバシーポリシー', href: '/privacy' },
+    { name: 'プライバシーポリシー', href: '/ja/privacy' },
     { name: '利用規約', href: `https://hirameki.dev/ja/terms/` },
   ],
   social: [
