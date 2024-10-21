@@ -2,7 +2,7 @@
 title: 【Vue3】v-onとは?使い方を7パターン紹介する
 description: v-onはhtml要素のイベントに関連するディレクティブ(vue独自の属性)です。ボタンをクリックした時に、特定の処理を行いたい時などに使うことができます。使い方を紹介します。全部で7パターンあります。Vue3で動きます。
 slug: vuejs_v-on
-category: vue
+category: vuejs
 createDate: 2022/07/01
 updated: 
 cover: 'https://res.cloudinary.com/t8/image/upload/v1658498117/vuejs_v-on_fiuhnz.png'

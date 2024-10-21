@@ -2,7 +2,7 @@
 title: 【Vue3】vue-cliをインストールして始める
 description: Vueはvue-cliを使うことで、簡単にプロジェクトを作成して、デバッグを始めることができます。今回はvue-cliを使ってVueのプロジェクトを立ち上げる方法を紹介します。Vue.jsは一言で言うと、「フロントエンド(ブラウザ)で動く、javascriptのフレームワーク」です。
 slug: vuejs_create
-category: vue
+category: vuejs
 createDate: 2021/10/29
 updated: 
 cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_80_bold:【Vue3】vue-cliをインストールして始める,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'

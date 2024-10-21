@@ -2,7 +2,7 @@
 title: Vue Routerとは？使い方を一通り説明する
 description: Vue Routerとは、Vue公式のルーターです。Vue Routerと使うことで、ページを作成、作ったページにURLを設定(動的も可)、コンポーネント内で画面遷移、GETのパラメータを設定してコンポーネント内で取り出すといったことができます。
 slug: vuejs_router
-category: vue
+category: vuejs
 createDate: 2022/01/05
 updated: 
 cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_100_bold:Vue Routerとは？使い方を一通り説明する,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
