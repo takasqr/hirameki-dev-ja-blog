@@ -18,8 +18,8 @@
 </template>
 
 <script setup lang="ts">
-import ArticlesCategory from '../../../components/content/articles-category/ArticlesCategory.vue';
-import { useSetHead } from '../../../composables/useSetHead'
+import ArticlesCategory from '../../../../components/content/articles-category/ArticlesCategory.vue';
+import { useSetHead } from '../../../../composables/useSetHead'
 
 definePageMeta({
   layout: 'ja-article'
