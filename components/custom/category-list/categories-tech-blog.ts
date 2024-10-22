@@ -4,6 +4,11 @@ import FireDuotoneIcon from '../../../components/icon/category/FireDuotoneIcon.v
 import CodeCompareDuotoneIcon from '../../../components/icon/category/CodeCompareDuotoneIcon.vue'
 import WhaleDuotoneIcon from '../../../components/icon/category/WhaleDuotoneIcon.vue'
 import MountainsDuotoneIcon from '../../../components/icon/category/MountainsDuotoneIcon.vue'
+import BookDuotoneIcon from '../../icon/category/BookDuotoneIcon.vue'
+import AppleBrandsIcon from '../../icon/category/AppleBrandsIcon.vue'
+import AWSBrandsIcon from '../../icon/category/AWSBrandsIcon.vue'
+import RectangleTerminalDuotoneIcon from '../../icon/category/RectangleTerminalDuotoneIcon.vue'
+import DatabaseDuotoneIcon from '../../icon/category/DatabaseDuotoneIcon.vue'
 import type { Category } from '../../../components/types/Category'
 
 const lang = 'ja'
@@ -44,5 +49,41 @@ export const categoriesTechBlog: Category[] = [
     description: '2 本の記事',
     path: `/${lang}/blog/tech/github`,
     icon: GitHubBrandsIcon,
+  },
+  {
+    name: 'Active Directory',
+    description: '1 本の記事',
+    path: `/${lang}/blog/tech/activedirectory`,
+    icon: BookDuotoneIcon,
+  },
+  {
+    name: 'Apple',
+    description: '2 本の記事',
+    path: `/${lang}/blog/tech/apple`,
+    icon: AppleBrandsIcon,
+  },
+  {
+    name: 'AWS',
+    description: '1 本の記事',
+    path: `/${lang}/blog/tech/aws`,
+    icon: AWSBrandsIcon,
+  },
+  {
+    name: 'コマンドプロンプト',
+    description: '2 本の記事',
+    path: `/${lang}/blog/tech/bat`,
+    icon: RectangleTerminalDuotoneIcon,
+  },
+  {
+    name: '技術書',
+    description: '1 本の記事',
+    path: `/${lang}/blog/tech/book`,
+    icon: BookDuotoneIcon,
+  },
+  {
+    name: 'データベース',
+    description: '1 本の記事',
+    path: `/${lang}/blog/tech/database`,
+    icon: DatabaseDuotoneIcon,
   },
 ]
