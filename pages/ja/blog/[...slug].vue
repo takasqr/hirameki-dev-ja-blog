@@ -19,31 +19,15 @@
 
 <script setup lang="ts">
 import ArticlesCategory from '../../../components/content/articles-category/ArticlesCategory.vue';
-import { useHead } from '@unhead/vue'
+import { useSetHead } from '../../../composables/useSetHead'
 
 definePageMeta({
   layout: 'ja-article'
 })
 
 const route = useRoute()
-const articles = await queryContent(route.fullPath).findOne()
-const category = articles.category
+const article = await queryContent(route.fullPath).findOne()
+const category = article.category
 
-useHead({
-  meta: [
-    { name: 'title', content: articles.title + ' | シェルの技術ブログ' },
-    { name: 'description', content: articles.description },
-    // Open Graph
-    { property: 'og:url', content: `https://blog.takasqr.dev${route.fullPath}` },
-    { property: 'og:title', content: articles.title + ' | シェルの技術ブログ' },
-    { property: 'og:description', content: articles.description },
-    { property: 'og:image', content: 'https://blog.takasqr.dev' + articles.cover },
-    // Twitter Card
-    { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:site', content: '@takasqr' },
-    { name: 'twitter:creator', content: '@takasqr' },
-    // サムネイル指定
-    { name: 'thumbnail', content: 'https://blog.takasqr.dev' + articles.cover }
-  ],
-})
+useSetHead({ title: article.title, description: article.description, cover: article.cover, path: route.fullPath })
 </script>
