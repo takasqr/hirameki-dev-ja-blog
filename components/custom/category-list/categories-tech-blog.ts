@@ -9,6 +9,9 @@ import AppleBrandsIcon from '../../icon/category/AppleBrandsIcon.vue'
 import AWSBrandsIcon from '../../icon/category/AWSBrandsIcon.vue'
 import RectangleTerminalDuotoneIcon from '../../icon/category/RectangleTerminalDuotoneIcon.vue'
 import DatabaseDuotoneIcon from '../../icon/category/DatabaseDuotoneIcon.vue'
+import CodeDuotoneIcon from '../../icon/category/CodeDuotoneIcon.vue'
+import GoogleBrandsIcon from '../../icon/category/GoogleBrandsIcon.vue'
+import GlobeDuotoneIcon from '../../icon/category/GlobeDuotoneIcon.vue'
 import type { Category } from '../../../components/types/Category'
 
 const lang = 'ja'
@@ -85,5 +88,23 @@ export const categoriesTechBlog: Category[] = [
     description: '1 本の記事',
     path: `/${lang}/blog/tech/database`,
     icon: DatabaseDuotoneIcon,
+  },
+  {
+    name: '開発',
+    description: '8 本の記事',
+    path: `/${lang}/blog/tech/dev`,
+    icon: CodeDuotoneIcon,
+  },
+  {
+    name: 'Google',
+    description: '2 本の記事',
+    path: `/${lang}/blog/tech/google`,
+    icon: GoogleBrandsIcon,
+  },
+  {
+    name: 'web',
+    description: '1 本の記事',
+    path: `/${lang}/blog/tech/web`,
+    icon: GlobeDuotoneIcon,
   },
 ]
