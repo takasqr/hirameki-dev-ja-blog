@@ -2,7 +2,7 @@
 title: Let's EncryptをDockerで作ったapache2(WordPress)に入れる
 description: dockerで作ったWordPress(apache2)のコンテナにLet's Encryptをインストールします。Let’s Encryptは無料でホームページをHTTPS化できるツールです。Let’s EncryptはMozillaやシスコシステムズなどがスポンサーになって運営されている認証局です。
 slug: letsencrypt_apache
-category: letsencrypt
+category: web
 createDate: 2019/03/03
 updated: 2021/10/28
 cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_80_bold:Let%27s%20EncryptをDockerで作ったapache2(WordPress)に入れる,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
