@@ -2,7 +2,7 @@
 title: wordnet日本語版(sqlite)を使って類語Web APIを作った
 description: 最近、文章を単語に分割して、単語ごとに類語を表示するWebアプリを作ったのですが、文章を単語に分割する時にwordnet日本語版を使って関連語を返すWeb APIを作りました。作ったWebアプリはこれです。
 slug: wordnet_japanese
-category: wordnet
+category: dev
 createDate: 2021/10/26
 updated: 
 cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_80_bold:wordnet日本語版(sqlite)を使って類語Web APIを作った,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
