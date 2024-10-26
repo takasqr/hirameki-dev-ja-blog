@@ -6,7 +6,9 @@
           <article class="prose lg:prose-xl">
             <h1>{{ doc.title }}</h1>
 
-            <Breadcrumb class="not-prose" />
+            <HorizontalScroll>
+              <Breadcrumb class="not-prose" />
+            </HorizontalScroll>
 
             <div class="my-6">
               <TweetButton />
@@ -28,6 +30,7 @@
 import ArticlesCategory from '../../../../components/content/articles-category/ArticlesCategory.vue';
 import { useSetHead } from '../../../../composables/useSetHead'
 import Breadcrumb from '../../../../components/basic/breadcrumb/Breadcrumb.vue'
+import HorizontalScroll from '../../../../components/basic/horizontal-scroll/HorizontalScroll.vue'
 
 definePageMeta({
   layout: 'ja-article'
