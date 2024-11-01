@@ -16,4 +16,6 @@ const category = 'xcode'
 definePageMeta({
   layout: 'ja-article'
 })
+
+useSetHead(getTechBlogCategoryHeadParams(category))
 </script>

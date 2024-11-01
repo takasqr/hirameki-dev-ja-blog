@@ -16,4 +16,6 @@ const category = 'docker'
 definePageMeta({
   layout: 'ja-article'
 })
+
+useSetHead(getTechBlogCategoryHeadParams(category))
 </script>

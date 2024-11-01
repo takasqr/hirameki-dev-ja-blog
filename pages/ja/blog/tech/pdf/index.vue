@@ -16,4 +16,6 @@ const category = 'pdf'
 definePageMeta({
   layout: 'ja-article'
 })
+
+useSetHead(getTechBlogCategoryHeadParams(category))
 </script>

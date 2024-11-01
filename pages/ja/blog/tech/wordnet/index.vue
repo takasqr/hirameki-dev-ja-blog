@@ -16,4 +16,6 @@ const category = 'wordnet'
 definePageMeta({
   layout: 'ja-article'
 })
+
+useSetHead(getTechBlogCategoryHeadParams(category))
 </script>

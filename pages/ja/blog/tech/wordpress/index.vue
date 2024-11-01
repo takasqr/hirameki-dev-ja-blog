@@ -16,4 +16,6 @@ const category = 'wordpress'
 definePageMeta({
   layout: 'ja-article'
 })
+
+useSetHead(getTechBlogCategoryHeadParams(category))
 </script>
