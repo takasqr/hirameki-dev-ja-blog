@@ -10,11 +10,11 @@ export default withNuxt(
   // pages ディレクトリでは必ずヘッダー情報を設定しなければならない
   {
     plugins: {
-      'pattern-rules': patternRules
+      'pattern-rules': patternRules,
     },
-    files: ["pages/**/*.vue"],
+    files: ['pages/**/*.vue'],
     rules: {
-      'pattern-rules/required-identifier': ['warn', { patterns: ['useSetHead'] }]
+      'pattern-rules/required-identifier': ['warn', { patterns: ['useSetHead'] }],
     },
   },
 )
