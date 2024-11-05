@@ -1,5 +1,5 @@
 <template>
-  <div :class="['sticky top-0 z-40 flex items-center gap-x-6 px-4 py-4 sm:px-6 lg:pl-80', mergedClasses.border]">
+  <div :class="['sticky top-0 z-20 flex items-center gap-x-6 px-4 py-4 sm:px-6 lg:pl-80', mergedClasses.border]">
     <button type="button" :class="['-m-2.5 p-2.5 lg:hidden', mergedClasses.icon?.color]" @click="open()">
       <span class="sr-only">Open sidebar</span>
       <Bars3Icon class="h-6 w-6" aria-hidden="true" />
