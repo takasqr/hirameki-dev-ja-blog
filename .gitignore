@@ -5,6 +5,7 @@ nuxt.d.ts
 .output
 .data
 .env
+.env.*
 framework
 dist
 .DS_Store
