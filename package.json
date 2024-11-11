@@ -39,7 +39,7 @@
     "eslint": "^9.11.0",
     "eslint-plugin-pattern-rules": "^0.1.5",
     "happy-dom": "^15.7.4",
-    "nuxt": "^3.13.2",
+    "nuxt": "^3.11.1",
     "playwright-core": "^1.47.2",
     "postcss": "^8.4.47",
     "storybook": "8.0.8",
