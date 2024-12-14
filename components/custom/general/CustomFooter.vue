@@ -14,7 +14,7 @@
         <div class="bg-white h-14 w-14 p-2 rounded-full flex justify-center items-center">
           <img
             class="h-8 rounded"
-            src="https://takasqr.dev/logo.svg"
+            src="/icon.png"
             alt=""
           >
         </div>
