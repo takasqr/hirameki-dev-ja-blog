@@ -5,6 +5,16 @@
         <ContentDoc v-slot="{ doc }">
           <article class="prose lg:prose-xl">
             <h1>{{ doc.title }}</h1>
+
+            <div class="my-6">
+              <TweetButton />
+            </div>
+
+            <div class="text-gray-400">
+              <span v-if="article.createDate">公開日: <time :datetime="article.createDate.replace(/\//g, '-')">{{ article.createDate.replace(/\//g, '-') }}</time></span>
+              <span v-if="article.updated" class="ml-2">更新日: <time :datetime="article.updated.replace(/\//g, '-')">{{ article.updated.replace(/\//g, '-') }}</time></span>
+            </div>
+
             <ContentRenderer :value="doc" />
           </article>
         </ContentDoc>
