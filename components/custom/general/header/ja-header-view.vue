@@ -2,44 +2,48 @@
   <div class="bg-white">
     <header class="inset-x-0 top-0 z-50">
       <nav
-        class="flex items-center justify-between p-6 lg:px-8"
+        class=""
         aria-label="Global"
       >
-        <div class="flex lg:flex-1">
-          <a
-            href="/ja/"
-            class="-m-1.5 p-1.5"
-          >
-            <span class="sr-only">blog.takasqr.dev</span>
-            <img
-              class="h-8 w-auto rounded"
-              src="/icon.png"
-              alt=""
-            >
-          </a>
-        </div>
+        <div class="mx-auto max-w-3xl">
+          <div class="flex items-center justify-between py-6 px-4 md:px-0">
+            <div class="flex lg:flex-1">
+              <a
+                href="/ja/"
+                class="-m-1.5 p-1.5"
+              >
+                <span class="sr-only">hirameki.dev</span>
+                <img
+                  class="h-8 w-auto rounded"
+                  src="/logo.png"
+                  alt=""
+                >
+              </a>
+            </div>
 
-        <div class="flex">
-          <div class="flex lg:hidden">
-            <button
-              type="button"
-              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-              @click="mobileMenuOpen = true"
-            >
-              <span class="sr-only">Open main menu</span>
-              <Bars3Icon
-                class="h-6 w-6"
-                aria-hidden="true"
-              />
-            </button>
-          </div>
-          <div class="hidden lg:flex lg:gap-x-12">
-            <a
-              v-for="item in navigation"
-              :key="item.name"
-              :href="item.href"
-              class="text-sm font-semibold leading-6 text-gray-900"
-            >{{ item.name }}</a>
+            <div class="flex">
+              <div class="flex lg:hidden">
+                <button
+                  type="button"
+                  class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+                  @click="mobileMenuOpen = true"
+                >
+                  <span class="sr-only">Open main menu</span>
+                  <Bars3Icon
+                    class="h-6 w-6"
+                    aria-hidden="true"
+                  />
+                </button>
+              </div>
+              <div class="hidden lg:flex lg:gap-x-12">
+                <a
+                  v-for="item in navigation"
+                  :key="item.name"
+                  :href="item.href"
+                  class="text-sm font-semibold leading-6 text-gray-900"
+                >{{ item.name }}</a>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
