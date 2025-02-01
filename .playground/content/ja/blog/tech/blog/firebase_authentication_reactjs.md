@@ -5,7 +5,7 @@ slug: firebase_authentication_reactjs
 category: firebase
 createDate: 2021/11/01
 updated: 
-cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_80_bold:Firebase Authentication(v9)とReactで認証機能を実装する,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/l_text:Sawarabi%20Gothic_80_bold:Firebase Authentication(v9)とReactで認証機能を実装する,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
 alt: Firebase Authentication(v9)とReactで認証機能を実装する
 recommend: false
 ---

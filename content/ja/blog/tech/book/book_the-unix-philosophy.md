@@ -5,7 +5,7 @@ slug: book_the-unix-philosophy
 category: book
 createDate: 2022/07/01
 updated: 
-cover: 'https://res.cloudinary.com/t8/image/upload/v1658415728/book_the-unix-philosophy_vtmcgn.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/v1658415728/book_the-unix-philosophy_vtmcgn.png'
 alt: 「UNIXという考え方」を読んだ
 recommend: false 
 ---

@@ -5,7 +5,7 @@ slug: yamaha_rtx_password
 category: yamaha
 createDate: 2020/11/01
 updated: 
-cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_80_bold:YAMAHA RXTルーターのパスワードを忘れた時にみるページ,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/l_text:Sawarabi%20Gothic_80_bold:YAMAHA RXTルーターのパスワードを忘れた時にみるページ,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
 alt: YAMAHA RXTルーターのパスワードを忘れた時にみるページ
 recommend: false
 ---

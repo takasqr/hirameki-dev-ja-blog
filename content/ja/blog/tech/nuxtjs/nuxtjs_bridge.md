@@ -5,7 +5,7 @@ slug: nuxtjs_bridge
 category: nuxtjs
 createDate: 2021/11/06
 updated: 2021/11/08
-cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_80_bold:Nuxt3にBridgeを使って移行してみる,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/l_text:Sawarabi%20Gothic_80_bold:Nuxt3にBridgeを使って移行してみる,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
 alt: Nuxt3にBridgeを使って移行してみる【Nuxt2→3】
 recommend: false
 ---

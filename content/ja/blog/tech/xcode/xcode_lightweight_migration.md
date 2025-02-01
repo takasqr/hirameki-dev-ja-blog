@@ -5,7 +5,7 @@ slug: xcode_lightweight_migration
 category: xcode
 createDate: 2024/04/20
 updated: 
-cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_80_bold:CoreData でライトウェイトマイグレーション,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/l_text:Sawarabi%20Gothic_80_bold:CoreData でライトウェイトマイグレーション,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
 alt: CoreData でライトウェイトマイグレーション【Lightweight migration】
 recommend: true
 ---

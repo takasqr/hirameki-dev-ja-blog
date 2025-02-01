@@ -5,7 +5,7 @@ slug: gtm-via-google-analytics-tags
 category: gtm
 createDate: 2024/04/26
 updated: 
-cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_80_bold:Google タグマネージャーを通して Google アナリティクスのタグを配信する,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/l_text:Sawarabi%20Gothic_80_bold:Google タグマネージャーを通して Google アナリティクスのタグを配信する,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
 alt: Google タグマネージャーを通して Google アナリティクスのタグを配信する
 recommend: true
 homepage: true

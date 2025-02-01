@@ -5,7 +5,7 @@ slug: javascript_pop
 category: javascript
 createDate: 2021/04/22
 updated: 2021/08/22
-cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_80_bold:javascriptのpopメソッドをわかりやすく説明する,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/l_text:Sawarabi%20Gothic_80_bold:javascriptのpopメソッドをわかりやすく説明する,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
 alt: javascriptのpopメソッドをわかりやすく説明する
 recommend: false
 ---

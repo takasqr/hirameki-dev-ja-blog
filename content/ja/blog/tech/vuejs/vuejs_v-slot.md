@@ -5,7 +5,7 @@ slug: vuejs_v-slot
 category: vuejs
 createDate: 2022/07/24
 updated: 
-cover: 'https://res.cloudinary.com/t8/image/upload/v1658498117/vuejs_v-slot_n6p4fw.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/v1658498117/vuejs_v-slot_n6p4fw.png'
 alt: 【Vue3】v-slotとは？使い方を紹介する
 recommend: false
 ---

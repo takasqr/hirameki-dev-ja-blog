@@ -5,7 +5,7 @@ slug: docker_system_prune
 category: docker
 createDate: 2019/06/19
 updated: 
-cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_80_bold:Dockerで不要になったimageやcontainerを一括削除【system prune】,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/l_text:Sawarabi%20Gothic_80_bold:Dockerで不要になったimageやcontainerを一括削除【system prune】,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
 alt: Dockerで不要になったimageやcontainerを一括削除【system prune】
 recommend: false
 ---

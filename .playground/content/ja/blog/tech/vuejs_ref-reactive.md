@@ -5,7 +5,7 @@ slug: vuejs_ref-reactive
 category: vuejs
 createDate: 2022/07/29
 updated: 
-cover: 'https://res.cloudinary.com/t8/image/upload/v1659161357/vuejs_ref-reactive_ggmeh3.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/v1659161357/vuejs_ref-reactive_ggmeh3.png'
 alt: 【Vue3】refとreactiveとは？使い方を紹介する
 recommend: false
 ---

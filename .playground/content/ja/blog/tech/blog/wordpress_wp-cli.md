@@ -5,7 +5,7 @@ slug: wordpress_wp_cli
 category: wordpress
 createDate: 2019/06/09
 updated: 2021/08/29
-cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_80_bold:wp-cliのインストールと使い方【WordPressコマンドツール】,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/l_text:Sawarabi%20Gothic_80_bold:wp-cliのインストールと使い方【WordPressコマンドツール】,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
 alt: wp-cliのインストールと使い方【WordPressコマンドツール】
 ---
 ## WP-CLIとは

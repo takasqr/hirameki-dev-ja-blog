@@ -5,7 +5,7 @@ slug: vuejs_v-for
 category: vuejs
 createDate: 2022/07/11
 updated: 2022/08/08
-cover: 'https://res.cloudinary.com/t8/image/upload/v1658415296/vuejs_v-for_jfyxsq.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/v1658415296/vuejs_v-for_jfyxsq.png'
 alt: 【Vue3】v-forとは？使い方を紹介する
 recommend: false
 ---

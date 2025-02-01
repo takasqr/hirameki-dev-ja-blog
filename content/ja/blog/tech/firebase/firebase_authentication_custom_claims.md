@@ -5,7 +5,7 @@ slug: firebase_authentication_custom_claims
 category: firebase
 createDate: 2021/09/15
 updated: 
-cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_60_bold:【Firebase】カスタムクレーム(Custom Claims)で管理者ユーザーを作る,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/l_text:Sawarabi%20Gothic_60_bold:【Firebase】カスタムクレーム(Custom Claims)で管理者ユーザーを作る,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
 alt: 【Firebase】カスタムクレーム(Custom Claims)で管理者ユーザーを作る
 recommend: false
 ---

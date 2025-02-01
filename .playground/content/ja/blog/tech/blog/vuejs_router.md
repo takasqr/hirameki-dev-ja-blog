@@ -5,7 +5,7 @@ slug: vuejs_router
 category: vue
 createDate: 2022/01/05
 updated: 
-cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_100_bold:Vue Routerとは？使い方を一通り説明する,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/l_text:Sawarabi%20Gothic_100_bold:Vue Routerとは？使い方を一通り説明する,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
 alt: Vue Routerとは？使い方を一通り説明する
 recommend: false
 ---

@@ -5,7 +5,7 @@ slug: vuejs_v-show
 category: vuejs
 createDate: 2022/07/04
 updated: 
-cover: 'https://res.cloudinary.com/t8/image/upload/v1658498117/vuejs_v-show_m42mbg.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/v1658498117/vuejs_v-show_m42mbg.png'
 alt: 【Vue3】v-showとは？使い方を紹介する
 recommend: false
 ---

@@ -5,7 +5,7 @@ slug: git_gitignore
 category: git
 createDate: 2021/03/01
 updated: 2022/07/29
-cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_80_bold:.gitignoreの書き方,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/l_text:Sawarabi%20Gothic_80_bold:.gitignoreの書き方,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
 alt: .gitignoreの書き方
 recommend: false
 ---

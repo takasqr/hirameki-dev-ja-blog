@@ -5,7 +5,7 @@ slug: learn_programming
 category: programming
 createDate: 2022/05/23
 updated: 2022/05/23
-cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_100_bold:論文と本から学ぶ、プログラミング独学のコツ,co_rgb:fff,w_620,c_fit/v1642574453/alfons-morales-YLSwjSy7stw-unsplash_2_1_xnt6z7.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/l_text:Sawarabi%20Gothic_100_bold:論文と本から学ぶ、プログラミング独学のコツ,co_rgb:fff,w_620,c_fit/v1642574453/alfons-morales-YLSwjSy7stw-unsplash_2_1_xnt6z7.png'
 alt: 論文と本から学ぶ、プログラミング独学のコツ
 recommend: false
 ---

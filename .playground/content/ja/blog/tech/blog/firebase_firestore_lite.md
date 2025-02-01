@@ -5,7 +5,7 @@ slug: firebase_firestore_lite
 category: firebase
 createDate: 2021/08/16
 updated: 
-cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_80_bold:Firestore Liteとは,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/l_text:Sawarabi%20Gothic_80_bold:Firestore Liteとは,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
 alt: Firestore Liteとは？
 recommend: false
 ---

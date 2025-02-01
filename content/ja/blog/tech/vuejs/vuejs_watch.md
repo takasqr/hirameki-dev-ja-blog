@@ -5,7 +5,7 @@ slug: vuejs_watch
 category: vuejs
 createDate: 2022/07/29
 updated: 
-cover: 'https://res.cloudinary.com/t8/image/upload/v1659104694/vuejs_watch_bdnvnt.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/v1659104694/vuejs_watch_bdnvnt.png'
 alt: 【Vue3】watchオプションとは？使い方を紹介する
 recommend: false
 ---

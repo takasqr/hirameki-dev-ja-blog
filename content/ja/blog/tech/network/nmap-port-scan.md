@@ -1,11 +1,11 @@
 ---
-title: Nmap のポートスキャンでサーバー、ルーターのセキュリティをチェックする
-description: マトリックスのトリニティが使っていたツールでおなじみ Nmap の使い方を紹介します。Nmap を使えば、ネットワーク機器のポートの状況を調べることができます。ルーターやサーバーのセキュリティチェックなどに使えます。今回は自分で運用している Web サーバーの443ポートの状況をチェックしてみました。
+title: Nmap でポートスキャン
+description: マトリックスのトリニティが使っていたツールでおなじみ Nmap の使い方です。ポートスキャンで。ルーターやサーバーのセキュリティチェックできます。運用している Web サーバーの443ポートの状況をチェックしました。
 slug: nmap-port-scan
 category: network
 createDate: 2024/12/09
 updated: 
-cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_100_bold:Nmap のポートスキャンでサーバー、ルーターのセキュリティをチェックする,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/l_text:Sawarabi%20Gothic_80_bold:Nmap で%0Aポートスキャン,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
 homepage: true
 ---
 

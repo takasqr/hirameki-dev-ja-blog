@@ -5,7 +5,7 @@ slug: if_them_plans
 category: psychology
 createDate: 2021/02/14
 updated: 2021/08/16
-cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_80_bold:目標達成率を高める「if thenプランニング」とは【本とアプリも紹介】,co_rgb:fff,w_620,c_fit/v1642574453/fabio-comparelli-uq2E2V4LhCY-unsplash_2_qmkq1b.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/l_text:Sawarabi%20Gothic_80_bold:目標達成率を高める「if thenプランニング」とは【本とアプリも紹介】,co_rgb:fff,w_620,c_fit/v1642574453/fabio-comparelli-uq2E2V4LhCY-unsplash_2_qmkq1b.png'
 alt: 目標達成率を高める「if thenプランニング」とは!?【本とアプリも紹介】
 recommend: false
 ---

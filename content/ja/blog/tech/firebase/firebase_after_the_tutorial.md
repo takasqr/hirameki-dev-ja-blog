@@ -5,7 +5,7 @@ slug: firebase_after_the_tutorial
 category: firebase
 createDate: 2021/09/08
 updated: 
-cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_80_bold:firebaseに入門して一年後の使い方,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/l_text:Sawarabi%20Gothic_80_bold:firebaseに入門して一年後の使い方,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
 alt: firebaseに入門して一年後の使い方
 recommend: false
 ---

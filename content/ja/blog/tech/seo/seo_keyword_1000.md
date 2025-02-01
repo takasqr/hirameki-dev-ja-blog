@@ -5,7 +5,7 @@ slug: seo_keyword_1000
 category: seo
 createDate: 2021/08/01
 updated: 2021/11/08
-cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_60_bold:弱小ドメインでミドルキーワードを狙った時に検索順位10位にどれくらいの期間で表示されるのか,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/l_text:Sawarabi%20Gothic_60_bold:弱小ドメインでミドルキーワードを狙った時に検索順位10位にどれくらいの期間で表示されるのか,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
 alt: 弱小ドメインでミドルキーワードを狙った時に検索順位10位にどれくらいの期間で表示されるのか?
 ---
 ## はじめに

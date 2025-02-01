@@ -5,7 +5,7 @@ slug: vuejs_created
 category: vuejs
 createDate: 2022/07/29
 updated: 
-cover: 'https://res.cloudinary.com/t8/image/upload/v1659161357/vuejs_created_znc9uu.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/v1659161357/vuejs_created_znc9uu.png'
 alt: 【Vue3】createdとは？使い方を紹介する
 recommend: false
 ---

@@ -5,7 +5,7 @@ slug: 20210801_study_5_years
 category: web
 createDate: 2021/08/01
 updated: 
-cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_90_bold:5年間毎日プログラミングの勉強をする為にやったこと,co_rgb:fff,w_620,c_fit/v1642574453/aaron-burden-QJDzYT_K8Xg-unsplash_1_xaxykh.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/l_text:Sawarabi%20Gothic_90_bold:5年間毎日プログラミングの勉強をする為にやったこと,co_rgb:fff,w_620,c_fit/v1642574453/aaron-burden-QJDzYT_K8Xg-unsplash_1_xaxykh.png'
 alt: 5年間ほぼ毎日プログラミングの勉強をするためにやったこと
 recommend: false
 ---

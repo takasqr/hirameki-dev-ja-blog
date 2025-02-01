@@ -5,7 +5,7 @@ slug: javascript_unshift
 category: javascript
 createDate: 2021/07/12
 updated: 2021/08/22
-cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_80_bold:javascriptのunshiftメソッドをわかりやすく説明する,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/l_text:Sawarabi%20Gothic_80_bold:javascriptのunshiftメソッドをわかりやすく説明する,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
 alt: javascriptのunshiftメソッドをわかりやすく説明する
 recommend: false
 ---

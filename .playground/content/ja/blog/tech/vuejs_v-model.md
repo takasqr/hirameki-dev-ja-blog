@@ -5,7 +5,7 @@ slug: vuejs_v-model
 category: vuejs
 createDate: 2022/07/12
 updated: 
-cover: 'https://res.cloudinary.com/t8/image/upload/v1658415297/vuejs_v-model_k9fhm2.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/v1658415297/vuejs_v-model_k9fhm2.png'
 alt: 【Vue3】v-modelとは？使い方を紹介する
 recommend: false
 ---

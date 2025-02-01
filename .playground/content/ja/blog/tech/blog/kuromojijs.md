@@ -5,7 +5,7 @@ slug: kuromojijs
 category: npm
 createDate: 2021/10/21
 updated: 
-cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_80_bold:kuromoji.jsでJavascript製の形態素解析APIを作る,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/l_text:Sawarabi%20Gothic_80_bold:kuromoji.jsでJavascript製の形態素解析APIを作る,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
 alt: kuromoji.jsでJavascript製の形態素解析APIを作る
 recommend: false
 ---

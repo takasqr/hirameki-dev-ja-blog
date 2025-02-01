@@ -5,7 +5,7 @@ slug: 20220115_english_tech_blog
 category: other
 createDate: 2022/01/15
 updated: 
-cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_100_bold:英語対応の技術ブログを作った,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/l_text:Sawarabi%20Gothic_100_bold:英語対応の技術ブログを作った,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
 ---
 
 

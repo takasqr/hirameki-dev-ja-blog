@@ -5,7 +5,7 @@ slug: vuejs_v-on
 category: vuejs
 createDate: 2022/07/01
 updated: 
-cover: 'https://res.cloudinary.com/t8/image/upload/v1658498117/vuejs_v-on_fiuhnz.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/v1658498117/vuejs_v-on_fiuhnz.png'
 alt: 【Vue3】v-onとは?使い方を7パターン紹介する
 recommend: false
 ---

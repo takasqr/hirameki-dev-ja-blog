@@ -5,7 +5,7 @@ slug: vuejs_v-if
 category: vuejs
 createDate: 2022/07/04
 updated: 
-cover: 'https://res.cloudinary.com/t8/image/upload/v1658498117/vuejs_v-if_bgsdmi.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/v1658498117/vuejs_v-if_bgsdmi.png'
 alt: 【Vue3】v-ifとは？使い方を紹介する
 recommend: false
 ---

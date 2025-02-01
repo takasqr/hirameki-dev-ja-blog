@@ -5,7 +5,7 @@ slug: vuetifyjs_v-icon
 category: vuetifyjs
 createDate: 2022/01/24
 updated: 
-cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_100_bold:Vuefity.jsでv-iconを使う,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/l_text:Sawarabi%20Gothic_100_bold:Vuefity.jsでv-iconを使う,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
 alt: Vuefityでv-iconを使う方法【本番用の設定も紹介】
 recommend: false
 ---

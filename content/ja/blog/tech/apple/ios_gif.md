@@ -5,7 +5,7 @@ slug: ios_gif
 category: apple
 createDate: 2021/11/03
 updated: 
-cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_80_bold:iPhoneの標準機能で高画質なgifを作る,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/l_text:Sawarabi%20Gothic_80_bold:iPhoneの標準機能で高画質なgifを作る,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
 alt: iPhoneの標準機能で高画質なgifを作る
 recommend: false
 ---

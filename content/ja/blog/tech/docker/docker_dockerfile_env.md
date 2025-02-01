@@ -5,7 +5,7 @@ slug: docker_dockerfile_env
 category: docker
 createDate: 2021/10/24
 updated: 2022/07/27
-cover: 'https://res.cloudinary.com/t8/image/upload/l_text:Sawarabi%20Gothic_80_bold:dockerfileのenvを使って環境変数を渡す【ARGとの違いも説明する】,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/l_text:Sawarabi%20Gothic_80_bold:dockerfileのenvを使って環境変数を渡す【ARGとの違いも説明する】,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'
 alt: dockerfileのenvを使って環境変数を渡す【ARGとの違いも説明する】
 recommend: false
 ---

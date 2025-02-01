@@ -5,7 +5,7 @@ slug: vuejs_emit
 category: vuejs
 createDate: 2022/07/29
 updated: 
-cover: 'https://res.cloudinary.com/t8/image/upload/v1659161357/vuejs_emit_uvmuwv.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/v1659161357/vuejs_emit_uvmuwv.png'
 alt: 【Vue3】emitとは？使い方を紹介する
 recommend: false
 ---

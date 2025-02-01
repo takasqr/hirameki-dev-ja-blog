@@ -5,7 +5,7 @@ slug: vuejs_v-html
 category: vuejs
 createDate: 2022/07/09
 updated: 
-cover: 'https://res.cloudinary.com/t8/image/upload/v1658415297/vuejs_v-html_hxd7tb.png'
+cover: 'https://res.cloudinary.com/takasqr/image/upload/v1658415297/vuejs_v-html_hxd7tb.png'
 alt: 【Vue3】v-htmlとは？使い方を紹介する
 recommend: false
 ---
