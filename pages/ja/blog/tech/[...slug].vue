@@ -26,13 +26,13 @@
     </div>
     
     <div class="mt-20">
-      <ArticlesCategory :category="category"/>
+      <ArticlesRecommended :category="category"/>
     </div>
   </NuxtLayout>
 </template>
 
 <script setup lang="ts">
-import ArticlesCategory from '../../../../components/content/articles-category/ArticlesCategory.vue';
+import ArticlesRecommended from '../../../../components/content/articles-recommended/ArticlesRecommended.vue';
 import { useSetHead } from '../../../../composables/useSetHead'
 import Breadcrumb from '../../../../components/basic/breadcrumb/Breadcrumb.vue'
 import HorizontalScroll from '../../../../components/basic/horizontal-scroll/HorizontalScroll.vue'

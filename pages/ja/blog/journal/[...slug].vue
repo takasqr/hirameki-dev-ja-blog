@@ -22,14 +22,15 @@
     </div>
     
     <div class="mt-20">
-      <ArticlesCategory :category="category"/>
+      <ArticlesRecommended :category="category"/>
     </div>
   </NuxtLayout>
 </template>
 
 <script setup lang="ts">
-import ArticlesCategory from '../../../../components/content/articles-category/ArticlesCategory.vue';
+// import ArticlesCategory from '../../../../components/content/articles-category/ArticlesCategory.vue';
 import { useSetHead } from '../../../../composables/useSetHead'
+import ArticlesRecommended from '../../../../components/content/articles-recommended/ArticlesRecommended.vue';
 
 definePageMeta({
   layout: 'ja-article'

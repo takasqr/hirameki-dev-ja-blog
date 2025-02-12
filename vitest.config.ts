@@ -5,6 +5,7 @@ export default defineVitestConfig({
   test: {
     include: [
       'test/unit/**/*.{test,spec}.?(c|m)[jt]s?(x)',
+      'utils/**/*.{test,spec}.?(c|m)[jt]s?(x)',
       // 'components/basic/**/*.{test,spec}.?(c|m)[jt]s?(x)'
     ],
   },
