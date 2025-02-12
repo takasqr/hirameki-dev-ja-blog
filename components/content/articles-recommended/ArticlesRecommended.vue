@@ -8,6 +8,7 @@ import ArticleList from '../../../components/content/article-list/ArticleList.vu
 import type { Article } from '../../../components/types/Article';
 import { getHomepageArticles } from '../../../utils/getHomepageArticles'
 import { getRandomSubset } from '../../../utils/getRandomSubset'
+import { getDeterministicRandomSubset } from '../../../utils/getDeterministicRandomSubset'
 
 const props = defineProps({
   category: {
@@ -43,5 +44,5 @@ const homepageArticles = await getHomepageArticles()
 
 const recommendedArticles = [...homepageArticles, ...articles.value]
 
-const articlesData = getRandomSubset(recommendedArticles, 12)
+const articlesData = getDeterministicRandomSubset(recommendedArticles, 12, 9999)
 </script>

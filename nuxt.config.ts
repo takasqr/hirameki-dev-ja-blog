@@ -7,10 +7,6 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
   ],
   css: ['./assets/css/main.css'],
-  routeRules: {
-    // /ja/blog/ 以下のすべてのパスをビルド時に静的生成（SSG）する
-    '/ja/blog/**': { prerender: true },
-  },
   postcss: {
     plugins: {
       tailwindcss: {},
