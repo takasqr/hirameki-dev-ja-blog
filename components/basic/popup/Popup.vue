@@ -47,21 +47,21 @@ const fullClassObject = {
 }
 
 // ダイアログ用 state を購読
-const dialogStore = PopupStore()
+const popupStore = PopupStore()
 // ストアの状態とアクションをコンポーネントにマッピング
-const isOpen = dialogStore.isOpen;
-const persistent = dialogStore.getPersistent
+const isOpen = popupStore.isOpen;
+const persistent = popupStore.getPersistent
 
 // ダイアログを閉じる
 function close({ isConfirmed }: { isConfirmed: boolean | null }) {
   
   // 回答が強制されていて、ボタンを押してない場合はダイアログを閉じさせない
   if (persistent.value == false || isConfirmed != null) {
-    dialogStore.close({ isConfirmed: isConfirmed })
+    popupStore.close({ isConfirmed: isConfirmed })
   }
 }
 
 function forceClose() {
-  dialogStore.close({ isConfirmed: null})
+  popupStore.close({ isConfirmed: null})
 }
 </script>

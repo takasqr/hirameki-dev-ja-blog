@@ -30,6 +30,7 @@
 import { ref, defineProps, type PropType } from 'vue'
 import type { ClassObject } from '../../types/ClassObject';
 import { deepMergeClassObject } from '../../util';
+// @ts-ignore
 import type { TextFieldSize } from './TextFieldSize'
 
 const props = defineProps({

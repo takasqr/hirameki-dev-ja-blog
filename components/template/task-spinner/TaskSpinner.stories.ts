@@ -1,14 +1,14 @@
 // Replace vue3 with vue if you are using Storybook for Vue 2
 import type { Meta, StoryObj } from '@storybook/vue3';
 
-import TaskCard from './TaskCard.vue';
+import TaskSpinner from './TaskSpinner.vue';
 
-const meta: Meta<typeof TaskCard> = {
-  component: TaskCard,
+const meta: Meta<typeof TaskSpinner> = {
+  component: TaskSpinner,
 };
 
 export default meta;
-type Story = StoryObj<typeof TaskCard>;
+type Story = StoryObj<typeof TaskSpinner>;
 
 /*
  *👇 Render functions are a framework specific feature to allow you control on how the component renders.
@@ -17,12 +17,7 @@ type Story = StoryObj<typeof TaskCard>;
  */
 export const Primary: Story = {
   render: () => ({
-    components: { TaskCard },
-    template: `
-    <TaskCard title="タイトル" description="説明文">
-      <template #trailing>
-        <p>⭐️</p>
-      </template>
-    </TaskCard>`,
+    components: { TaskSpinner },
+    template: '<TaskSpinner></TaskSpinner>',
   }),
 };
