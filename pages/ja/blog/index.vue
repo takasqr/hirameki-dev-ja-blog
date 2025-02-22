@@ -16,7 +16,7 @@ import { withTrailingSlash } from 'ufo'
 import ArticleList from '../../../components/content/article-list/ArticleList.vue';
 import type { Article } from '../../../components/types/Article';
 import Pagination from '@takasqr/tw-vue-ui/basic/pagination/Pagination.vue'
-import useSetHead from '../../../composables/useSetHead'
+import { useSetHead } from '../../../composables/useSetHead'
 
 definePageMeta({
   layout: 'ja-article'
@@ -81,4 +81,11 @@ function getPagePath(pageNumber: string | null): string | null {
     return `/ja/blog?page=${pageNumber}`
   }
 }
+
+useSetHead({
+  title: '知ってることを全部書く技術ブログ',
+  description: '一人のソフトウェアエンジニアの、知ってることを全部書く技術ブログです。',
+  cover: 'https://image.hirameki.dev/takasqr/image/upload/l_dylagecz4vyaeo3xqcdx/l_text:MPLUS1p-Black.ttf_80_bold:知ってることを全部書く%0A技術ブログ,co_rgb:374151,w_620,c_fit/v1712091289/zq6hxcih0jcwdw2pantm.png',
+  path: route.path,
+})
 </script>
