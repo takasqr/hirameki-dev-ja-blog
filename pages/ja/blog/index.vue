@@ -23,7 +23,7 @@ definePageMeta({
 })
 
 const route = useRoute()
-const page = route.query.page ? String(route.query.page)[0] : null
+const page = route.query.page ? String(route.query.page)[0] : '1'
 
 const perPage = 12
 
@@ -74,7 +74,7 @@ function getPreviousPage(page: string): string | null {
   }
 }
 
-function getPagePath(pageNumber: string): string | null {
+function getPagePath(pageNumber: string | null): string | null {
   if (pageNumber == null) {
     return null
   } else {
