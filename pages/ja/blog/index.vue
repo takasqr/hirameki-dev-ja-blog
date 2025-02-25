@@ -17,24 +17,26 @@ import ArticleList from '../../../components/content/article-list/ArticleList.vu
 import type { Article } from '../../../components/types/Article';
 import Pagination from '@takasqr/tw-vue-ui/basic/pagination/Pagination.vue'
 import { useSetHead } from '../../../composables/useSetHead'
+import { useTotalPostCount } from '../../../composables/content/useTotalPostCount';
+import { getNextPage, getPreviousPage } from '../../../utils/pagination'
 
 definePageMeta({
   layout: 'ja-article'
 })
 
 const route = useRoute()
-const page = route.query.page ? String(route.query.page)[0] : '1'
-
-const perPage = 12
+const page = Number(route.query.page ? String(route.query.page)[0] : '1')
 
 // 非同期データ取得のための一意のキーを作成
 const asyncDataKey = `articles-blog-all`
 const path = '/ja/blog/'
+const perPage = 12
+const totalPostCount = await useTotalPostCount(path)
 
-const nextPageNumber = getNextPage(page)
+const nextPageNumber = getNextPage({ currentPage: page, perPage: perPage, totalPostCount: totalPostCount })
 const nextPagePath = getPagePath(nextPageNumber)
 
-const previousPageNumber = getPreviousPage(page)
+const previousPageNumber = getPreviousPage({ currentPage: page })
 const previousPagePath = getPagePath(previousPageNumber)
 
 const { data: articles } = await useAsyncData(asyncDataKey, async () => {
@@ -59,22 +61,7 @@ const { data: articles } = await useAsyncData(asyncDataKey, async () => {
 
 const articlesData = articles.value ?? []
 
-function getNextPage(page: string): string | null {
-  const pageNumber = Number(page) + 1
-
-  return String(pageNumber)
-}
-
-function getPreviousPage(page: string): string | null {
-  if (Number(page) <= Number('1')) {
-    return null
-  } else {
-    const pageNumber = Number(page) - 1
-    return String(pageNumber)
-  }
-}
-
-function getPagePath(pageNumber: string | null): string | null {
+function getPagePath(pageNumber: number | null): string | null {
   if (pageNumber == null) {
     return null
   } else {
