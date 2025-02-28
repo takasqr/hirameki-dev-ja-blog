@@ -1,17 +1,20 @@
 import type { HeadParams } from "./types"
+import { getSiteTitle } from "../utils/getSiteTitle"
 
 export function useSetHead({ title, description, cover, path }: HeadParams) {
   if (title === undefined) {
     throw new Error('The \'title\' parameter is required and cannot be undefined.')
   }
 
+  const siteTitle = getSiteTitle()
+
   useHead({
-    title: title,
+    title: `${title} | ${siteTitle}`,
     meta: [
       { name: 'description', content: description },
       // Open Graph
       { property: 'og:url', content: `https://hirameki.dev${path}` },
-      { property: 'og:title', content: title + ' | ひらめき開発' },
+      { property: 'og:title', content: `${title} | ${siteTitle}` },
       { property: 'og:description', content: description },
       { property: 'og:image', content: cover },
       // Twitter Card

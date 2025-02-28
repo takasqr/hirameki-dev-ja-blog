@@ -70,7 +70,7 @@ function getPagePath(pageNumber: number | null): string | null {
 }
 
 useSetHead({
-  title: '知ってることを全部書く技術ブログ',
+  title: 'かいがらブログ',
   description: '一人のソフトウェアエンジニアの、知ってることを全部書く技術ブログです。',
   cover: 'https://image.hirameki.dev/takasqr/image/upload/l_dylagecz4vyaeo3xqcdx/l_text:MPLUS1p-Black.ttf_80_bold:知ってることを全部書く%0A技術ブログ,co_rgb:374151,w_620,c_fit/v1712091289/zq6hxcih0jcwdw2pantm.png',
   path: route.path,
