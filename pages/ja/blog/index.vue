@@ -25,7 +25,7 @@ definePageMeta({
 })
 
 const route = useRoute()
-const page = Number(route.query.page ? String(route.query.page)[0] : '1')
+const page = Number(route.query.page ? String(route.query.page) : '1')
 
 // 非同期データ取得のための一意のキーを作成
 const asyncDataKey = `articles-blog-all`
