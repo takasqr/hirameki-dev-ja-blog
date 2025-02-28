@@ -6,7 +6,7 @@ export function useSetHead({ title, description, cover, path }: HeadParams) {
     throw new Error('The \'title\' parameter is required and cannot be undefined.')
   }
 
-  const siteTitle = getSiteTitle()
+  const siteTitle = getSiteTitle(path)
 
   useHead({
     title: `${title} | ${siteTitle}`,
