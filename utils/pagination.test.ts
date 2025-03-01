@@ -21,6 +21,16 @@ describe('getNextPage', () => {
     const result = getNextPage({ currentPage: 2, perPage: 12, totalPostCount: 30 })
     expect(result).toBe(3)
   })
+
+  it('現在9ページ目でかつ上限の場合、null を持ってこれるか', () => {
+    const result = getNextPage({ currentPage: 9, perPage: 10, totalPostCount: 90 })
+    expect(result).toBe(null)
+  })
+
+  it('現在9ページ目でかつ上限ではない場合、次の番号を持ってこれるか', () => {
+    const result = getNextPage({ currentPage: 9, perPage: 10, totalPostCount: 100 })
+    expect(result).toBe(10)
+  })
 })
 
 describe('getPreviousPage', () => {
