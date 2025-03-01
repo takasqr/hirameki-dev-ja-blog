@@ -38,7 +38,7 @@ import Breadcrumb from '../../../../components/basic/breadcrumb/Breadcrumb.vue'
 import HorizontalScroll from '../../../../components/basic/horizontal-scroll/HorizontalScroll.vue'
 
 definePageMeta({
-  layout: 'ja-article'
+  layout: 'ja-article-tech'
 })
 
 const route = useRoute()

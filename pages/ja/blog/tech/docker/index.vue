@@ -14,7 +14,7 @@ import CategoryPageView from '../../../../../components/content/category-page-vi
 const category = 'docker'
 
 definePageMeta({
-  layout: 'ja-article'
+  layout: 'ja-article-tech'
 })
 
 useSetHead(getTechBlogCategoryHeadParams(category))
