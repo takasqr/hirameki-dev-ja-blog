@@ -24,3 +24,6 @@ dist
 playwright-report
 
 test-results
+
+# GitHub Packages
+.npmrc
