@@ -46,9 +46,9 @@
             </div>
           </div>
 
-          <div class="px-4 md:px-0 prose flex items-center">
+          <div class="px-4 md:px-0 flex items-center">
             <span>
-              <a href="/ja/blog/journal/2025/20250210_learn_9_years">9年間毎日プログラミングした話</a>
+              <a class="underline font-medium" href="/ja/blog/journal/2025/20250210_learn_9_years">9年間毎日プログラミングした話</a>
 
               <br class="md:hidden">
 
@@ -61,7 +61,7 @@
                 >
               </a>
 
-              <a class="ml-2" href="/ja/blog/journal">日常はこっち</a>
+              <a class="underline font-medium ml-2" href="/ja/blog/journal">日常はこっち</a>
             </span>
           </div>
 
