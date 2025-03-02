@@ -6,7 +6,7 @@
         aria-label="Global"
       >
         <div class="mx-auto max-w-3xl">
-          <div class="flex items-center justify-between py-6 px-4 md:px-0">
+          <div class="flex items-center justify-between pt-6 pb-2 px-4 md:px-0">
             <div class="flex lg:flex-1">
               <a
                 href="/ja/blog"
@@ -45,6 +45,30 @@
               </div>
             </div>
           </div>
+
+          <div class="px-4 md:px-0 flex items-center">
+            <span>
+              <a class="underline font-medium" href="/ja/blog/journal/2025/20250210_learn_9_years">9年間毎日プログラミングした話</a>
+
+              <br class="md:hidden">
+
+              <span class="ml-0 md:ml-4 mr-1">by</span>
+              <a href="/ja">
+                <img
+                class="h-4 inline m-0"
+                src="/logo.png"
+                alt=""
+                >
+              </a>
+
+              <a class="underline font-medium ml-2" href="/ja/blog/journal">日常</a>
+              <a class="underline font-medium ml-2" href="/ja/blog/tech">開発</a>
+            </span>
+          </div>
+
+          <!-- <div class="px-4 md:px-0 prose">
+            <a href="/ja/blog/journal">9年間毎日プログラミングした話</a>
+          </div> -->
         </div>
       </nav>
       <Dialog
@@ -60,7 +84,7 @@
               href="/ja/blog"
               class="-m-1.5 p-1.5"
             >
-              <span class="sr-only">blog.takasqr.dev</span>
+              <span class="sr-only">hirameki.dev</span>
               <img
                 class="h-8 w-auto rounded"
                 src="/かいがらブログ.webp"

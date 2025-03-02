@@ -9,13 +9,13 @@
           <div class="flex items-center justify-between pt-6 pb-2 px-4 md:px-0">
             <div class="flex lg:flex-1">
               <a
-                href="/ja/blog/tech"
+                href="/ja/blog"
                 class="-m-1.5 p-1.5"
               >
                 <span class="sr-only">hirameki.dev</span>
                 <img
                   class="h-8 w-auto rounded"
-                  src="/かいがら技術ブログ.webp"
+                  src="/かいがらブログ.webp"
                   alt=""
                 >
               </a>
@@ -61,7 +61,8 @@
                 >
               </a>
 
-              <a class="underline font-medium ml-2" href="/ja/blog/journal">日常はこっち</a>
+              <a class="underline font-medium ml-2" href="/ja/blog/journal">日常</a>
+              <a class="underline font-medium ml-2" href="/ja/blog/tech">開発</a>
             </span>
           </div>
 
@@ -80,13 +81,13 @@
         <DialogPanel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div class="flex items-center justify-between">
             <a
-              href="/ja/blog/tech"
+              href="/ja/blog"
               class="-m-1.5 p-1.5"
             >
-              <span class="sr-only">blog.takasqr.dev</span>
+              <span class="sr-only">hirameki.dev</span>
               <img
                 class="h-8 w-auto rounded"
-                src="/かいがら技術ブログ.webp"
+                src="/かいがらブログ.webp"
                 alt=""
               >
             </a>
