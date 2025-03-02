@@ -6,7 +6,7 @@
         aria-label="Global"
       >
         <div class="mx-auto max-w-3xl">
-          <div class="flex items-center justify-between pt-6 pb-2 px-4 md:px-0">
+          <div class="flex items-center justify-between py-6 px-4 md:px-0">
             <div class="flex lg:flex-1">
               <a
                 href="/ja/blog/tech"
@@ -45,29 +45,6 @@
               </div>
             </div>
           </div>
-
-          <div class="px-4 md:px-0 prose flex items-center">
-            <span>
-              <a href="/ja/blog/journal/2025/20250210_learn_9_years">9年間毎日プログラミングした話</a>
-
-              <br class="md:hidden">
-
-              <span class="ml-0 md:ml-4 mr-1">by</span>
-              <a href="/ja">
-                <img
-                class="h-4 inline m-0"
-                src="/logo.png"
-                alt=""
-                >
-              </a>
-
-              <a class="ml-2" href="/ja/blog/journal">日常はこっち</a>
-            </span>
-          </div>
-
-          <!-- <div class="px-4 md:px-0 prose">
-            <a href="/ja/blog/journal">9年間毎日プログラミングした話</a>
-          </div> -->
         </div>
       </nav>
       <Dialog
