@@ -2,7 +2,7 @@
   <div class="bg-white">
     <HeaderViewTech />
 
-    <Container class="md:mt-6 lg:mt-10 xl:mt-16 mb-16 md:mb-28">
+    <Container class="mt-2 md:mt-6 lg:mt-10 xl:mt-16 mb-16 md:mb-28">
       <slot />
     </Container>
 
