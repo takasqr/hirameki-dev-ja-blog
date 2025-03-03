@@ -36,6 +36,7 @@ import ArticlesRecommended from '../../../../components/content/articles-recomme
 import { useSetHead } from '../../../../composables/useSetHead'
 import Breadcrumb from '../../../../components/basic/breadcrumb/Breadcrumb.vue'
 import HorizontalScroll from '../../../../components/basic/horizontal-scroll/HorizontalScroll.vue'
+import TweetButton from '../../../../components/custom/x/TweetButton.vue'
 
 definePageMeta({
   layout: 'ja-article-tech'
