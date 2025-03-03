@@ -27,3 +27,5 @@ test-results
 
 # GitHub Packages
 .npmrc
+
+playground.vue
