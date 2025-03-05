@@ -27,6 +27,10 @@ export function useSetHead({ title, description, cover, path }: HeadParams) {
     link: [
       { rel: 'canonical', href: `https://hirameki.dev${path}` },
     ],
+    // htmlAttrs: {
+    //   // 言語は layout で設定する
+    //   lang: 'ja',
+    // },
   })
 }
 
