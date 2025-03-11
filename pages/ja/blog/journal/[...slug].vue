@@ -40,6 +40,7 @@
 // import ArticlesCategory from '../../../../components/content/articles-category/ArticlesCategory.vue';
 import { useSetHead } from '../../../../composables/useSetHead'
 import ArticlesRecommended from '../../../../components/content/articles-recommended/ArticlesRecommended.vue';
+import MyProfileCard from '../../../../components/custom/my-profile-card/MyProfileCard.vue'
 
 definePageMeta({
   layout: 'ja-article'
