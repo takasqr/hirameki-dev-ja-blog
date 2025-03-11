@@ -62,10 +62,23 @@
         </div>
       </Container>
 
-      <div class="bg-gray-100">
+      <div class="bg-gray-50">
         <Container class="py-8 md:py-10">
           <div class="my-4">
             <AdPomodoroTree />
+          </div>
+        </Container>
+      </div>
+
+      <div class="bg-white">
+        <Container class="py-8 md:py-10">
+          <div class="my-4">
+            <div class="text-xl font-semibold flex justify-center mb-2 text-gray-800">
+              <h3>このブログを書いてる人</h3>
+            </div>
+            <div class="flex justify-center">
+              <MyProfileCard />
+            </div>
           </div>
         </Container>
       </div>
@@ -80,6 +93,7 @@ import ArticlesHomepage from '../../../components/content/articles-homepage/Arti
 import ArticlesRecently from '../../../components/content/articles-recently/ArticlesRecently.vue'
 import AdPomodoroTree from '../../../components/custom/pomodorotree/AdPomodoroTree.vue'
 import { useSetHead } from '#imports'
+import MyProfileCard from '../../../components/custom/my-profile-card/MyProfileCard.vue'
 
 const route = useRoute()
 const lang = 'ja'

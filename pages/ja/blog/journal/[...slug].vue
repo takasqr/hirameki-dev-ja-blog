@@ -20,6 +20,15 @@
         </ContentDoc>
       </main>
     </div>
+
+    <div class="mt-20">
+      <div class="text-xl font-semibold flex justify-center mb-2">
+        <h3>この記事を書いた人</h3>
+      </div>
+      <div class="flex justify-center">
+        <MyProfileCard />
+      </div>
+    </div>
     
     <div class="mt-20">
       <ArticlesRecommended :category="category"/>

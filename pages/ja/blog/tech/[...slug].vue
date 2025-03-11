@@ -24,7 +24,16 @@
         </ContentDoc>
       </main>
     </div>
-    
+
+    <div class="mt-20">
+      <div class="text-xl font-semibold flex justify-center mb-2">
+        <h3>この記事を書いた人</h3>
+      </div>
+      <div class="flex justify-center">
+        <MyProfileCard />
+      </div>
+    </div>
+
     <div class="mt-20">
       <ArticlesRecommended :category="category"/>
     </div>
@@ -37,6 +46,7 @@ import { useSetHead } from '../../../../composables/useSetHead'
 import Breadcrumb from '../../../../components/basic/breadcrumb/Breadcrumb.vue'
 import HorizontalScroll from '../../../../components/basic/horizontal-scroll/HorizontalScroll.vue'
 import TweetButton from '../../../../components/custom/x/TweetButton.vue'
+import MyProfileCard from '../../../../components/custom/my-profile-card/MyProfileCard.vue'
 
 definePageMeta({
   layout: 'ja-article-tech'
