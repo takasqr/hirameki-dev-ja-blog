@@ -8,7 +8,7 @@
     <a href="/ja">
       <img
       class="h-4 inline m-0"
-      src="/logo.png"
+      src="/ひらめき開発.webp"
       alt=""
       >
     </a>
