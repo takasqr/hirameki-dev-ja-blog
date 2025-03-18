@@ -1,12 +1,12 @@
 <template>
   <div class="not-prose">
-    <SpacerLadder>
+    <SpacerLadder v-if="props.showBreadcrumb">
       <HorizontalScroll>
         <Breadcrumb/>
       </HorizontalScroll>
     </SpacerLadder>
 
-    <SpacerLadder>
+    <SpacerLadder v-if="props.createDate || props.updated">
       <div class="text-gray-400">
         <span v-if="props.createDate">公開日: <time :datetime="props.createDate.replace(/\//g, '-')">{{ props.createDate.replace(/\//g, '-') }}</time></span>
         <span v-if="props.updated" class="ml-2">更新日: <time :datetime="props.updated.replace(/\//g, '-')">{{ props.updated.replace(/\//g, '-') }}</time></span>
@@ -14,7 +14,7 @@
     </SpacerLadder>
 
     <SpacerLadder>
-      <div v-if="props.showBreadcrumb" class="">
+      <div class="">
         <TweetButton />
       </div>
     </SpacerLadder>
@@ -31,11 +31,13 @@ import SpacerLadder from '@takasqr/tw-vue-ui/template/spacer-ladder/SpacerLadder
 const props = defineProps({
   createDate: {
     type: String as PropType<string>,
-    required: true,
+    required: false,
+    default: null
   },
   updated: {
-    type: String as PropType<string>,
-    required: true,
+    type: [String, null] as PropType<string | null>,
+    required: false,
+    default: null
   },
   showBreadcrumb: {
     type: Boolean as PropType<boolean>,
