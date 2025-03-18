@@ -4,22 +4,13 @@
       <main>
         <ContentDoc v-slot="{ doc }">
           <article class="prose lg:prose-xl">
-            <h1>{{ doc.title }}</h1>
+            <TitleSection>{{ doc.title }}</TitleSection>
+            
+            <PageMetaSection :create-date="article.createDate" :updated="article.updated" />
 
-            <HorizontalScroll>
-              <Breadcrumb class="not-prose" />
-            </HorizontalScroll>
-
-            <div class="my-6">
-              <TweetButton />
-            </div>
-
-            <div class="text-gray-400">
-              <span v-if="article.createDate">公開日: <time :datetime="article.createDate.replace(/\//g, '-')">{{ article.createDate.replace(/\//g, '-') }}</time></span>
-              <span v-if="article.updated" class="ml-2">更新日: <time :datetime="article.updated.replace(/\//g, '-')">{{ article.updated.replace(/\//g, '-') }}</time></span>
-            </div>
-
-            <ContentRenderer :value="doc" />
+            <SpacerIsland>
+              <ContentRenderer :value="doc" />
+            </SpacerIsland>
           </article>
         </ContentDoc>
       </main>
@@ -43,10 +34,10 @@
 <script setup lang="ts">
 import ArticlesRecommended from '../../../../components/content/articles-recommended/ArticlesRecommended.vue';
 import { useSetHead } from '../../../../composables/useSetHead'
-import Breadcrumb from '../../../../components/basic/breadcrumb/Breadcrumb.vue'
-import HorizontalScroll from '../../../../components/basic/horizontal-scroll/HorizontalScroll.vue'
-import TweetButton from '../../../../components/custom/x/TweetButton.vue'
 import MyProfileCard from '../../../../components/custom/my-profile-card/MyProfileCard.vue'
+import TitleSection from '../../../../components/template/title-section/TitleSection.vue'
+import PageMetaSection from '../../../../components/template/page-meta-section/PageMetaSection.vue'
+import SpacerIsland from '@takasqr/tw-vue-ui/template/spacer-island/SpacerIsland.vue';
 
 definePageMeta({
   layout: 'ja-article-tech'
