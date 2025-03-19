@@ -24,6 +24,10 @@ export default defineNuxtConfig({
       preload: ['json', 'js', 'ts', 'html', 'css', 'vue', 'diff', 'shell', 'markdown', 'yaml', 'bash', 'ini', 'c', 'cpp', 'sql']
     }
   },
+
+  $meta: {
+    name: 'blg'
+  }
   // storybook: {
   //   url: 'http://localhost:6006',
   //   storybookRoute: '/__storybook__',
