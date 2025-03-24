@@ -1,6 +1,7 @@
 <template>
   <span>
-    <a class="underline font-medium" href="/ja/blog/journal/2025/20250210_learn_9_years">9年間毎日プログラミングした話</a>
+    <a class="underline font-medium" href="/ja/blog/journal/2025/20250309_built-custom-keyboard/">キーボードを自作した話</a>
+    <!-- <a class="underline font-medium" href="/ja/blog/journal/2025/20250210_learn_9_years">9年間毎日プログラミングした話</a> -->
 
     <br class="md:hidden">
 
