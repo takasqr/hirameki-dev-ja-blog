@@ -40,7 +40,8 @@ import PageMetaSection from '../../../../components/template/page-meta-section/P
 import SpacerIsland from '@takasqr/tw-vue-ui/template/spacer-island/SpacerIsland.vue';
 
 definePageMeta({
-  layout: 'ja-article-tech'
+  layout: 'ja-article-tech',
+  middleware: ['trailing-slash'],
 })
 
 const route = useRoute()
