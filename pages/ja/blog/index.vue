@@ -84,7 +84,6 @@ const lang = 'ja'
 
 definePageMeta({
   layout: 'ja-blog-home',
-  middleware: ['trailing-slash'],
 })
 
 useSetHead({

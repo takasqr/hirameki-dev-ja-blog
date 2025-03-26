@@ -15,8 +15,7 @@ import { categoriesTechBlog } from '../../../../components/custom/category-list/
 import CategoryList from '../../../../components/custom/category-list/CategoryList.vue';
 
 definePageMeta({
-  layout: 'ja-article-tech',
-  middleware: ['trailing-slash'],
+  layout: 'ja-article-tech'
 })
 
 </script>
