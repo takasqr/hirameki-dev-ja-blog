@@ -41,11 +41,9 @@
 import { useSetHead } from '../../../../composables/useSetHead'
 import ArticlesRecommended from '../../../../components/content/articles-recommended/ArticlesRecommended.vue';
 import MyProfileCard from '../../../../components/custom/my-profile-card/MyProfileCard.vue'
-import TitleSection from '../../../../components/template/title-section/TitleSection.vue'
 
 definePageMeta({
-  layout: 'ja-article',
-  middleware: ['trailing-slash']
+  layout: 'ja-article'
 })
 
 const route = useRoute()

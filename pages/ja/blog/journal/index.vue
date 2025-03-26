@@ -21,8 +21,7 @@ import { useTotalPostCount } from '../../../../composables/content/useTotalPostC
 import { getNextPage, getPreviousPage } from '../../../../utils/pagination'
 
 definePageMeta({
-  layout: 'ja-article',
-  middleware: ['trailing-slash']
+  layout: 'ja-article'
 })
 
 const route = useRoute()

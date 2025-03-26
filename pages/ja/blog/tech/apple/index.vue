@@ -14,8 +14,7 @@ import CategoryPageView from '../../../../../components/content/category-page-vi
 const category = 'apple'
 
 definePageMeta({
-  layout: 'ja-article-tech',
-  middleware: ['trailing-slash']
+  layout: 'ja-article-tech'
 })
 
 useSetHead(getTechBlogCategoryHeadParams(category))
