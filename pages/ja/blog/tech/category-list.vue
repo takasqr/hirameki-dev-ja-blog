@@ -1,13 +1,15 @@
 <template>
-  <div class="bg-white">
-    <NuxtLayout>
-      <main>
-        <CategoryList
-          :categories="categoriesTechBlog"
-        />
-      </main>
-    </NuxtLayout>
-  </div>
+  <NuxtLayout>
+    <template #title>
+      <div class="prose lg:prose-xl">
+        <h1>{{ "カテゴリー一覧" }}</h1>
+      </div>
+    </template>
+
+    <CategoryList
+      :categories="categoriesTechBlog"
+    />
+  </NuxtLayout>
 </template>
 
 <script setup lang="ts">
@@ -15,7 +17,7 @@ import { categoriesTechBlog } from '../../../../components/custom/category-list/
 import CategoryList from '../../../../components/custom/category-list/CategoryList.vue';
 
 definePageMeta({
-  layout: 'ja-article-tech',
+  layout: 'ja-blog-default',
   middleware: ['trailing-slash'],
 })
 

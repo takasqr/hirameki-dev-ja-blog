@@ -1,20 +1,39 @@
 <template>
   <div class="bg-white">
-    <HeaderViewTech />
+    <w-app-template>
+      <template #header>
+        <HeaderViewTech />
+      </template>
 
-    <Container class="">
-      <slot />
-    </Container>
+      <template #title>
+        <slot name="title" />
+      </template>
 
-    <Footer />
+      <template #default>
+        <LazyTemplatePageMetaSection :create-date="article.createDate" :updated="article.updated" />
+
+        <slot />
+      </template>
+
+      <template #bottom>
+        <slot name="bottom" />
+      </template>
+
+      <template #footer>
+        <Footer />
+      </template>
+    </w-app-template>
   </div>
 </template>
 
 <script setup lang="ts">
-import { useHead } from '@unhead/vue'
+import WAppTemplate from 'vanilla-vue-ui/page-template/app-template/WAppTemplate.vue'
+import { LazyTemplatePageMetaSection } from '#components'
 import Footer from '../components/custom/general/CustomFooter.vue'
 import HeaderViewTech from '../components/custom/general/header/ja-header-view-tech.vue'
-import Container from '../components/basic/container/Container.vue'
+
+const route = useRoute()
+const article = await queryContent(route.fullPath).only(['createDate', 'updated']).findOne()
 
 useHead({
   htmlAttrs: {

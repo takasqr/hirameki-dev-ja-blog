@@ -1,14 +1,18 @@
 <template>
-  <div class="bg-white">
-    <NuxtLayout>
-      <main>
-        <ArticleList :articles="articlesData" />
-        <div class="mt-10">
-          <Pagination :next-path="nextPagePath" :previous-path="previousPagePath" />
-        </div>
-      </main>
-    </NuxtLayout>
-  </div>
+  <NuxtLayout>
+    <template #title>
+      <div class="prose lg:prose-xl">
+        <h1>開発</h1>
+      </div>
+    </template>
+
+    <div>
+      <ArticleList :articles="articlesData" />
+      <div class="mt-10">
+        <Pagination :next-path="nextPagePath" :previous-path="previousPagePath" />
+      </div>
+    </div>
+  </NuxtLayout>
 </template>
 
 <script setup lang="ts">
@@ -21,7 +25,7 @@ import { useTotalPostCount } from '../../../../composables/content/useTotalPostC
 import { getNextPage, getPreviousPage } from '../../../../utils/pagination'
 
 definePageMeta({
-  layout: 'ja-article-tech',
+  layout: 'ja-blog-default',
   middleware: ['trailing-slash'],
 })
 
@@ -66,7 +70,7 @@ function getPagePath(pageNumber: number | null): string | null {
   if (pageNumber == null) {
     return null
   } else {
-    return `/ja/blog?page=${pageNumber}`
+    return `/ja/blog/tech/?page=${pageNumber}`
   }
 }
 

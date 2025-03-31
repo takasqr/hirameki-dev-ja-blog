@@ -1,0 +1,45 @@
+<template>
+  <NuxtLayout>
+    <template #title>
+      <div class="prose lg:prose-xl">
+        <h1>{{ article.title }}</h1>
+      </div>
+    </template>
+
+    <ContentDoc v-slot="{ doc }">
+      <article class="prose lg:prose-xl">
+        <ContentRenderer :value="doc" />
+      </article>
+
+      <div class="mt-20">
+        <div class="text-xl font-semibold flex justify-center mb-2">
+          <h3>この記事を書いた人</h3>
+        </div>
+        <div class="flex justify-center">
+          <MyProfileCard />
+        </div>
+      </div>
+    </ContentDoc>
+    
+    <template #bottom>
+      <ArticlesRecommended :category="category"/>
+    </template>
+  </NuxtLayout>
+</template>
+
+<script setup lang="ts">
+import { useSetHead } from '../../../../../composables/useSetHead'
+import ArticlesRecommended from '../../../../../components/content/articles-recommended/ArticlesRecommended.vue';
+import MyProfileCard from '../../../../../components/custom/my-profile-card/MyProfileCard.vue'
+
+definePageMeta({
+  layout: 'ja-article',
+  middleware: ['trailing-slash']
+})
+
+const route = useRoute()
+const article = await queryContent(route.fullPath).findOne()
+const category = article.category
+
+useSetHead({ title: article.title, description: article.description, cover: article.cover, path: route.fullPath })
+</script>
