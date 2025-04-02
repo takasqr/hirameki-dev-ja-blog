@@ -42,7 +42,13 @@ const { data: articles } = await useAsyncData(asyncDataKey, async () => {
 // homepage: true の記事を取得
 const homepageArticles = await getHomepageArticles()
 
-const recommendedArticles = [...homepageArticles, ...articles.value]
+// 表示中の記事のパス一覧を作成
+const currentArticlePaths = new Set(articles.value.map(article => article._path))
+
+// 表示中の記事と重複しないようフィルタ
+const filteredHomepageArticles = homepageArticles.filter(article => !currentArticlePaths.has(article._path))
+
+const recommendedArticles = [...filteredHomepageArticles, ...articles.value]
 
 const articlesData = getDeterministicRandomSubset(recommendedArticles, 12, 9999)
 </script>
