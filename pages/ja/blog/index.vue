@@ -44,6 +44,14 @@
           </div>
           <MyLibraryCarousel />
         </div>
+
+        <div>
+          <h2 class="my-10 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            カテゴリー
+          </h2>
+
+          <CategoryListSimple />
+        </div>
       </Container>
 
       <div class="bg-gray-50">
