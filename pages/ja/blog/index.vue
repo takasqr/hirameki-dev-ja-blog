@@ -10,7 +10,7 @@
         </SpacerIsland>
 
         <div>
-          <h2 class="my-10 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 class="mb-10 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Articles
           </h2>
 
