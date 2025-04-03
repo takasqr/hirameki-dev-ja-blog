@@ -5,7 +5,7 @@
 
         <SpacerIsland>
           <div class="text-center">
-            <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">アプリ開発して気づいたことを<br class="md:hidden">ブログに書いています。</p>
+            <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">アプリ開発で気づいたことを<br class="md:hidden">ブログに書いています。</p>
           </div>
         </SpacerIsland>
 
