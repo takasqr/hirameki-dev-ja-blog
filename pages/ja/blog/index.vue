@@ -3,6 +3,12 @@
     <main>
       <Container class="md:mt-6 lg:mt-6 xl:mt-6 mb-16 md:mb-28">
 
+        <SpacerIsland>
+          <div class="text-center">
+            <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">アプリ開発して気づいたことを<br class="md:hidden">ブログに書いています。</p>
+          </div>
+        </SpacerIsland>
+
         <div>
           <h2 class="my-10 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Articles
@@ -86,6 +92,8 @@ import AdPomodoroTree from '../../../components/custom/pomodorotree/AdPomodoroTr
 import { useSetHead } from '#imports'
 import MyProfileCard from '../../../components/custom/my-profile-card/MyProfileCard.vue'
 import MyLibraryCarousel from '../../../components/custom/my-library-carousel/MyLibraryCarousel.vue'
+import SpacerIsland from 'vanilla-vue-ui/template/spacer-island/WSpacerIsland.vue'
+import CategoryListSimple from '../../../components/custom/category-list-simple/CategoryListSimple.vue'
 
 const route = useRoute()
 const lang = 'ja'
