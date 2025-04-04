@@ -8,14 +8,6 @@
 - Tailwond
 - Storybook
 
-## Storybook
-
-以下のコマンドで Storybook のビューアを起動できます。
-
-```bash
-npm run storybook
-```
-
 ## 開発ガイドライン
 
 ### Git 運用
@@ -66,3 +58,7 @@ z-index の設定は以下のルールで設定する。
 - z-50: 予備
 
 - アプリケーションバーはサイドメニューより下にする必要がある
+
+### rounded
+
+- 基本的に rounded-xl を使用する
