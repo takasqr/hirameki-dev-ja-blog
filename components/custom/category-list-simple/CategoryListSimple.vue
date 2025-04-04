@@ -1,6 +1,6 @@
 <template>
   <div class="prose">
-    <ul class="columns-2">
+    <ul class="columns-2 md:columns-3">
       <li v-for="category in visibleCategories" :key="category.name">
         <a :href="`/ja/blog/tech/${category.name}`">{{ category.name }} ({{ category.count }})</a>
       </li>
@@ -26,7 +26,7 @@ import SecondaryButton from '@takasqr/tw-vue-ui/template/secondary-button/Second
 
 const count = 16
 const showAll = ref(false)
-const rawCategories = await useCategory()
+const rawCategories = await useCategory('/ja/blog/')
 const categories = rawCategories.sort((a, b) => b.count - a.count)
 
 const visibleCategories = computed(() => {
