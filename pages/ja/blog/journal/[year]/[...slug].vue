@@ -1,6 +1,13 @@
 <template>
   <NuxtLayout>
     <template #title>
+
+      <div v-if="article.showCover">
+        <SpacerIsland>
+          <img :src="article.cover" class="rounded-xl">
+        </SpacerIsland>
+      </div>
+
       <div class="prose lg:prose-xl">
         <h1>{{ article.title }}</h1>
       </div>
@@ -31,6 +38,7 @@
 import { useSetHead } from '../../../../../composables/useSetHead'
 import ArticlesRecommended from '../../../../../components/content/articles-recommended/ArticlesRecommended.vue';
 import MyProfileCard from '../../../../../components/custom/my-profile-card/MyProfileCard.vue'
+import SpacerIsland from '@takasqr/tw-vue-ui/template/spacer-island/SpacerIsland.vue';
 
 definePageMeta({
   layout: 'ja-article',
