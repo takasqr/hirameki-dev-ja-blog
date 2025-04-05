@@ -4,7 +4,9 @@
 
       <div v-if="article.showCover">
         <SpacerIsland>
-          <img :src="article.cover" class="rounded-xl">
+          <div class="border rounded-xl">
+            <img :src="article.cover" class="rounded-xl">
+          </div>
         </SpacerIsland>
       </div>
 
