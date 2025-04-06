@@ -43,7 +43,7 @@ export function useSetHead({ title, description, cover, path }: HeadParams) {
 export function getTechBlogCategoryHeadParams(category: string): HeadParams {
   const title = `${category} の記事一覧`
   const description = `${category} の記事一覧です。`
-  const cover = `'https://res.cloudinary.com/takasqr/image/upload/l_text:Sawarabi%20Gothic_60_bold:${category}の記事一覧,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'`
+  const cover = `'https://res.cloudinary.com/takasqr/image/upload/l_text:MPLUS1p-Black.ttf_60_bold:${category}の記事一覧,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'`
   const path = `/ja/blog/tech/${category}`
 
   return { title, description, cover, path }
