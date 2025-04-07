@@ -35,9 +35,6 @@ const dateRange: QueryBuilderWhere = {
   $lte: end
 }
 
-console.log(props.year)
-console.log(dateRange)
-
 const { data: articles } = await useAsyncData(asyncDataKey, async () => {
   // まずすべての記事を取得
   // 全件取得はよくない。遅くなってきたら修正する
@@ -67,8 +64,6 @@ const { data: articles } = await useAsyncData(asyncDataKey, async () => {
     createDate: content.createDate,
   }) as unknown as Article)
 })
-
-console.log(articles.value)
 
 const articlesData = articles.value ?? []
 </script>
