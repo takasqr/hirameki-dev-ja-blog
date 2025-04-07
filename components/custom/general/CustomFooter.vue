@@ -1,9 +1,14 @@
 <template>
-  <FooterTemplate :navigations="navigations" />
+  <FooterTemplate
+    :navigations="navigations"
+    :rss-url="rssUrl"
+  />
 </template>
 
 <script setup lang="ts">
 import FooterTemplate from '@takasqr/tw-vue-ui/template/footer-template/FooterTemplate.vue'
+
+const rssUrl = '/ja/blog/feed.xml'
 
 const navigations = [
   {
