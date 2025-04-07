@@ -48,3 +48,18 @@ export function getTechBlogCategoryHeadParams(category: string): HeadParams {
 
   return { title, description, cover, path }
 }
+
+/**
+ * 技術ブログのカテゴリーページに対して、head タグに必要な情報を生成する関数
+ * 
+ * @param {string} category - カテゴリー名。ページタイトルや URL に使用される
+ * @returns {HeadParams} - ページの head 情報として使用するパラメータを返す
+ */
+export function getJournalBlogCategoryHeadParams(year: string): HeadParams {
+  const title = `${year} 年の記事一覧`
+  const description = `${year} 年の記事一覧です。`
+  const cover = `'https://res.cloudinary.com/takasqr/image/upload/l_text:MPLUS1p-Black.ttf_60_bold:${year}年の記事一覧,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'`
+  const path = `/ja/blog/journal/${year}`
+
+  return { title, description, cover, path }
+}
