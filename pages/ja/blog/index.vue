@@ -1,91 +1,103 @@
 <template>
   <NuxtLayout>
-    <main>
-      <Container class="md:mt-6 lg:mt-6 xl:mt-6 mb-16 md:mb-28">
-
+    <w-page-block>
+      <w-section>
         <SpacerIsland>
           <div class="text-center">
             <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">アプリ開発で気づいたことを<br class="md:hidden">ブログに書いています。</p>
           </div>
         </SpacerIsland>
+      </w-section>
+    </w-page-block>
 
-        <div>
-          <h2 class="mb-10 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+
+    <w-page-block>
+      <w-section>
+        <template #title>
+          <h2>
             Articles
           </h2>
+        </template>
 
-          <ArticlesHomepage :path="lang" />
+        <ArticlesHomepage :path="lang" />
 
-          <div class="flex flex-1 justify-end m-2">
-            <a
-              href="/ja/blog/tech/"
-              class="text-sm font-semibold leading-6 text-gray-900"
-            >もっと読む <span aria-hidden="true">&rarr;</span></a>
-          </div>
+        <div class="flex flex-1 justify-end m-2">
+          <a
+            href="/ja/blog/tech/"
+            class="text-sm font-semibold leading-6 text-gray-900"
+          >もっと読む <span aria-hidden="true">&rarr;</span></a>
         </div>
+      </w-section>
+    </w-page-block>
 
-        
-        <div>
-          <h2 class="my-10 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+
+    <w-page-block>
+      <w-section>
+        <template #title>
+          <h2>
             Recently
           </h2>
+        </template>
 
-          <ArticlesRecently :path="lang" />
+        <ArticlesRecently :path="lang" />
 
-          <div class="flex flex-1 justify-end m-2">
-            <a
-              href="/ja/blog/tech/"
-              class="text-sm font-semibold leading-6 text-gray-900"
-            >もっと読む <span aria-hidden="true">&rarr;</span></a>
-          </div>
+        <div class="flex flex-1 justify-end m-2">
+          <a
+            href="/ja/blog/tech/"
+            class="text-sm font-semibold leading-6 text-gray-900"
+          >もっと読む <span aria-hidden="true">&rarr;</span></a>
         </div>
+      </w-section>
+    </w-page-block>
 
-        <div>
-          <h2 class="my-10 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+    <w-page-block>
+      <w-section>
+        <template #title>
+          <h2>
             Dev
           </h2>
+        </template>
 
-          <div class="mb-2">
-            <span class="text-gray-600">ライブラリ作りました＼(^o^)／</span>
-          </div>
-          <MyLibraryCarousel />
+
+        <div class="mb-2">
+          <span class="text-gray-600">ライブラリ作りました＼(^o^)／</span>
         </div>
-
-        <div>
-          <h2 class="my-10 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        <MyLibraryCarousel />
+      </w-section>
+    </w-page-block>
+    
+    <w-page-block>
+      <w-section>
+        <template #title>
+          <h2>
             カテゴリー
           </h2>
+        </template>
 
-          <CategoryListSimple />
+        <CategoryListSimple />
+      </w-section>
+    </w-page-block>
+
+    <w-page-block class="bg-gray-50">
+      <w-section>
+        <AdPomodoroTree />
+      </w-section>
+    </w-page-block>
+
+    <w-page-block>
+      <w-section>
+        <div class="text-xl font-semibold flex justify-center mb-2 text-gray-800">
+          <h3>このブログを書いてる人</h3>
         </div>
-      </Container>
-
-      <div class="bg-gray-50">
-        <Container class="py-8 md:py-10">
-          <div class="my-4">
-            <AdPomodoroTree />
-          </div>
-        </Container>
-      </div>
-
-      <div class="bg-white">
-        <Container class="py-8 md:py-10">
-          <div class="my-4">
-            <div class="text-xl font-semibold flex justify-center mb-2 text-gray-800">
-              <h3>このブログを書いてる人</h3>
-            </div>
-            <div class="flex justify-center">
-              <MyProfileCard />
-            </div>
-          </div>
-        </Container>
-      </div>
-    </main>
+        <div class="flex justify-center">
+          <MyProfileCard />
+        </div>
+      </w-section>
+    </w-page-block>
   </NuxtLayout>
 </template>
 
 <script setup lang="ts">
-import Container from '@takasqr/tw-vue-ui/basic/container/Container.vue'
 import ArticlesHomepage from '../../../components/content/articles-homepage/ArticlesHomepage.vue'
 import ArticlesRecently from '../../../components/content/articles-recently/ArticlesRecently.vue'
 import AdPomodoroTree from '../../../components/custom/pomodorotree/AdPomodoroTree.vue'
@@ -94,6 +106,8 @@ import MyProfileCard from '../../../components/custom/my-profile-card/MyProfileC
 import MyLibraryCarousel from '../../../components/custom/my-library-carousel/MyLibraryCarousel.vue'
 import SpacerIsland from 'vanilla-vue-ui/template/spacer-island/WSpacerIsland.vue'
 import CategoryListSimple from '../../../components/custom/category-list-simple/CategoryListSimple.vue'
+import WSection from 'vanilla-vue-ui/template/section/WSection.vue'
+import WPageBlock from 'vanilla-vue-ui/template/page-block/WPageBlock.vue'
 
 const route = useRoute()
 const lang = 'ja'

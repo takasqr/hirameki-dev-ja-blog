@@ -1,11 +1,11 @@
 <template>
-  <div class="bg-white">
+  <main class="bg-white">
     <HeaderView />
 
     <slot />
 
     <Footer />
-  </div>
+  </main>
 </template>
 
 <script setup lang="ts">
