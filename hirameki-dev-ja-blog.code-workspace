@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+	    "textlint.configPath": "./.textlintrc.json",
+		"textlint.nodePath": "./node_modules",
+		"textlint.languages": [
+			"markdown"
+		]
+	}
+}
