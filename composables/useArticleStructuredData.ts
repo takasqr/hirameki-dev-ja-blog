@@ -1,5 +1,6 @@
 import { articleStructuredDataConfig } from './useArticleStructuredDataConfig'
 import type { Article } from '../components/types/Article';
+import { encodeImageUrl } from '../utils/url'
 
 // --- Custom Error ---
 class ArticleNotFoundError extends Error {
@@ -66,6 +67,19 @@ interface SchemaArticle {
   };
 }
 
+/**
+ * UTCのISO 8601形式の日時文字列を、見かけ上JST（+09:00）に見せるためにZを置き換える関数。
+ * 
+ * ⚠️ この関数は実際の時刻はUTCのままで、オフセットだけをJST風にします。
+ * 入力日時がJST基準で保存されている場合に使ってください。
+ *
+ * @param {string} dateStr - 日付文字列（Dateコンストラクタで解釈できる形式）
+ * @returns {string} JSTオフセット付きのISO 8601形式文字列
+ */
+function toJstOffsetString(dateStr: string): string {
+  return new Date(dateStr).toISOString().replace('Z', '+09:00')
+}
+
 // --- Composable Implementation ---
 
 export const useArticleStructuredData = (
@@ -79,11 +93,8 @@ export const useArticleStructuredData = (
   }
 
   // Determine image URL with fallback
-  const imageUrl = article.cover
-    ? `${config.siteUrl}${article.cover.startsWith('/') ? '' : '/'}${article.cover}`
-    : articleStructuredDataConfig.layouts[
-        route.path.includes('/tech/') ? 'tech' : 'default'
-      ].fallbackImageUrl
+  // const imageUrl = article.cover
+  const imageUrl = encodeImageUrl(article.cover)
 
   // Prepare JSON-LD structured data object adhering to SchemaArticle type
   const jsonLd: SchemaArticle = {
@@ -96,8 +107,8 @@ export const useArticleStructuredData = (
     headline: article.title || '記事タイトル', // Provide a sensible fallback
     description: article.description || undefined, // Use undefined if not present
     image: imageUrl, // Normalized image URL
-    datePublished: article.createDate ? new Date(article.createDate).toISOString() : undefined,
-    dateModified: article.updated ? new Date(article.updated).toISOString() : undefined,
+    datePublished: article.createDate ? toJstOffsetString(article.createDate) : undefined,
+    dateModified: article.updated ? toJstOffsetString(article.updated) : undefined,
     author: {
       '@type': 'Person', // Assuming Person, could be configurable
       name: config.authorName,

@@ -8,12 +8,4 @@ export const articleStructuredDataConfig = {
     publisherLogoUrl: 'https://hirameki.dev/かいがらブログ.webp',
     siteUrl: 'https://hirameki.dev/ja/blog/',
   },
-  layouts: {
-    default: {
-      fallbackImageUrl: 'https://hirameki.dev/かいがらブログ.webp',
-    },
-    tech: {
-      fallbackImageUrl: 'https://hirameki.dev/かいがらブログ.webp',
-    },
-  },
 }

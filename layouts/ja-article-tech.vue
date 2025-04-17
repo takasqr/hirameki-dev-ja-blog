@@ -37,7 +37,7 @@ import { queryContent } from '#imports'
 
 const route = useRoute()
 const article = await queryContent(route.fullPath)
-  .only(['title', 'description', 'thumbnail', 'createDate', 'updated'])
+  .only(['title', 'description', 'thumbnail', 'createDate', 'updated', 'cover'])
   .findOne()
 
 const createDate = article?.createDate
