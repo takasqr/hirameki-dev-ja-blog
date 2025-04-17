@@ -127,6 +127,7 @@ export const useArticleStructuredData = (
     // Add JSON-LD script
     script: [
       {
+        key: 'jsonld',
         type: 'application/ld+json',
         children: JSON.stringify(jsonLd, null, 2),
       },
