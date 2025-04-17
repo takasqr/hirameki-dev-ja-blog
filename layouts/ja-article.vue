@@ -10,7 +10,7 @@
       </template>
 
       <template #default>
-        <LazyTemplatePageMetaSection :create-date="article.createDate" :updated="article.updated" />
+        <LazyTemplatePageMetaSection :create-date="createDate" :updated="updated" />
 
         <slot />
       </template>
@@ -31,14 +31,26 @@ import WAppTemplate from 'vanilla-vue-ui/page-template/app-template/WAppTemplate
 import { LazyTemplatePageMetaSection } from '#components'
 import Footer from '../components/custom/general/CustomFooter.vue'
 import HeaderViewTech from '../components/custom/general/header/ja-header-view.vue'
+import { useArticleStructuredData } from '../composables/useArticleStructuredData'
+import { articleStructuredDataConfig } from '../composables/useArticleStructuredDataConfig'
+import { queryContent } from '#imports'
+import { useRoute } from 'vue-router'
+import { useHead } from '@unhead/vue'
 
 const route = useRoute()
-const article = await queryContent(route.fullPath).only(['createDate', 'updated']).findOne()
+const article = await queryContent(route.fullPath)
+.only(['title', 'description', 'thumbnail', 'createDate', 'updated'])
+.findOne()
+
+const createDate = article?.createDate
+const updated = article?.updated
+
+await useArticleStructuredData(articleStructuredDataConfig.common, article)
 
 useHead({
   htmlAttrs: {
     lang: 'ja',
     prefix: 'og: https://ogp.me/ns#',
-  },
+  }
 })
 </script>

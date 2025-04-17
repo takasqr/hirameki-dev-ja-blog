@@ -1,0 +1,19 @@
+/**
+ * Configuration for structured data across different layouts
+ */
+export const articleStructuredDataConfig = {
+  common: {
+    authorName: 'かい(@takasqr)',
+    publisherName: 'かいがらブログ',
+    publisherLogoUrl: 'https://hirameki.dev/かいがらブログ.webp',
+    siteUrl: 'https://hirameki.dev/ja/blog/',
+  },
+  layouts: {
+    default: {
+      fallbackImageUrl: 'https://hirameki.dev/かいがらブログ.webp',
+    },
+    tech: {
+      fallbackImageUrl: 'https://hirameki.dev/かいがらブログ.webp',
+    },
+  },
+}

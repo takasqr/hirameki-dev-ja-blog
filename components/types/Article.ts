@@ -2,6 +2,7 @@ export type Article = {
   _path: string
   title: string
   createDate: string
+  updated?: string
   description: string
   cover: string
   category: string
