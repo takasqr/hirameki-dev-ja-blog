@@ -1,5 +1,7 @@
 import type { HeadParams } from "./types"
 import { getPageTitle } from "../utils/getPageTitle"
+import { siteConfig } from "./config/siteConfig"
+import { encodeImageUrl } from "../utils/url"
 
 export function useSetHead({ title, description, cover, path }: HeadParams) {
   if (title === undefined) {
@@ -7,25 +9,26 @@ export function useSetHead({ title, description, cover, path }: HeadParams) {
   }
 
   const pageTitle = getPageTitle(title, path)
+  const encodedCover = encodeImageUrl(cover)
 
   useHead({
     title: pageTitle,
     meta: [
       { name: 'description', content: description },
       // Open Graph
-      { property: 'og:url', content: `https://hirameki.dev${path}` },
+      { property: 'og:url', content: `${siteConfig.baseUrl}${path}` },
       { property: 'og:title', content: pageTitle },
       { property: 'og:description', content: description },
-      { property: 'og:image', content: cover },
+      { property: 'og:image', content: encodedCover },
       // Twitter Card
       { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:site', content: '@takasqr' },
-      { name: 'twitter:creator', content: '@takasqr' },
+      { name: 'twitter:site', content: siteConfig.twitter.site },
+      { name: 'twitter:creator', content: siteConfig.twitter.creator },
       // サムネイル指定
-      { name: 'thumbnail', content: cover },
+      { name: 'thumbnail', content: encodedCover },
     ],
     link: [
-      { rel: 'canonical', href: `https://hirameki.dev${path}` },
+      { rel: 'canonical', href: `${siteConfig.baseUrl}${path}` },
     ],
     // htmlAttrs: {
     //   // 言語は layout で設定する
