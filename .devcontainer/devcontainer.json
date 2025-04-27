@@ -10,15 +10,6 @@
 		"args": { "VARIANT": "20-bullseye" }
 	},
 
-	// Set *default* container specific settings.json values on container create.
-	"settings": {},
-
-	// Add the IDs of extensions you want installed when the container is created.
-	"extensions": [
-		"dbaeumer.vscode-eslint",
-		"saoudrizwan.claude-dev"
-	],
-
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
@@ -26,5 +17,13 @@
 	// "postCreateCommand": "yarn install",
 
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-	"remoteUser": "node"
+	"remoteUser": "node",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"RooVeterinaryInc.roo-cline",
+				"Vue.volar"
+			]
+		}
+	}
 }
