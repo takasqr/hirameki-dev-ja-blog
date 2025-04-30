@@ -2,17 +2,6 @@
   <NuxtLayout>
     <w-page-block>
       <w-section>
-        <SpacerIsland>
-          <div class="text-center">
-            <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">アプリ開発で気づいたことを<br class="md:hidden">ブログに書いています。</p>
-          </div>
-        </SpacerIsland>
-      </w-section>
-    </w-page-block>
-
-
-    <w-page-block>
-      <w-section>
         <template #title>
           <h2>
             Articles
@@ -30,6 +19,18 @@
       </w-section>
     </w-page-block>
 
+    <w-page-block>
+      <w-section>
+        <img src="/img/ja/blog/header-image-2.webp">
+      </w-section>
+      <w-section>
+        <SpacerIsland>
+          <div class="text-center">
+            <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">アプリ開発で気づいたことを<br class="md:hidden">ブログに書いています。</p>
+          </div>
+        </SpacerIsland>
+      </w-section>
+    </w-page-block>
 
     <w-page-block>
       <w-section>
