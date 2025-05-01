@@ -38,6 +38,14 @@ describe('encodeImageUrl', () => {
 
   // エッジケース
   it('should handle empty string', () => {
-    expect(encodeImageUrl('')).toBe('https://hirameki.dev/')
+    expect(encodeImageUrl('')).toBe('')
+  })
+
+  // asset.hirameki.dev を含むパスのテスト
+  it('asset.hirameki.dev', () => {
+    console.log(decodeURIComponent('https://asset.hirameki.dev/img%2Fblog%2Fjournal%2F2025%2F20250425%2F20250425_010.webp?alt=media'))
+    const url = 'https://asset.hirameki.dev/img%2Fblog%2Fjournal%2F2025%2F20250425%2F20250425_010.webp?alt=media'
+    const expectedUrl = `https://asset.hirameki.dev/img%2Fblog%2Fjournal%2F2025%2F20250425%2F20250425_010.webp?alt=media`
+    expect(encodeImageUrl(url)).toBe(expectedUrl)
   })
 })
