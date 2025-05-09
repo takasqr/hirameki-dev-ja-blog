@@ -21,6 +21,12 @@
 
     <w-page-block>
       <w-section>
+        <template #title>
+          <h2>
+            コンセプト
+          </h2>
+        </template>
+
         <img src="/img/ja/blog/header-image-2.webp">
       </w-section>
       <w-section>
