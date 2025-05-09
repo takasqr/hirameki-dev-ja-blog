@@ -4,25 +4,6 @@
       <w-section>
         <template #title>
           <h2>
-            Articles
-          </h2>
-        </template>
-
-        <ArticlesHomepage :path="lang" />
-
-        <div class="flex flex-1 justify-end m-2">
-          <a
-            href="/ja/blog/tech/"
-            class="text-sm font-semibold leading-6 text-gray-900"
-          >もっと読む <span aria-hidden="true">&rarr;</span></a>
-        </div>
-      </w-section>
-    </w-page-block>
-
-    <w-page-block>
-      <w-section>
-        <template #title>
-          <h2>
             コンセプト
           </h2>
         </template>
@@ -35,6 +16,25 @@
             <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">アプリ開発で気づいたことを<br class="md:hidden">ブログに書いています。</p>
           </div>
         </SpacerIsland>
+      </w-section>
+    </w-page-block>
+
+    <w-page-block>
+      <w-section>
+        <template #title>
+          <h2>
+            Articles
+          </h2>
+        </template>
+
+        <ArticlesHomepage :path="lang" />
+
+        <div class="flex flex-1 justify-end m-2">
+          <a
+            href="/ja/blog/tech/"
+            class="text-sm font-semibold leading-6 text-gray-900"
+          >もっと読む <span aria-hidden="true">&rarr;</span></a>
+        </div>
       </w-section>
     </w-page-block>
 
