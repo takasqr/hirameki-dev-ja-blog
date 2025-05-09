@@ -1,106 +1,108 @@
 <template>
   <NuxtLayout>
-    <w-page-block>
-      <w-section>
-        <template #title>
-          <h2>
-            コンセプト
-          </h2>
-        </template>
+    <SpacerIsland>
+      <w-page-block>
+        <w-section>
+          <template #title>
+            <h2>
+              コンセプト
+            </h2>
+          </template>
 
-        <img src="/img/ja/blog/header-image-2.webp">
-      </w-section>
-      <w-section>
-        <SpacerIsland>
-          <div class="text-center">
-            <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">アプリ開発で気づいたことを<br class="md:hidden">ブログに書いています。</p>
+          <img src="/img/ja/blog/header-image-2.webp">
+        </w-section>
+        <w-section>
+          <SpacerIsland>
+            <div class="text-center">
+              <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">アプリ開発で気づいたことを<br class="md:hidden">ブログに書いています。</p>
+            </div>
+          </SpacerIsland>
+        </w-section>
+      </w-page-block>
+
+      <w-page-block>
+        <w-section>
+          <template #title>
+            <h2>
+              Articles
+            </h2>
+          </template>
+
+          <ArticlesHomepage :path="lang" />
+
+          <div class="flex flex-1 justify-end m-2">
+            <a
+              href="/ja/blog/tech/"
+              class="text-sm font-semibold leading-6 text-gray-900"
+            >もっと読む <span aria-hidden="true">&rarr;</span></a>
           </div>
-        </SpacerIsland>
-      </w-section>
-    </w-page-block>
+        </w-section>
+      </w-page-block>
 
-    <w-page-block>
-      <w-section>
-        <template #title>
-          <h2>
-            Articles
-          </h2>
-        </template>
+      <w-page-block>
+        <w-section>
+          <template #title>
+            <h2>
+              Recently
+            </h2>
+          </template>
 
-        <ArticlesHomepage :path="lang" />
+          <ArticlesRecently :path="lang" />
 
-        <div class="flex flex-1 justify-end m-2">
-          <a
-            href="/ja/blog/tech/"
-            class="text-sm font-semibold leading-6 text-gray-900"
-          >もっと読む <span aria-hidden="true">&rarr;</span></a>
-        </div>
-      </w-section>
-    </w-page-block>
+          <div class="flex flex-1 justify-end m-2">
+            <a
+              href="/ja/blog/tech/"
+              class="text-sm font-semibold leading-6 text-gray-900"
+            >もっと読む <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </w-section>
+      </w-page-block>
 
-    <w-page-block>
-      <w-section>
-        <template #title>
-          <h2>
-            Recently
-          </h2>
-        </template>
-
-        <ArticlesRecently :path="lang" />
-
-        <div class="flex flex-1 justify-end m-2">
-          <a
-            href="/ja/blog/tech/"
-            class="text-sm font-semibold leading-6 text-gray-900"
-          >もっと読む <span aria-hidden="true">&rarr;</span></a>
-        </div>
-      </w-section>
-    </w-page-block>
-
-    <w-page-block>
-      <w-section>
-        <template #title>
-          <h2>
-            Dev
-          </h2>
-        </template>
+      <w-page-block>
+        <w-section>
+          <template #title>
+            <h2>
+              Dev
+            </h2>
+          </template>
 
 
-        <div class="mb-2">
-          <span class="text-gray-600">ライブラリ作りました＼(^o^)／</span>
-        </div>
-        <MyLibraryCarousel />
-      </w-section>
-    </w-page-block>
-    
-    <w-page-block>
-      <w-section>
-        <template #title>
-          <h2>
-            カテゴリー
-          </h2>
-        </template>
+          <div class="mb-2">
+            <span class="text-gray-600">ライブラリ作りました＼(^o^)／</span>
+          </div>
+          <MyLibraryCarousel />
+        </w-section>
+      </w-page-block>
+      
+      <w-page-block>
+        <w-section>
+          <template #title>
+            <h2>
+              カテゴリー
+            </h2>
+          </template>
 
-        <CategoryListSimple />
-      </w-section>
-    </w-page-block>
+          <CategoryListSimple />
+        </w-section>
+      </w-page-block>
 
-    <w-page-block class="bg-gray-50">
-      <w-section>
-        <AdPomodoroTree />
-      </w-section>
-    </w-page-block>
+      <w-page-block class="bg-gray-50">
+        <w-section>
+          <AdPomodoroTree />
+        </w-section>
+      </w-page-block>
 
-    <w-page-block>
-      <w-section>
-        <div class="text-xl font-semibold flex justify-center mb-2 text-gray-800">
-          <h3>このブログを書いてる人</h3>
-        </div>
-        <div class="flex justify-center">
-          <MyProfileCard />
-        </div>
-      </w-section>
-    </w-page-block>
+      <w-page-block>
+        <w-section>
+          <div class="text-xl font-semibold flex justify-center mb-2 text-gray-800">
+            <h3>このブログを書いてる人</h3>
+          </div>
+          <div class="flex justify-center">
+            <MyProfileCard />
+          </div>
+        </w-section>
+      </w-page-block>
+    </SpacerIsland>
   </NuxtLayout>
 </template>
 
