@@ -16,6 +16,13 @@
             <div class="text-center">
               <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">アプリ開発で気づいたことを<br class="md:hidden">ブログに書いています。</p>
             </div>
+
+            <div class="flex flex-1 justify-end m-2">
+              <a
+                href="/ja/blog/journal/2025/20250513_about-this-blog/"
+                class="text-sm font-semibold leading-6 text-gray-900"
+              >もっと読む <span aria-hidden="true">&rarr;</span></a>
+            </div>
           </SpacerIsland>
         </w-section>
       </w-page-block>
