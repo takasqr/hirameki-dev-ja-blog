@@ -21,7 +21,7 @@
               <a
                 href="/ja/blog/journal/2025/20250513_about-this-blog/"
                 class="text-sm font-semibold leading-6 text-gray-900"
-              >もっと読む <span aria-hidden="true">&rarr;</span></a>
+              >このブログについて <span aria-hidden="true">&rarr;</span></a>
             </div>
           </SpacerIsland>
         </w-section>
