@@ -3,11 +3,17 @@
     <div class="relative w-full">
       <a :href="props.article._path">
         <img
-          :src="props.article.cover"
+          :src="getThumbnail(props.article.cover)"
           alt=""
           loading="lazy"
           class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
         >
+        <!-- <img
+          :src="props.article.cover"
+          alt=""
+          loading="lazy"
+          class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
+        > -->
         <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
       </a>
     </div>
@@ -37,6 +43,8 @@
 <script setup lang="ts">
 import type { Article } from '../../types/Article'
 import { cleanDoubleSlashes } from 'ufo'
+import { isCloudinary } from '../../../utils/cloudinary/isCloudinary'
+import { getThumbnailCloudinary } from '../../../utils/cloudinary/getThumbnailCloudinary'
 
 const props = defineProps({
   article: {
@@ -58,4 +66,12 @@ const categoryPath = computed(() => {
     return cleanDoubleSlashes('/ja/' + props.article.categoryBasePath + props.article.category)
   }
 })
+
+function getThumbnail(cover: string): string {
+  if (isCloudinary(cover)) {
+    return getThumbnailCloudinary(cover)
+  } else {
+    return cover
+  }
+}
 </script>
