@@ -109,6 +109,20 @@
           </div>
         </w-section>
       </w-page-block>
+
+      <w-page-block>
+        <w-section>
+          <NewsLetterForm
+            title="News"
+            :turnstile-site-key="token"
+            button-text='購読する'
+            placeholder='Enter your email'
+            privacy-note='We care about your data. Read our '
+            privacy-policy-text='privacy policy'
+            privacy-policy-url='#'
+          />  
+        </w-section>
+      </w-page-block>
     </SpacerIsland>
   </NuxtLayout>
 </template>
@@ -124,9 +138,13 @@ import SpacerIsland from 'vanilla-vue-ui/template/spacer-island/WSpacerIsland.vu
 import CategoryListSimple from '../../../components/custom/category-list-simple/CategoryListSimple.vue'
 import WSection from 'vanilla-vue-ui/template/section/WSection.vue'
 import WPageBlock from 'vanilla-vue-ui/template/page-block/WPageBlock.vue'
+import NewsLetterForm from '@takasqr/tw-vue-ui/template/news-letter-form/NewsLetterForm.vue'
 
 const route = useRoute()
 const lang = 'ja'
+
+const runtimeConfig = useRuntimeConfig();
+const token = runtimeConfig.public.TURNSTILE_SITE_KEY as string | undefined
 
 definePageMeta({
   layout: 'ja-blog-home',

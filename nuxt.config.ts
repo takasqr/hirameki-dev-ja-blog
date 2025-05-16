@@ -25,6 +25,14 @@ export default defineNuxtConfig({
     }
   },
 
+  runtimeConfig: {
+    // https://nuxt.com/docs/guide/going-further/runtime-config
+    // Keys within public, will be also exposed to the client-side
+    public: {
+      TURNSTILE_SITE_KEY: process.env.TURNSTILE_SITE_KEY, // Turnstile
+    },
+  },
+
   $meta: {
     name: 'blg'
   }
