@@ -110,7 +110,7 @@
         </w-section>
       </w-page-block>
 
-      <w-page-block>
+      <!-- <w-page-block> -->
         <w-section>
           <NewsLetterForm
             title="News"
@@ -122,7 +122,7 @@
             privacy-policy-url='#'
           />  
         </w-section>
-      </w-page-block>
+      <!-- </w-page-block> -->
     </SpacerIsland>
   </NuxtLayout>
 </template>
