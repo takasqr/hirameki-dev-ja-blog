@@ -113,12 +113,13 @@
       <!-- <w-page-block> -->
         <w-section>
           <NewsLetterForm
-            title="News"
+            title="ニュースレター"
+            description="最新の更新情報をメールでお知らせします。登録フォームから登録して下さい。"
             :turnstile-site-key="token"
             button-text='購読する'
-            placeholder='Enter your email'
-            privacy-note='We care about your data. Read our '
-            privacy-policy-text='privacy policy'
+            placeholder='メールアドレスを入力して下さい。'
+            privacy-note='プライバシーポリシーは'
+            privacy-policy-text='こちら'
             privacy-policy-url='#'
           />  
         </w-section>
