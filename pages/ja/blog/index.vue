@@ -120,7 +120,7 @@
             placeholder='メールアドレスを入力して下さい。'
             privacy-note='プライバシーポリシーは'
             privacy-policy-text='こちら'
-            privacy-policy-url='#'
+            privacy-policy-url='/ja/privacy/'
           />  
         </w-section>
       <!-- </w-page-block> -->
