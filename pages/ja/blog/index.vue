@@ -123,7 +123,7 @@
             privacy-policy-url='/ja/privacy/'
             @submit="handleSubmit"
           >
-            <Turnstile @token="handleToken" />
+            <Turnstile :turnstile-site-key="siteKey" @token="handleToken" />
           </NewsLetterForm>
         </w-section>
       <!-- </w-page-block> -->
