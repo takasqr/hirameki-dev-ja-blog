@@ -165,6 +165,8 @@ function handleSubmit(email: string) {
     const logMessage = { email: email, token: token.value}
 
     sendLog({ created: new Date(), message: logMessage, appName: 'NewsLetterForm' })
+
+    alert('登録ありがとうございます。送信しました。')
   }
 }
 
