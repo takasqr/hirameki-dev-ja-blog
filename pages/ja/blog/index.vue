@@ -115,13 +115,16 @@
           <NewsLetterForm
             title="ニュースレター"
             description="最新の更新情報をメールでお知らせします。登録フォームから登録して下さい。"
-            :turnstile-site-key="token"
+            :turnstile-site-key="siteKey"
             button-text='購読する'
             placeholder='メールアドレスを入力して下さい。'
             privacy-note='プライバシーポリシーは'
             privacy-policy-text='こちら'
             privacy-policy-url='/ja/privacy/'
-          />  
+            @submit="handleSubmit"
+          >
+            <Turnstile @token="handleToken" />
+          </NewsLetterForm>
         </w-section>
       <!-- </w-page-block> -->
     </SpacerIsland>
@@ -140,16 +143,43 @@ import CategoryListSimple from '../../../components/custom/category-list-simple/
 import WSection from 'vanilla-vue-ui/template/section/WSection.vue'
 import WPageBlock from 'vanilla-vue-ui/template/page-block/WPageBlock.vue'
 import NewsLetterForm from '@takasqr/tw-vue-ui/template/news-letter-form/NewsLetterForm.vue'
+import Turnstile from '../../../components/template/turnstile/Turnstile.vue'
+import { sendLog } from '../../../utils/log/sendLog'
 
 const route = useRoute()
 const lang = 'ja'
 
+const token = ref('');
+
 const runtimeConfig = useRuntimeConfig();
-const token = runtimeConfig.public.TURNSTILE_SITE_KEY as string | undefined
+const siteKey = runtimeConfig.public.TURNSTILE_SITE_KEY as string | undefined
 
 definePageMeta({
   layout: 'ja-blog-home',
   middleware: ['trailing-slash'],
+})
+
+function handleSubmit(email: string) {
+  if (token.value.length > 0) {
+
+    const logMessage = { email: email, token: token.value}
+
+    sendLog({ created: new Date(), message: logMessage, appName: 'NewsLetterForm' })
+  }
+}
+
+function handleToken(turnstileToken: string) {
+  token.value = turnstileToken
+}
+
+useHead({
+  script: [
+    {
+      src: 'https://challenges.cloudflare.com/turnstile/v0/api.js',
+      async: true,
+      defer: true,
+    },
+  ],
 })
 
 useSetHead({
