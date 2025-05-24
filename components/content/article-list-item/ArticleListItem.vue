@@ -1,7 +1,7 @@
 <template>
   <article class="flex flex-col items-start justify-between">
     <div class="relative w-full">
-      <a :href="props.article._path">
+      <a :href="withTrailingSlash(props.article._path)">
         <img
           :src="getThumbnail(props.article.cover)"
           alt=""
@@ -24,13 +24,13 @@
           class="text-gray-500"
         >{{ props.article.createDate }}</time>
         <a
-          :href="categoryPath"
+          :href="withTrailingSlash(categoryPath)"
           class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
         >{{ props.article.category }}</a>
       </div>
       <div class="group relative">
         <h3 class="mt-0 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-          <a :href="props.article._path">
+          <a :href="withTrailingSlash(props.article._path)">
             <span class="absolute inset-0" />
             {{ props.article.title }}
           </a>
@@ -42,9 +42,10 @@
 
 <script setup lang="ts">
 import type { Article } from '../../types/Article'
-import { cleanDoubleSlashes } from 'ufo'
+import { cleanDoubleSlashes, withTrailingSlash } from 'ufo'
 import { isCloudinary } from '../../../utils/cloudinary/isCloudinary'
 import { getThumbnailCloudinary } from '../../../utils/cloudinary/getThumbnailCloudinary'
+
 
 const props = defineProps({
   article: {
