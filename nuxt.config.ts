@@ -1,3 +1,8 @@
+import { fileURLToPath } from 'url'
+import { dirname, join } from 'path'
+
+const currentDir = dirname(fileURLToPath(import.meta.url))
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -7,6 +12,9 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
   ],
   css: ['./assets/css/main.css'],
+  alias: {
+    '@blog-utils': join(currentDir, './utils')
+  },
   postcss: {
     plugins: {
       tailwindcss: {},
