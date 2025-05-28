@@ -2,7 +2,7 @@
   <div class="not-prose">
     <SpacerLadder v-if="props.showBreadcrumb">
       <HorizontalScroll>
-        <Breadcrumb/>
+        <Breadcrumb :trailing-slash="true" />
       </HorizontalScroll>
     </SpacerLadder>
 
