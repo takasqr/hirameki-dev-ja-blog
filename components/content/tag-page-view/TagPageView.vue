@@ -20,7 +20,7 @@ const path = '/ja/blog/'
 
 const { data: articles } = await useAsyncData(asyncDataKey, async () => {
   const rawContent = await queryContent(withTrailingSlash(path))
-    .where({ _partial: false, tag: props.tag })
+    .where({ _partial: false, tag: { $contains: props.tag } })
     .sort({ createDate: -1 })
     .find()
 
