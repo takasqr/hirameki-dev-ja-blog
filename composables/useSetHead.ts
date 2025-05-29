@@ -98,3 +98,18 @@ export function getJournalBlogCategoryHeadParams(year: string): HeadParams {
 
   return { title, description, cover, path }
 }
+
+
+/**
+ * タグページ用の `HeadParams` オブジェクトを生成する関数。
+ * Generates the `HeadParams` object for a tag page.
+ */
+export function getTagHeadParams(tag: string): HeadParams {
+  const title = `${tag} の記事一覧`
+  const description = `${tag} の記事一覧です。`
+  // Note: This Cloudinary URL structure might be better handled by a dedicated utility if it becomes complex or reused often.
+  const cover = `'https://res.cloudinary.com/takasqr/image/upload/l_text:MPLUS1p-Black.ttf_60_bold:${tag}の記事一覧,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'`
+  const path = `/ja/blog/tag/${tag}`
+
+  return { title, description, cover, path }
+}
