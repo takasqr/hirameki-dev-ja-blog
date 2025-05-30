@@ -2,7 +2,7 @@
   <div class="prose">
     <ul class="columns-2 md:columns-3">
       <li v-for="category in visibleCategories" :key="category.name">
-        <a :href="`/ja/blog/tech/${category.name}/`">{{ category.name }} ({{ category.count }})</a>
+        <a :href="`/ja/blog/tag/${category.name}/`">{{ category.name }} ({{ category.count }})</a>
       </li>
     </ul>
 
