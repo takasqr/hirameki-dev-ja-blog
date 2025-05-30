@@ -14,7 +14,7 @@ export type Tag = {
  * const tags = await useTags('/blog')
  * // => [ { name: 'vue', count: 3 }, { name: 'nuxt', count: 2 } ]
  */
-export async function useTags(path: string = '/'): Promise<Tag[]> {
+export async function useTag(path: string = '/'): Promise<Tag[]> {
   interface Article {
     tags?: string[]
   }
