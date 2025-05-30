@@ -11,24 +11,24 @@ export type Tag = {
  * @returns {Promise<Tag[]>} - 各タグの名前と出現回数を含む配列。
  *
  * @example
- * const tags = await useTags('/blog')
+ * const tag = await useTags('/blog')
  * // => [ { name: 'vue', count: 3 }, { name: 'nuxt', count: 2 } ]
  */
 export async function useTag(path: string = '/'): Promise<Tag[]> {
   interface Article {
-    tags?: string[]
+    tag?: string[]
   }
 
   const articles = await queryContent<Article>(path)
-    .only(['tags'])
-    .where({ tags: { $exists: true } })
+    .only(['tag'])
+    .where({ tag: { $exists: true } })
     .find()
 
   const tagCounts: Record<string, number> = {}
 
   for (const article of articles) {
-    if (Array.isArray(article.tags)) {
-      for (const tag of article.tags) {
+    if (Array.isArray(article.tag)) {
+      for (const tag of article.tag) {
         tagCounts[tag] = (tagCounts[tag] || 0) + 1
       }
     }
