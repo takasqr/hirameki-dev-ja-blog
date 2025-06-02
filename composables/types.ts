@@ -21,4 +21,9 @@ export type HeadParams = {
    * ページの URL パス。OGP や canonical リンクに使用
    */
   path: string
+
+  /**
+   * このページを noindex にするかどうか（省略時は index 扱い）
+   */
+  noindex?: boolean
 };
