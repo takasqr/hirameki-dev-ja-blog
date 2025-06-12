@@ -11,6 +11,7 @@
 <script setup lang="ts">
 import Footer from '../components/custom/general/CustomFooter.vue'
 import HeaderView from '../components/custom/general/header/ja-header-view.vue'
+import { useCommonHead } from '#imports'
 
 useHead({
   htmlAttrs: {
@@ -18,4 +19,6 @@ useHead({
     prefix: 'og: https://ogp.me/ns#',
   },
 })
+
+useCommonHead()
 </script>

@@ -31,6 +31,7 @@ import WAppTemplate from 'vanilla-vue-ui/page-template/app-template/WAppTemplate
 // import { LazyTemplatePageMetaSection } from '#components'
 import Footer from '../components/custom/general/CustomFooter.vue'
 import HeaderViewTech from '../components/custom/general/header/ja-header-view.vue'
+import { useCommonHead } from '#imports'
 
 useHead({
   htmlAttrs: {
@@ -38,4 +39,6 @@ useHead({
     prefix: 'og: https://ogp.me/ns#',
   },
 })
+
+useCommonHead()
 </script>

@@ -33,7 +33,7 @@ import Footer from '../components/custom/general/CustomFooter.vue'
 import HeaderViewTech from '../components/custom/general/header/ja-header-view.vue'
 import { useArticleStructuredData } from '../composables/useArticleStructuredData'
 import { articleStructuredDataConfig } from '../composables/useArticleStructuredDataConfig'
-import { queryContent } from '#imports'
+import { queryContent, useCommonHead } from '#imports'
 import { useRoute } from 'vue-router'
 import { useHead } from '@unhead/vue'
 
@@ -53,4 +53,6 @@ useHead({
     prefix: 'og: https://ogp.me/ns#',
   }
 })
+
+useCommonHead()
 </script>

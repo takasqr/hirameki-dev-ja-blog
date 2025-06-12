@@ -33,7 +33,7 @@ import Footer from '../components/custom/general/CustomFooter.vue'
 import HeaderViewTech from '../components/custom/general/header/ja-header-view-tech.vue'
 import { useArticleStructuredData } from '../composables/useArticleStructuredData'
 import { articleStructuredDataConfig } from '../composables/useArticleStructuredDataConfig'
-import { queryContent } from '#imports'
+import { queryContent, useCommonHead } from '#imports'
 
 const route = useRoute()
 const article = await queryContent(route.fullPath)
@@ -51,4 +51,6 @@ useHead({
     prefix: 'og: https://ogp.me/ns#',
   },
 })
+
+useCommonHead()
 </script>
