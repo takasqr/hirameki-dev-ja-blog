@@ -11,8 +11,8 @@
 </template>
 
 <script setup lang="ts">
-import YearPageView from '../../../../../components/content/year-page-view/YearPageView.vue'
-import { getJournalBlogCategoryHeadParams } from '../../../../../composables/useSetHead'
+import YearPageView from '../../../../components/content/year-page-view/YearPageView.vue'
+import { getJournalBlogCategoryHeadParams } from '../../../../composables/useSetHead'
 const { year } = useRoute().params
 const yearString = year as unknown as string
 

@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-import CategoryPageView from '../../../../../components/content/category-page-view/CategoryPageView.vue'
+import CategoryPageView from '../../../../components/content/category-page-view/CategoryPageView.vue'
 
 const { category } = useRoute().params
 const categoryString = category as unknown as string

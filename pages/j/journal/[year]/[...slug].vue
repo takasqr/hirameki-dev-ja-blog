@@ -37,9 +37,9 @@
 </template>
 
 <script setup lang="ts">
-import { useSetHead } from '../../../../../composables/useSetHead'
-import ArticlesRecommended from '../../../../../components/content/articles-recommended/ArticlesRecommended.vue';
-import MyProfileCard from '../../../../../components/custom/my-profile-card/MyProfileCard.vue'
+import { useSetHead } from '../../../../composables/useSetHead'
+import ArticlesRecommended from '../../../../components/content/articles-recommended/ArticlesRecommended.vue';
+import MyProfileCard from '../../../../components/custom/my-profile-card/MyProfileCard.vue'
 import SpacerIsland from '@takasqr/tw-vue-ui/template/spacer-island/SpacerIsland.vue';
 
 definePageMeta({

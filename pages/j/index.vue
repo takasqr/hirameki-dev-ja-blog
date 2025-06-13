@@ -144,20 +144,20 @@
 </template>
 
 <script setup lang="ts">
-import ArticlesHomepage from '../../../components/content/articles-homepage/ArticlesHomepage.vue'
-import ArticlesRecently from '../../../components/content/articles-recently/ArticlesRecently.vue'
-import AdPomodoroTree from '../../../components/custom/pomodorotree/AdPomodoroTree.vue'
+import ArticlesHomepage from '../../components/content/articles-homepage/ArticlesHomepage.vue'
+import ArticlesRecently from '../../components/content/articles-recently/ArticlesRecently.vue'
+import AdPomodoroTree from '../../components/custom/pomodorotree/AdPomodoroTree.vue'
 import { useSetHead } from '#imports'
-import MyProfileCard from '../../../components/custom/my-profile-card/MyProfileCard.vue'
-import MyLibraryCarousel from '../../../components/custom/my-library-carousel/MyLibraryCarousel.vue'
+import MyProfileCard from '../../components/custom/my-profile-card/MyProfileCard.vue'
+import MyLibraryCarousel from '../../components/custom/my-library-carousel/MyLibraryCarousel.vue'
 import SpacerIsland from 'vanilla-vue-ui/template/spacer-island/WSpacerIsland.vue'
-import CategoryListSimple from '../../../components/custom/category-list-simple/CategoryListSimple.vue'
-import TagListSimple from '../../../components/custom/tag-list-simple/TagListSimple.vue'
+import CategoryListSimple from '../../components/custom/category-list-simple/CategoryListSimple.vue'
+import TagListSimple from '../../components/custom/tag-list-simple/TagListSimple.vue'
 import WSection from 'vanilla-vue-ui/template/section/WSection.vue'
 import WPageBlock from 'vanilla-vue-ui/template/page-block/WPageBlock.vue'
 import NewsLetterForm from '@takasqr/tw-vue-ui/template/news-letter-form/NewsLetterForm.vue'
-import Turnstile from '../../../components/template/turnstile/Turnstile.vue'
-import { sendLog } from '../../../utils/log/sendLog'
+import Turnstile from '../../components/template/turnstile/Turnstile.vue'
+import { sendLog } from '../../utils/log/sendLog'
 
 const route = useRoute()
 const lang = 'ja'

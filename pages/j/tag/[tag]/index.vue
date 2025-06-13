@@ -11,8 +11,8 @@
 </template>
 
 <script setup lang="ts">
-import TagPageView from '../../../../../components/content/tag-page-view/TagPageView.vue'
-import { getTagHeadParams } from '../../../../../composables/useSetHead'
+import TagPageView from '../../../../components/content/tag-page-view/TagPageView.vue'
+import { getTagHeadParams } from '../../../../composables/useSetHead'
 
 const { tag } = useRoute().params
 const tagString = tag as unknown as string
