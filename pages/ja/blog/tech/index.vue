@@ -26,7 +26,7 @@ import { getNextPage, getPreviousPage } from '../../../../utils/pagination'
 
 definePageMeta({
   layout: 'ja-blog-default',
-  middleware: ['trailing-slash'],
+  middleware: ['trailing-slash', 'redirect-router'],
 })
 
 const route = useRoute()

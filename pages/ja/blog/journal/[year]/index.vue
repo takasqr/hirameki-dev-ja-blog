@@ -19,7 +19,7 @@ const yearString = year as unknown as string
 
 definePageMeta({
   layout: 'ja-blog-default',
-  middleware: ['trailing-slash']
+  middleware: ['trailing-slash', 'redirect-router']
 })
 
 useSetHead(getJournalBlogCategoryHeadParams(yearString))

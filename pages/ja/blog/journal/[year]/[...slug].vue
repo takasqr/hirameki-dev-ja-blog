@@ -44,7 +44,7 @@ import SpacerIsland from '@takasqr/tw-vue-ui/template/spacer-island/SpacerIsland
 
 definePageMeta({
   layout: 'ja-article',
-  middleware: ['trailing-slash']
+  middleware: ['trailing-slash', 'redirect-router']
 })
 
 const route = useRoute()
