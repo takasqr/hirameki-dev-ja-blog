@@ -1,13 +1,15 @@
+// @vitest-environment nuxt
 import { describe, it, expect } from 'vitest'
-import { mount } from '@vue/test-utils'
-import PrimaryButton from './PrimaryButton.vue'; // コンポーネントのパスを適切に設定してください
+import { mountSuspended } from '@nuxt/test-utils/runtime'
+import PrimaryButton from './PrimaryButton.vue';
 
 describe('PrimaryButton', () => {
-  it('renders correctly', () => {
-    const wrapper = mount(PrimaryButton, {
+  it('renders correctly', async () => {
+    const wrapper = await mountSuspended(PrimaryButton, {
       slots: {
         default: 'Click Me'
-      }
+      },
+      route: '/test'
     });
 
     expect(wrapper.html()).toContain('Click Me');
