@@ -1,39 +1,41 @@
-// Divider.spec.ts
+// @vitest-environment nuxt
 import { describe, it, expect } from 'vitest';
-import { mount } from '@vue/test-utils';
+import { mountSuspended } from '@nuxt/test-utils/runtime';
 import Divider from './Divider.vue';
 
-// コンポーネントのテストを記述します
 describe('Divider', () => {
-  // コンポーネントが正しくレンダリングされるかテスト
-  it('renders properly', () => {
-    const wrapper = mount(Divider);
+  it('renders properly', async () => {
+    const wrapper = await mountSuspended(Divider, {
+      route: '/test'
+    });
     expect(wrapper.exists()).toBeTruthy();
     expect(wrapper.classes()).toContain('relative');
   });
 
-  // スロットを通じて渡された内容が正しく表示されるかテスト
-  it('displays slot content', () => {
+  it('displays slot content', async () => {
     const slotContent = 'テストコンテンツ';
-    const wrapper = mount(Divider, {
+    const wrapper = await mountSuspended(Divider, {
       slots: {
-        default: slotContent,
+        default: () => slotContent,
       },
+      route: '/test'
     });
     expect(wrapper.text()).toContain(slotContent);
   });
 
-  // ボーダーのクラスが適用されているかテスト
-  it('applies border class correctly', () => {
-    const wrapper = mount(Divider);
+  it('applies border class correctly', async () => {
+    const wrapper = await mountSuspended(Divider, {
+      route: '/test'
+    });
     const border = wrapper.find('.border-t');
     expect(border.exists()).toBeTruthy();
     expect(border.classes()).toContain('border-gray-300');
   });
 
-  // テキスト色とサイズのクラスが適用されているかテスト
-  it('applies text color and size classes correctly', () => {
-    const wrapper = mount(Divider);
+  it('applies text color and size classes correctly', async () => {
+    const wrapper = await mountSuspended(Divider, {
+      route: '/test'
+    });
     const text = wrapper.find('.text-sm');
     expect(text.exists()).toBeTruthy();
     expect(text.classes()).toContain('text-gray-500');

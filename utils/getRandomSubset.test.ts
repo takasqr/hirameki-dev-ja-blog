@@ -27,9 +27,19 @@ describe('getRandomSubset', () => {
     });
   });
 
-  it('返された要素の順序が元の配列と異なることを確認する', () => {
+  it('返された要素の順序が完全にランダムであることを確認する', () => {
     const data = [1, 2, 3, 4, 5];
-    const result = getRandomSubset(data, 3);
-    expect(result).not.toEqual(data.slice(0, 3));
+    let hasRandomOrder = false;
+    
+    // 複数回テストして、少なくとも1回は異なる順序になることを確認
+    for (let i = 0; i < 10; i++) {
+      const result = getRandomSubset(data, 3);
+      if (!result.every((item, index) => item === data[index])) {
+        hasRandomOrder = true;
+        break;
+      }
+    }
+    
+    expect(hasRandomOrder).toBe(true);
   });
 });

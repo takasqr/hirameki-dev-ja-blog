@@ -1,11 +1,10 @@
-// Feed.spec.ts
+// @vitest-environment nuxt
 import { describe, it, expect, beforeEach } from 'vitest'
 import type { VueWrapper } from '@vue/test-utils';
-import { mount } from '@vue/test-utils'
+import { mountSuspended } from '@nuxt/test-utils/runtime'
 import Feed from './Feed.vue'
 import { CheckIcon, HandThumbUpIcon, UserIcon } from '@heroicons/vue/20/solid'
 
-// タイムラインのダミーデータを用意します
 const timeline = [
   {
     id: 1,
@@ -33,29 +32,26 @@ const timeline = [
 describe('Feed.vue', () => {
   let wrapper: VueWrapper
 
-  beforeEach(() => {
-    // 各テストケース実行前にコンポーネントをマウントします
-    wrapper = mount(Feed, {
+  beforeEach(async () => {
+    wrapper = await mountSuspended(Feed, {
       props: {
         timeline: timeline
-      }
+      },
+      route: '/test'
     })
   })
 
-  it('タイムラインが正しく表示されること', () => {
-    // タイムラインのイベント数が期待通りであることを検証します
+  it('タイムラインが正しく表示されること', async () => {
     const events = wrapper.findAll('li')
     expect(events).toHaveLength(timeline.length)
 
-    // 各イベントが正しくレンダリングされていることを検証します
     events.forEach((event, index) => {
       expect(event.text()).toContain(timeline[index].content)
       expect(event.text()).toContain(timeline[index].date)
     })
   })
 
-  it('各イベントに正しいアイコンと背景色が設定されていること', () => {
-    // 各イベントのアイコンと背景色を検証します
+  it('各イベントに正しいアイコンと背景色が設定されていること', async () => {
     timeline.forEach((item, index) => {
       const eventIconWrapper = wrapper.findAll('.flex.items-center')[index]
       expect(eventIconWrapper.classes()).toContain(item.iconBackground)
