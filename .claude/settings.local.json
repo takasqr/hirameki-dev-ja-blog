@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rg:*)",
+      "Bash(sed:*)",
+      "Bash(grep:*)",
+      "Bash(awk:*)",
+      "Bash(node:*)",
+      "Bash(npx tsc:*)",
+      "Bash(rm:*)",
+      "Bash(find:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(npm run test:*)",
+      "Bash(npm run:*)",
+      "Bash(npx vitest run:*)",
+      "Bash(python3:*)",
+      "Bash(ls:*)",
+      "Bash(mv:*)",
+      "Bash(echo)",
+      "Bash(mkdir:*)",
+      "Bash(timeout:*)",
+      "Bash(rg:*)",
+      "Edit(*)",
+      "Write(*)",
+      "MultiEdit(*)",
+      "Bash(npm i:*)",
+      "Bash(npm run test:unit:coverage:*)",
+      "Bash(npm run test:unit:*)",
+      "Bash(timeout 60 npm run test:unit:coverage)",
+      "Bash(true)"
+    ],
+    "deny": []
+  },
+  "auto_approve_edits": true
+}
