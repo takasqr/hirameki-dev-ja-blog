@@ -1,1 +1,1 @@
-`docs/tasks/2025/06/26`のタスクが全て`completed: true`になるまで実行して下さい。
+`docs/tasks/2025/06/27`のタスクが全て`completed: true`になるまで実行して下さい。
