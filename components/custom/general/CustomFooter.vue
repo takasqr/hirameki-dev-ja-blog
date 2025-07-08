@@ -20,13 +20,14 @@ const navigations = [
   {
     name: '開発', items: [
       { name: 'JapanJS', href: 'https://japanjs.org' },
-      { name: 'eslint-plugin-pattern-rules', href: 'https://pattern-rules.hirameki.dev/ja' },
+      { name: 'eslint-plugin-regular-expression', href: 'https://eslint.regexp.app/ja/' },
+      { name: 'hono-firebase-functions', href: 'https://github.com/takasqr/hono-firebase-functions' },
     ],
   },
   {
     name: '私について', items: [
       { name: 'プロフィール', href: '/ja/about/' },
-      { name: 'ブログ', href: '/ja/blog/' },
+      { name: 'かいがらブログ', href: '/ja/blog/' },
     ],
   },
   {
