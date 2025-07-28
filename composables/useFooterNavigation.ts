@@ -6,7 +6,7 @@ export const useFooterNavigation = () => {
       { name: 'ルーレットアプリ', href: 'https://spin.randomized.app/s/ja/' },
       { name: 'ランダムアプリ', href: 'https://randomized.app/n/ja/' },
       { name: 'ヒエログリフズ', href: 'https://hieroglyphs.dev/z/ja/' },
-      { name: 'ひらめき開発', href: '/https://hirameki.dev/ja/' },
+      { name: 'ひらめき開発', href: 'https://hirameki.dev/ja/' },
       { name: 'モールスコードクラウド', href: 'https://morsecode.cloud/b/ja/' },
       { name: '正規表現チェッカー', href: 'https://regexp.app/c/ja/' },
     ],
@@ -32,5 +32,5 @@ export const useFooterNavigation = () => {
   },
 ]
 
-  return { navigations }
+  return navigations
 }
