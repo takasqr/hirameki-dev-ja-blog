@@ -9,7 +9,7 @@ import type { Article } from '../../../components/types/Article';
 
 // 非同期データ取得のための一意のキーを作成
 const asyncDataKey = `tech-articles-homepage`
-const path = '/ja/blog/'
+const path = '/p/'
 
 const { data: articles } = await useAsyncData(asyncDataKey, async () => {
   const rawContent = await queryContent(withTrailingSlash(path))
