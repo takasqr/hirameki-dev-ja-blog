@@ -43,10 +43,14 @@ export default defineNuxtConfig({
 
   $meta: {
     name: 'blg'
-  }
+  },
   // storybook: {
   //   url: 'http://localhost:6006',
   //   storybookRoute: '/__storybook__',
   //   port: 6006,
   // },
+  extends: [
+    'github:takasqr/nuxt-layer-common',
+    'github:takasqr/nuxt-layer-takasqr',
+  ],
 })
