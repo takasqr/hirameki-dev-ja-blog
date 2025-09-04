@@ -15,7 +15,7 @@ export function getSiteTitle(path: string): string {
     return 'hieroglyph.dev'
   }
   else if (path.startsWith('/c/ja/')) {
-    return '正規表現アプリ'
+    return '正規表現ツール'
   }
   else if (path.startsWith('/c/')) {
     return 'regexp.app'
@@ -42,7 +42,7 @@ export function getSiteTitle(path: string): string {
     return 'hirameki.dev'
   }
   else if (path.includes('/e/ja/')) {
-    return '画像ツール by もじツール'
+    return '画像ツール by hirameki.dev'
   }
   else {
     return 'もじツール by hirameki.dev'
