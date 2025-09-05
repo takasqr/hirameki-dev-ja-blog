@@ -1,9 +1,9 @@
 <template>
   <div class="not-prose">
     <SpacerLadder v-if="props.showBreadcrumb">
-      <HorizontalScroll>
+      <WHorizontalScroll>
         <w-breadcrumb :trailing-slash="true" />
-      </HorizontalScroll>
+      </WHorizontalScroll>
     </SpacerLadder>
 
     <SpacerLadder v-if="props.createDate || props.updated">
@@ -23,7 +23,7 @@
 
 <script setup lang="ts">
 import WBreadcrumb from 'vanilla-vue-ui/basic/breadcrumb/WBreadcrumb.vue'
-import HorizontalScroll from '@takasqr/tw-vue-ui/basic/horizontal-scroll/HorizontalScroll.vue'
+import WHorizontalScroll from 'vanilla-vue-ui/basic/horizontal-scroll/WHorizontalScroll.vue'
 import TweetButton from '../../../components/custom/x/TweetButton.vue'
 import { defineProps, type PropType } from 'vue'
 import SpacerLadder from '@takasqr/tw-vue-ui/template/spacer-ladder/SpacerLadder.vue'
