@@ -43,7 +43,7 @@ import { useSetHead } from '../../../../composables/useSetHead'
 // import SpacerIsland from '@takasqr/tw-vue-ui/template/spacer-island/SpacerIsland.vue';
 
 definePageMeta({
-  layout: 'ja-article-tech',
+  layout: 'ja-memo',
   middleware: ['trailing-slash'],
 })
 
