@@ -2,17 +2,17 @@ export const useFooterNavigation = () => {
   const navigations = [
   {
     name: 'Web サービス', items: [
-      { name: 'ポモドーロ・ツリー', href: 'https://pomodorotree.com/ja' },
-      { name: 'ルーレットアプリ', href: 'https://spin.randomized.app/s/ja/' },
-      { name: 'ランダムアプリ', href: 'https://randomized.app/n/ja/' },
-      { name: 'ヒエログリフズ', href: 'https://hieroglyphs.dev/z/ja/' },
       { name: 'もじツール', href: 'https://hirameki.dev/ja/' },
+      { name: 'ポモドーロ・ツリー', href: 'https://pomodorotree.com/ja' },
+      // { name: 'ルーレットアプリ', href: 'https://spin.randomized.app/s/ja/' },
+      // { name: 'ランダムアプリ', href: 'https://randomized.app/n/ja/' },
+      { name: 'ヒエログリフズ', href: 'https://hieroglyphs.dev/z/ja/' },
       { name: 'モールスコードクラウド', href: 'https://morsecode.cloud/b/ja/' },
       { name: '正規表現チェッカー', href: 'https://regexp.app/c/ja/' },
       // { name: 'もじツール', href: 'https://ja.typography.dev/' },
       { name: 'ライブプラス', href: 'https://livestreamplus.app/v/ja/' },
-      { name: '画像文字入れツール', href: 'https://canvas.hirameki.dev/e/ja/text/' },
-      { name: 'JAPANESE HIRAMEKI DEV', href: 'https://japanese.hirameki.dev/a/en/' },
+      // { name: '画像文字入れツール', href: 'https://canvas.hirameki.dev/e/ja/text/' },
+      // { name: 'JAPANESE HIRAMEKI DEV', href: 'https://japanese.hirameki.dev/a/en/' },
       // { name: 'Mdbrew', href: 'https://mdbrew.com/' },
     ],
   },
