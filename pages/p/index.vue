@@ -1,7 +1,7 @@
 <template>
   <NuxtLayout>
     <SpacerIsland>
-      <w-page-block>
+      <!-- <w-page-block>
         <w-section>
           <template #title>
             <h2>
@@ -25,32 +25,13 @@
             </div>
           </SpacerIsland>
         </w-section>
-      </w-page-block>
+      </w-page-block> -->
 
       <w-page-block>
         <w-section>
           <template #title>
             <h2>
-              Articles
-            </h2>
-          </template>
-
-          <ArticlesHomepage :path="lang" />
-
-          <div class="flex flex-1 justify-end m-2">
-            <a
-              href="/ja/blog/tech/"
-              class="text-sm font-semibold leading-6 text-gray-900"
-            >もっと読む <span aria-hidden="true">&rarr;</span></a>
-          </div>
-        </w-section>
-      </w-page-block>
-
-      <w-page-block>
-        <w-section>
-          <template #title>
-            <h2>
-              Recently
+              記事
             </h2>
           </template>
 
@@ -69,10 +50,32 @@
         <w-section>
           <template #title>
             <h2>
-              Dev
+              メモ
             </h2>
           </template>
 
+          <div class="mb-2">
+            <span class="text-gray-600">記事にするほどじゃないやつ</span>
+          </div>
+
+          <ArticleListTextOnly :articles="articlesData" />
+
+          <div class="flex flex-1 justify-end m-2">
+            <a
+              href="/p/memo/"
+              class="text-sm font-semibold leading-6 text-gray-900"
+            >もっと読む <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </w-section>
+      </w-page-block>
+
+      <w-page-block>
+        <w-section>
+          <template #title>
+            <h2>
+              Dev
+            </h2>
+          </template>
 
           <div class="mb-2">
             <span class="text-gray-600">ライブラリ作りました＼(^o^)／</span>
@@ -105,11 +108,11 @@
         </w-section>
       </w-page-block>
 
-      <w-page-block class="bg-gray-50">
+      <!-- <w-page-block class="bg-gray-50">
         <w-section>
           <AdPomodoroTree />
         </w-section>
-      </w-page-block>
+      </w-page-block> -->
 
       <w-page-block>
         <w-section>
@@ -139,6 +142,25 @@
           </NewsLetterForm>
         </w-section>
       <!-- </w-page-block> -->
+
+      <w-page-block>
+        <w-section>
+          <template #title>
+            <h2>
+              読まれている
+            </h2>
+          </template>
+
+          <ArticlesHomepage :path="lang" />
+
+          <div class="flex flex-1 justify-end m-2">
+            <a
+              href="/ja/blog/tech/"
+              class="text-sm font-semibold leading-6 text-gray-900"
+            >もっと読む <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </w-section>
+      </w-page-block>
     </SpacerIsland>
   </NuxtLayout>
 </template>
@@ -146,7 +168,7 @@
 <script setup lang="ts">
 import ArticlesHomepage from '../../components/content/articles-homepage/ArticlesHomepage.vue'
 import ArticlesRecently from '../../components/content/articles-recently/ArticlesRecently.vue'
-import AdPomodoroTree from '../../components/custom/pomodorotree/AdPomodoroTree.vue'
+// import AdPomodoroTree from '../../components/custom/pomodorotree/AdPomodoroTree.vue'
 import { useSetHead } from '#imports'
 import MyProfileCard from '../../components/custom/my-profile-card/MyProfileCard.vue'
 import MyLibraryCarousel from '../../components/custom/my-library-carousel/MyLibraryCarousel.vue'
@@ -158,6 +180,9 @@ import WPageBlock from 'vanilla-vue-ui/template/page-block/WPageBlock.vue'
 import NewsLetterForm from '@takasqr/tw-vue-ui/template/news-letter-form/NewsLetterForm.vue'
 import Turnstile from '../../components/template/turnstile/Turnstile.vue'
 import { sendLog } from '../../utils/log/sendLog'
+import ArticleListTextOnly from '../../components/content/article-list/ArticleListTextOnly.vue';
+import { withTrailingSlash } from 'ufo'
+import type { Article } from '../../components/types/Article';
 
 const route = useRoute()
 const lang = 'ja'
@@ -203,4 +228,27 @@ useSetHead({
   cover: 'https://asset.hirameki.dev/img%2Fblog%2Fogp_image.webp?alt=media',
   path: route.path,
 })
+
+// memo
+// 非同期データ取得のための一意のキーを作成
+const asyncDataKey = `memo-all`
+const path = '/p/memo/'
+const perPage = 6
+
+const { data: articles } = await useAsyncData(asyncDataKey, async () => {
+  const rawContent = await queryContent(withTrailingSlash(path))
+    .where({ _partial: false })
+    .limit(perPage)
+    .sort({ createDate: -1 })
+    .find()
+
+  // ParsedContent を Article にマッピング
+  return rawContent.map(content => ({
+    _path: content._path,
+    title: content.title,
+    createDate: content.createDate,
+  }) as unknown as Article)
+})
+
+const articlesData = articles.value ?? []
 </script>
