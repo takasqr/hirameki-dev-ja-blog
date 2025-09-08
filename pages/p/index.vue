@@ -35,6 +35,10 @@
             </h2>
           </template>
 
+          <div class="mb-2">
+            <span class="text-gray-600">新しい記事です</span>
+          </div>
+
           <ArticlesRecently :path="lang" />
 
           <div class="flex flex-1 justify-end m-2">
