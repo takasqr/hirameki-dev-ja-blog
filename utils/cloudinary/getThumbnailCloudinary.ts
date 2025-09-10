@@ -12,7 +12,7 @@ function getThumbnailCloudinary(url: string): string {
   const lastSlashIndex = urlWithoutVersion.lastIndexOf('/');
   if (lastSlashIndex === -1) return urlWithoutVersion; // スラッシュがない場合はそのまま返す
 
-  const newWidth = 350
+  const newWidth = 250
 
   return (
     urlWithoutVersion.slice(0, lastSlashIndex) +
