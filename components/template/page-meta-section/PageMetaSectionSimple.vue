@@ -6,12 +6,19 @@
         <span v-if="props.updated" class="ml-2">更新日: <time :datetime="props.updated.replace(/\//g, '-')">{{ props.updated.replace(/\//g, '-') }}</time></span>
       </div>
     </SpacerLadder>
+
+    <SpacerLadder>
+      <div class="">
+        <TweetButton />
+      </div>
+    </SpacerLadder>
   </div>
 </template>
 
 <script setup lang="ts">
 import { defineProps, type PropType } from 'vue'
 import SpacerLadder from '@takasqr/tw-vue-ui/template/spacer-ladder/SpacerLadder.vue'
+import TweetButton from '~/components/custom/x/TweetButton.vue'
 
 const props = defineProps({
   createDate: {

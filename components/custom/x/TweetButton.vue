@@ -1,25 +1,34 @@
 <template>
-  <a
-    href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-    class="twitter-share-button"
-    data-show-count="false"
-  >
-    Tweet
-  </a>
-  <!-- <script
-   async src="https://platform.twitter.com/widgets.js"
-   charset="utf-8">
-  </script> -->
+  <XShareButton :url="shareUrl" />
 </template>
 
-<script setup>
-import { onMounted } from 'vue'
+<script setup lang="ts">
+import { ref, computed, onMounted } from 'vue'
+import XShareButton from '@takasqr/tw-vue-ui/custom/x-share-button/XShareButton.vue'
+
+const route = useRoute()
+const reqURL = useRequestURL()
+
+// ページの絶対URL
+const pageUrl = computed(() => `${reqURL.origin}${route.fullPath}`)
+
+// ページタイトル（<head><title> を優先）
+const pageTitle = ref('')
 
 onMounted(() => {
-  const script = document.createElement('script')
-  script.src = 'https://platform.twitter.com/widgets.js'
-  script.async = true
-  script.charset = 'utf-8'
-  document.head.appendChild(script)
+  // SSRではdocumentが無いので、クライアント側で補完
+  if (typeof document !== 'undefined') {
+    pageTitle.value = document.title || (route.meta?.title as string) || (route.name?.toString() ?? '')
+  }
+})
+
+// Twitter Intent のURLを合成
+const shareUrl = computed(() => {
+  const base = 'https://x.com/intent/tweet'
+  const query = new URLSearchParams({
+    text: pageTitle.value,
+    url: pageUrl.value,
+  })
+  return `${base}?${query.toString()}`
 })
 </script>
