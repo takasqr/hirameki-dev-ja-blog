@@ -63,6 +63,6 @@
     "pinia": "^2.2.4",
     "three": "^0.169.0",
     "ufo": "^1.5.4",
-    "vanilla-vue-ui": "^0.0.17"
+    "vanilla-vue-ui": "^0.0.18"
   }
 }
