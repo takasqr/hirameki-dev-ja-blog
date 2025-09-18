@@ -30,7 +30,7 @@ const redirectRules = [
   },
   {
     pattern: '^/ja/blog/(.*)$',
-    redirect: '/j/$1',
+    redirect: '/p/$1',
   },
   {
     pattern: '^/ja/morse-code/morse-code-converter/$',
