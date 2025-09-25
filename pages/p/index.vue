@@ -147,7 +147,7 @@
         </w-section>
       <!-- </w-page-block> -->
 
-      <w-page-block>
+      <!-- <w-page-block>
         <w-section>
           <template #title>
             <h2>
@@ -164,7 +164,7 @@
             >もっと読む <span aria-hidden="true">&rarr;</span></a>
           </div>
         </w-section>
-      </w-page-block>
+      </w-page-block> -->
     </SpacerIsland>
   </NuxtLayout>
 </template>
