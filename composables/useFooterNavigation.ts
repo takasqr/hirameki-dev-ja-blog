@@ -10,7 +10,7 @@ export const useFooterNavigation = () => {
       // { name: 'モールスコードクラウド', href: 'https://morsecode.cloud/b/ja/' },
       { name: '正規表現チェッカー', href: 'https://regexp.app/c/ja/' },
       // { name: 'もじツール', href: 'https://ja.typography.dev/' },
-      { name: 'ライブプラス', href: 'https://livestreamplus.app/v/ja/' },
+      // { name: 'ライブプラス', href: 'https://livestreamplus.app/v/ja/' },
       // { name: '画像文字入れツール', href: 'https://canvas.hirameki.dev/e/ja/text/' },
       // { name: 'JAPANESE HIRAMEKI DEV', href: 'https://japanese.hirameki.dev/a/en/' },
       // { name: 'Mdbrew', href: 'https://mdbrew.com/' },
