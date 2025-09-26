@@ -48,4 +48,10 @@ describe('encodeImageUrl', () => {
     const expectedUrl = `https://asset.hirameki.dev/img%2Fblog%2Fjournal%2F2025%2F20250425%2F20250425_010.webp?alt=media`
     expect(encodeImageUrl(url)).toBe(expectedUrl)
   })
+
+  it('一部エンコードされているURL', () => {
+    const url = 'https://image.hirameki.dev/takasqr/image/upload/l_dylagecz4vyaeo3xqcdx/l_text:MPLUS1p-Black.ttf_100_bold:明朝体%0A変換ツール,co_rgb:374151,w_620,c_fit/v1712091289/ogp_serif_ja_atc1zt'
+    const expectedUrl = `https://image.hirameki.dev/takasqr/image/upload/l_dylagecz4vyaeo3xqcdx/l_text:MPLUS1p-Black.ttf_100_bold:%E6%98%8E%E6%9C%9D%E4%BD%93%0A%E5%A4%89%E6%8F%9B%E3%83%84%E3%83%BC%E3%83%AB,co_rgb:374151,w_620,c_fit/v1712091289/ogp_serif_ja_atc1zt`
+    expect(encodeImageUrl(url)).toBe(expectedUrl)
+  })
 })
