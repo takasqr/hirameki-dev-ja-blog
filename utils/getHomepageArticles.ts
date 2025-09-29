@@ -11,7 +11,7 @@ import { withTrailingSlash } from 'ufo'
  */
 function getHomepageArticles(): Promise<Article[]> {
   const asyncDataKey = `tech-articles-homepage`
-  const path = '/p/'
+  const path = '/ja/blog/'
 
   return useAsyncData(asyncDataKey, async () => {
     const rawContent = await queryContent(withTrailingSlash(path))

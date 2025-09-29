@@ -9,7 +9,7 @@
           <div class="flex items-center justify-between pt-6 pb-2 px-4 md:px-0">
             <div class="flex lg:flex-1">
               <a
-                href="/p/"
+                href="/ja/blog/"
                 class="-m-1.5 p-1.5"
               >
                 <span class="sr-only">hirameki.dev</span>
@@ -51,7 +51,7 @@
           </div>
 
           <!-- <div class="px-4 md:px-0 prose">
-            <a href="/p/journal">9年間毎日プログラミングした話</a>
+            <a href="/ja/blog/journal">9年間毎日プログラミングした話</a>
           </div> -->
         </div>
       </nav>
