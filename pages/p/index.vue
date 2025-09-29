@@ -9,7 +9,7 @@
             </h2>
           </template>
 
-          <img src="/img/ja/blog/header-image-2.webp">
+          <img src="/img/p/header-image-2.webp">
         </w-section>
         <w-section>
           <SpacerIsland>
