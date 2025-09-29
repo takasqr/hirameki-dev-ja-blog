@@ -6,6 +6,6 @@ export const articleStructuredDataConfig = {
     authorName: 'かい(@takasqr)',
     publisherName: 'かいがらブログ',
     publisherLogoUrl: 'https://hirameki.dev/かいがらブログ.webp',
-    siteUrl: 'https://hirameki.dev/ja/blog/',
+    siteUrl: 'https://hirameki.dev/p/',
   },
 }

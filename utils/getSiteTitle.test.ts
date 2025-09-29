@@ -4,9 +4,9 @@ import { getSiteTitle } from './getSiteTitle';
 describe('getSiteTitle', () => {
   it('ja/blog パスの場合、かいがらブログを返す', () => {
     expect(getSiteTitle('/ja/blog')).toBe('かいがらブログ');
-    expect(getSiteTitle('/ja/blog/tech')).toBe('かいがらブログ');
-    expect(getSiteTitle('/ja/blog/journal')).toBe('かいがらブログ');
-    expect(getSiteTitle('/ja/blog/tech/category')).toBe('かいがらブログ');
+    expect(getSiteTitle('/p/tech')).toBe('かいがらブログ');
+    expect(getSiteTitle('/p/journal')).toBe('かいがらブログ');
+    expect(getSiteTitle('/p/tech/category')).toBe('かいがらブログ');
   });
 
   it('en パスの場合、hirameki.devを返す', () => {

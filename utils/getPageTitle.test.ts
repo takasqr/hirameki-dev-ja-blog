@@ -15,7 +15,7 @@ describe('getPageTitle', () => {
   });
 
   it('異なるパスで正しく動作する', () => {
-    expect(getPageTitle('テスト', '/ja/blog/tech')).toBe('テスト | かいがらブログ');
+    expect(getPageTitle('テスト', '/p/tech')).toBe('テスト | かいがらブログ');
     expect(getPageTitle('Test', '/en/about')).toBe('Test | hirameki.dev');
     expect(getPageTitle('テスト', '/contact')).toBe('テスト | ひらめき開発');
   });
