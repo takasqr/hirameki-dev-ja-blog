@@ -27,7 +27,7 @@
         </w-section>
       </w-page-block> -->
 
-      <w-page-block>
+      <w-page-block class="bg-gray-50">
         <w-section>
           <template #title>
             <h2>
