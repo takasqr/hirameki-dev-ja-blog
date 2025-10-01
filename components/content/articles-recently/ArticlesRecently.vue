@@ -9,10 +9,13 @@ import type { Article } from '../../../components/types/Article'
 
 // 非同期データ取得のための一意のキーを作成
 const asyncDataKey = `tech-articles-recently`
-const path = '/ja/blog/'
+const path = '/p/'
 
 const { data: articles } = await useAsyncData(asyncDataKey, async () => {
   const rawContent = await queryContent(withTrailingSlash(path))
+    .where({
+      _path: { $not: /^\/p\/memo/ },
+    })
     .sort({ createDate: -1 })
     .limit(8)
     .find()
