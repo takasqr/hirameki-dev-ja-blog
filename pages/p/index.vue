@@ -88,7 +88,7 @@
         </w-section>
       </w-page-block>
       
-      <w-page-block>
+      <w-page-block class="bg-gray-100">
         <w-section>
           <template #title>
             <h2>
@@ -100,7 +100,7 @@
         </w-section>
       </w-page-block>
 
-      <w-page-block>
+      <w-page-block class="bg-gray-50">
         <w-section>
           <template #title>
             <h2>
