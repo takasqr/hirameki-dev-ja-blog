@@ -42,9 +42,9 @@ export function getSiteTitle(path: string): string {
     return 'hirameki.dev'
   }
   else if (path.includes('/e/ja/')) {
-    return '画像ツール by hirameki.dev'
+    return 'hirameki.dev'
   }
   else {
-    return 'もじツール by hirameki.dev'
+    return 'hirameki.dev'
   }
 }
