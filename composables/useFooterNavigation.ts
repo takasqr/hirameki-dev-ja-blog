@@ -2,7 +2,7 @@ export const useFooterNavigation = () => {
   const navigations = [
   {
     name: 'Web サービス', items: [
-      { name: 'もじツール', href: 'https://hirameki.dev/ja/' },
+      { name: 'hirameki.dev', href: 'https://hirameki.dev/ja/' },
       { name: 'ポモドーロ・ツリー', href: 'https://pomodorotree.com/ja' },
       // { name: 'ルーレットアプリ', href: 'https://spin.randomized.app/s/ja/' },
       // { name: 'ランダムアプリ', href: 'https://randomized.app/n/ja/' },
@@ -44,7 +44,7 @@ export const useFooterNavigation = () => {
     name: '私について', items: [
       { name: 'プロフィール', href: 'https://hirameki.dev/ja/about/' },
       { name: 'かいがらブログ', href: 'https://kaigara.blog/p/' },
-      { name: 'CodeDrip', href: 'https://codedrip.app/' }
+      // { name: 'CodeDrip', href: 'https://codedrip.app/' }
     ],
   },
   {
