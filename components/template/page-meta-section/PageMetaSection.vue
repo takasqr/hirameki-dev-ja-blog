@@ -1,7 +1,7 @@
 <template>
   <div class="not-prose">
     <SpacerLadder v-if="props.showBreadcrumb">
-      <WHorizontalScroll>
+      <WHorizontalScroll :scrollbar-width="'none'">
         <w-breadcrumb :trailing-slash="true" />
       </WHorizontalScroll>
     </SpacerLadder>
