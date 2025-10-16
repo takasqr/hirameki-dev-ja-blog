@@ -34,7 +34,7 @@ const page = Number(route.query.page ? String(route.query.page) : '1')
 
 // 非同期データ取得のための一意のキーを作成
 const asyncDataKey = `tech-articles-all`
-const path = '/ja/blog/'
+const path = '/p/'
 const perPage = 12
 const totalPostCount = await useTotalPostCount(path)
 
@@ -70,7 +70,7 @@ function getPagePath(pageNumber: number | null): string | null {
   if (pageNumber == null) {
     return null
   } else {
-    return `/ja/blog/tech/?page=${pageNumber}`
+    return `/p/tech/?page=${pageNumber}`
   }
 }
 

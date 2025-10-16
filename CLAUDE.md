@@ -47,7 +47,7 @@
 - 該当する場合はユニットテスト
 
 ### コンテンツ管理
-- **ブログコンテンツ**: `content/ja/blog/` 内のmarkdownファイル
+- **ブログコンテンツ**: `content/p/` 内のmarkdownファイル
 - **構造**: 技術記事用の `tech/`、日記エントリー用の `journal/`
 - **メタデータ**: 記事設定にfrontmatterを使用
 - `@nuxt/content` モジュールで管理
@@ -61,7 +61,7 @@
 
 ### テスト戦略
 - **ユニットテスト**: `test/unit/` と `utils/` をターゲットにしたVitest設定
-- **E2Eテスト**: `/ja/blog/` ルートに焦点を当てたPlaywright
+- **E2Eテスト**: `/p/` ルートに焦点を当てたPlaywright
 - **コンポーネントテスト**: Vue Test Utils統合
 
 ## 主要設定

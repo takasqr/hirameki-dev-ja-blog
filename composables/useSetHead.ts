@@ -11,7 +11,7 @@ import { encodeImageUrl } from "../utils/url"
  * @param {string} params.title - ページの基本タイトル / Base title for the page.
  * @param {string} params.description - ページの説明 / Description of the page.
  * @param {string} params.cover - カバー画像のURL (OGP画像などに使用) / URL of the cover image (used for OGP image, etc.).
- * @param {string} params.path - ページのパス (例: '/ja/blog/article-slug') / Path of the page (e.g., '/ja/blog/article-slug').
+ * @param {string} params.path - ページのパス (例: '/p/article-slug') / Path of the page (e.g., '/p/article-slug').
  * @throws {Error} `title` パラメータが未定義の場合にエラーをスロー / Throws an error if the `title` parameter is undefined.
  */
 export function useSetHead({ title, description, cover, path, noindex }: HeadParams) {
@@ -40,7 +40,7 @@ export function useSetHead({ title, description, cover, path, noindex }: HeadPar
  * @param {string} params.title - ページの基本タイトル / Base title for the page.
  * @param {string} params.description - ページの説明 / Description of the page.
  * @param {string} params.cover - カバー画像のURL (OGP画像などに使用) / URL of the cover image (used for OGP image, etc.).
- * @param {string} params.path - ページのパス (例: '/ja/blog/article-slug') / Path of the page (e.g., '/ja/blog/article-slug').
+ * @param {string} params.path - ページのパス (例: '/p/article-slug') / Path of the page (e.g., '/p/article-slug').
  * @throws {Error} `title` パラメータが未定義の場合にエラーをスロー / Throws an error if the `title` parameter is undefined.
  */
 export function setHead({ title, description, cover, path, noindex }: HeadParams) {
@@ -106,7 +106,7 @@ export function getTechBlogCategoryHeadParams(category: string): HeadParams {
   const description = `${category} の記事一覧です。`
   // Note: This Cloudinary URL structure might be better handled by a dedicated utility if it becomes complex or reused often.
   const cover = `'https://res.cloudinary.com/takasqr/image/upload/l_text:MPLUS1p-Black.ttf_60_bold:${category}の記事一覧,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'`
-  const path = `/ja/blog/tech/${category}`
+  const path = `/p/tech/${category}`
 
   return { title, description, cover, path }
 }
@@ -123,7 +123,7 @@ export function getJournalBlogCategoryHeadParams(year: string): HeadParams {
   const description = `${year} 年の記事一覧です。`
   // Note: This Cloudinary URL structure might be better handled by a dedicated utility if it becomes complex or reused often.
   const cover = `'https://res.cloudinary.com/takasqr/image/upload/l_text:MPLUS1p-Black.ttf_60_bold:${year}年の記事一覧,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'`
-  const path = `/ja/blog/journal/${year}`
+  const path = `/p/journal/${year}`
 
   return { title, description, cover, path }
 }
@@ -138,7 +138,7 @@ export function getTagHeadParams(tag: string): HeadParams {
   const description = `${tag} の記事一覧です。`
   // Note: This Cloudinary URL structure might be better handled by a dedicated utility if it becomes complex or reused often.
   const cover = `'https://res.cloudinary.com/takasqr/image/upload/l_text:MPLUS1p-Black.ttf_60_bold:${tag}の記事一覧,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'`
-  const path = `/ja/blog/tag/${tag}`
+  const path = `/p/tag/${tag}`
 
   return { title, description, cover, path }
 }

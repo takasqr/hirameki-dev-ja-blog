@@ -13,7 +13,7 @@ describe('articleStructuredDataConfig', () => {
     expect(common.authorName).toBe('かい(@takasqr)');
     expect(common.publisherName).toBe('かいがらブログ');
     expect(common.publisherLogoUrl).toBe('https://hirameki.dev/かいがらブログ.webp');
-    expect(common.siteUrl).toBe('https://hirameki.dev/ja/blog/');
+    expect(common.siteUrl).toBe('https://hirameki.dev/p/');
   });
 
   it('URLが正しい形式である', () => {

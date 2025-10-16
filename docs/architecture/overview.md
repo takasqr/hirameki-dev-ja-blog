@@ -69,7 +69,7 @@ components/
 ### @nuxt/content 統合
 
 ```
-content/ja/blog/
+content/p/
 ├── tech/           # 技術記事
 │   ├── nuxtjs/
 │   ├── vuejs/

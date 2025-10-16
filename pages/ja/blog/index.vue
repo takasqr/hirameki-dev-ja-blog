@@ -9,7 +9,7 @@
             </h2>
           </template>
 
-          <img src="/img/ja/blog/header-image-2.webp">
+          <img src="/img/p/header-image-2.webp">
         </w-section>
         <w-section>
           <SpacerIsland>
@@ -19,7 +19,7 @@
 
             <div class="flex flex-1 justify-end m-2">
               <a
-                href="/ja/blog/journal/2025/20250513_about-this-blog/"
+                href="/p/journal/2025/20250513_about-this-blog/"
                 class="text-sm font-semibold leading-6 text-gray-900"
               >このブログについて <span aria-hidden="true">&rarr;</span></a>
             </div>
@@ -39,7 +39,7 @@
 
           <div class="flex flex-1 justify-end m-2">
             <a
-              href="/ja/blog/tech/"
+              href="/p/tech/"
               class="text-sm font-semibold leading-6 text-gray-900"
             >もっと読む <span aria-hidden="true">&rarr;</span></a>
           </div>
@@ -58,7 +58,7 @@
 
           <div class="flex flex-1 justify-end m-2">
             <a
-              href="/ja/blog/tech/"
+              href="/p/tech/"
               class="text-sm font-semibold leading-6 text-gray-900"
             >もっと読む <span aria-hidden="true">&rarr;</span></a>
           </div>

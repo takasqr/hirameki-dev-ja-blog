@@ -3,10 +3,10 @@ import { getSiteTitle } from './getSiteTitle';
 
 describe('getSiteTitle', () => {
   it('ja/blog パスの場合、かいがらブログを返す', () => {
-    expect(getSiteTitle('/ja/blog')).toBe('かいがらブログ');
-    expect(getSiteTitle('/ja/blog/tech')).toBe('かいがらブログ');
-    expect(getSiteTitle('/ja/blog/journal')).toBe('かいがらブログ');
-    expect(getSiteTitle('/ja/blog/tech/category')).toBe('かいがらブログ');
+    expect(getSiteTitle('/p/')).toBe('かいがらブログ');
+    expect(getSiteTitle('/p/tech')).toBe('かいがらブログ');
+    expect(getSiteTitle('/p/journal')).toBe('かいがらブログ');
+    expect(getSiteTitle('/p/tech/category')).toBe('かいがらブログ');
   });
 
   it('en パスの場合、hirameki.devを返す', () => {
@@ -27,7 +27,7 @@ describe('getSiteTitle', () => {
   });
 
   it('大文字小文字を区別する（実装に合わせて修正）', () => {
-    expect(getSiteTitle('/JA/BLOG')).toBe('ひらめき開発'); // 大文字は含まれていないので
+    expect(getSiteTitle('/P/')).toBe('ひらめき開発'); // 大文字は含まれていないので
     expect(getSiteTitle('/EN/')).toBe('ひらめき開発'); // 大文字は含まれていないので
   });
 });

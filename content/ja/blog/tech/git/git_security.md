@@ -29,7 +29,7 @@ Git には ID やパスワードなどの機密情報を含めないで管理し
 
 `.gitignore`の使い方はこのブログでも紹介しています。
 
-[【2022年版】.gitignoreの書き方を6パターン紹介](/ja/blog/tech/git/git_gitignore)
+[【2022年版】.gitignoreの書き方を6パターン紹介](/p/tech/git/git_gitignore)
 
 ## pre-commti
 
