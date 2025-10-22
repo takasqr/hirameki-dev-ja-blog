@@ -6,21 +6,26 @@ const currentDir = dirname(fileURLToPath(import.meta.url))
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+
   modules: [
     "@nuxt/content",
     // "@nuxtjs/storybook",
     "@pinia/nuxt",
   ],
+
   css: ['./assets/css/main.css'],
+
   alias: {
     '@blog-utils': join(currentDir, './utils')
   },
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+
   // @ts-ignore
   content: {
     contentHead: false,
@@ -44,6 +49,7 @@ export default defineNuxtConfig({
   $meta: {
     name: 'blg'
   },
+
   // storybook: {
   //   url: 'http://localhost:6006',
   //   storybookRoute: '/__storybook__',
@@ -53,4 +59,6 @@ export default defineNuxtConfig({
     'github:takasqr/nuxt-layer-common',
     'github:takasqr/nuxt-layer-takasqr',
   ],
+
+  compatibilityDate: '2025-10-16',
 })
