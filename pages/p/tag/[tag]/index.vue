@@ -19,7 +19,7 @@ const tagString = tag as unknown as string
 
 definePageMeta({
   layout: 'ja-blog-default',
-  middleware: ['trailing-slash']
+  middleware: ['trailing-slash', 'redirect-router'],
 })
 
 useSetHead(getTagHeadParams(tagString))
