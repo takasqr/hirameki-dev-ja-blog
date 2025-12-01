@@ -4,9 +4,9 @@
 
     <!-- <br class="md:hidden"> -->
 
-    <span class="mr-1">by</span>
+    <!-- <span class="mr-1">by</span> -->
 
-    <a href="/ja/">
+    <!-- <a href="/ja/">
       <img
         class="h-4 w-auto m-0 align-middle inline"
         src="/logo/hirameki.dev.webp"
@@ -14,7 +14,12 @@
         width="339"
         height="44"
       >
-    </a>
+    </a> -->
+
+    <a
+      class="underline font-medium ml-2"
+      href="/ja/blog/tag/半年チャレンジ/"
+    >半年チャレンジ途中経過はこちら</a>
 
     <!-- <a class="underline font-medium ml-2" href="/p/journal/">日常</a> -->
     <!-- <a class="underline font-medium ml-2" href="/p/tech/">開発</a> -->
