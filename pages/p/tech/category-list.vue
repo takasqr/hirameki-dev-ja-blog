@@ -18,7 +18,7 @@ import CategoryList from '../../../components/custom/category-list/CategoryList.
 
 definePageMeta({
   layout: 'ja-blog-default',
-  middleware: ['trailing-slash'],
+  middleware: ['trailing-slash', 'redirect-router'],
 })
 
 </script>

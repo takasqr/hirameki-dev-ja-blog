@@ -198,7 +198,7 @@ const siteKey = runtimeConfig.public.TURNSTILE_SITE_KEY as string | undefined
 
 definePageMeta({
   layout: 'ja-blog-home',
-  middleware: ['trailing-slash'],
+  middleware: ['trailing-slash', 'redirect-router'],
 })
 
 function handleSubmit(email: string) {

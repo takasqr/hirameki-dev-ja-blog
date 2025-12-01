@@ -26,7 +26,7 @@ import Pagination from '@takasqr/tw-vue-ui/basic/pagination/Pagination.vue'
 
 definePageMeta({
   layout: 'ja-memo',
-  middleware: ['trailing-slash'],
+  middleware: ['trailing-slash', 'redirect-router'],
 })
 
 const route = useRoute()
