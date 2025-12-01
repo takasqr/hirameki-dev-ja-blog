@@ -15,7 +15,7 @@ homepage: true
 
 カナ変換、都道府県の一覧データなど、日本特有のめんどくさい実装を肩代わりするライブラリを作りました。
 
-[JapanJS](https://japanjs.org)
+[JapanJS](https://github.com/japanjsorg/japanjs)
 
 ::self-introduction
 ::

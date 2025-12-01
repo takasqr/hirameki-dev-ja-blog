@@ -1,6 +1,6 @@
 <template>
   <Carousel class="rounded-xl">
-    <a href="https://japanjs.org">
+    <a href="https://github.com/japanjsorg/japanjs">
       <img
         src="https://image.hirameki.dev/takasqr/image/upload/l_dylagecz4vyaeo3xqcdx/l_text:MPLUS1p-Black.ttf_100_bold:JapanJS%0A日本関連%0A便利ツール,co_rgb:374151,w_620,c_fit/v1712091289/ttpfb67cwdp2pwjes6pw.png"
         alt="JapanJS"
