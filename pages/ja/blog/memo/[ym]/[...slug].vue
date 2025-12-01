@@ -21,7 +21,7 @@
 
 <script setup lang="ts">
 import { withTrailingSlash } from 'ufo'
-import { useSetHead } from '../../../../composables/useSetHead'
+import { useSetHead } from '../../../../../composables/useSetHead'
 import Pagination from '@takasqr/tw-vue-ui/basic/pagination/Pagination.vue'
 
 definePageMeta({

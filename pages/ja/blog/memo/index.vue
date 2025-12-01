@@ -18,12 +18,12 @@
 
 <script setup lang="ts">
 import { withTrailingSlash } from 'ufo'
-import ArticleListTextOnly from '../../../components/content/article-list/ArticleListTextOnly.vue';
-import type { Article } from '../../../components/types/Article';
+import ArticleListTextOnly from '../../../../components/content/article-list/ArticleListTextOnly.vue';
+import type { Article } from '../../../../components/types/Article';
 import Pagination from '@takasqr/tw-vue-ui/basic/pagination/Pagination.vue'
-import { useSetHead } from '../../../composables/useSetHead'
-import { useTotalPostCount } from '../../../composables/content/useTotalPostCount';
-import { getNextPage, getPreviousPage } from '../../../utils/pagination'
+import { useSetHead } from '../../../../composables/useSetHead'
+import { useTotalPostCount } from '../../../../composables/content/useTotalPostCount';
+import { getNextPage, getPreviousPage } from '../../../../utils/pagination'
 
 definePageMeta({
   layout: 'ja-blog-default',
