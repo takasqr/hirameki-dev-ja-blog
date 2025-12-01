@@ -58,7 +58,7 @@
   "dependencies": {
     "@headlessui/vue": "^1.7.23",
     "@heroicons/vue": "^2.1.5",
-    "@takasqr/tw-vue-ui": "^0.0.143",
+    "@takasqr/tw-vue-ui": "^0.0.144",
     "dayjs": "^1.11.13",
     "maath": "^0.10.8",
     "pinia": "^2.2.4",

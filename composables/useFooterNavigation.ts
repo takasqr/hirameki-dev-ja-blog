@@ -27,7 +27,7 @@ export const useFooterNavigation = () => {
   },
   {
     name: '開発ツール（JavaScript）', items: [
-      { name: 'JapanJS', href: 'https://japanjs.org' },
+      { name: 'JapanJS', href: 'https://github.com/japanjsorg/japanjs' },
       { name: 'eslint-plugin-regular-expression', href: 'https://eslint.regexp.app/ja/' },
       { name: 'hono-firebase-functions', href: 'https://github.com/takasqr/hono-firebase-functions' },
     ],
