@@ -5,30 +5,36 @@
         class=""
         aria-label="Global"
       >
-        <div class="mx-auto max-w-3xl">
+        <div class="mx-auto max-w-4xl">
           <div class="flex items-center justify-between pt-6 pb-2 px-4 md:px-0">
             <div class="flex lg:flex-1">
               <a
-                href="/p/"
+                :href="logoUrl"
                 class="-m-1.5 p-1.5"
               >
                 <span class="sr-only">hirameki.dev</span>
                 <img
                   class="h-8 w-auto rounded"
-                  src="/かいがらブログ.webp"
-                  alt=""
+                  :src="imagePath"
+                  alt="FontLogo"
                 >
               </a>
             </div>
 
             <div class="flex">
+              <div class="mx-4 flex items-center">
+                <!-- <ClientOnly>
+                  <LanguageButton />
+                </ClientOnly> -->
+              </div>
+
               <div class="flex lg:hidden">
                 <button
                   type="button"
                   class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
                   @click="mobileMenuOpen = true"
                 >
-                  <span class="sr-only">Open main menu</span>
+                  <span class="sr-only">メインメニューを開く</span>
                   <Bars3Icon
                     class="h-6 w-6"
                     aria-hidden="true"
@@ -61,13 +67,13 @@
         <DialogPanel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div class="flex items-center justify-between">
             <a
-              href="/p/"
+              :href="logoUrl"
               class="-m-1.5 p-1.5"
             >
               <span class="sr-only">hirameki.dev</span>
               <img
                 class="h-8 w-auto rounded"
-                src="/かいがらブログ.webp"
+                :src="imagePath"
                 alt=""
               >
             </a>
@@ -76,7 +82,7 @@
               class="-m-2.5 rounded-md p-2.5 text-gray-700"
               @click="mobileMenuOpen = false"
             >
-              <span class="sr-only">Close menu</span>
+              <span class="sr-only">メニューを閉じる</span>
               <XMarkIcon
                 class="h-6 w-6"
                 aria-hidden="true"
@@ -108,10 +114,12 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 import HeaderSignageMemo from '../../header-signage/HeaderSignageMemo.vue'
 
 const lang = 'ja'
+const imagePath = '/logo/hirameki.dev.webp'
+const logoUrl = '/ja/'
 
 const navigation = [
   // { name: 'ログイン', href: `https://hirameki.dev/${lang}/signin/` },
-  { name: 'お問い合わせ', href: `https://hirameki.dev/${lang}/contact/` },
+  { name: 'お問い合わせ', href: `/${lang}/contact/` },
 ]
 
 const mobileMenuOpen = ref(false)
