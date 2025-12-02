@@ -115,6 +115,8 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 import HeaderSignageBlog from '../../header-signage/HeaderSignageBlog.vue'
 
 const lang = 'ja'
+const imagePath = '/logo/HIRAMEKI.DEV.svg'
+const logoUrl = '/ja/'
 
 const navigation = [
   // { name: 'ログイン', href: `https://hirameki.dev/${lang}/signin/` },
