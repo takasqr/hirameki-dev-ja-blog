@@ -114,7 +114,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 import HeaderSignageMemo from '../../header-signage/HeaderSignageMemo.vue'
 
 const lang = 'ja'
-const imagePath = '/logo/hirameki.dev.webp'
+const imagePath = '/logo/HIRAMEKI.DEV.svg'
 const logoUrl = '/ja/'
 
 const navigation = [

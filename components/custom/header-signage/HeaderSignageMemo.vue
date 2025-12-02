@@ -8,7 +8,7 @@
     <!-- <a href="/ja/"> -->
     <img
       class="h-4 inline m-0"
-      src="/logo/hirameki.dev.webp"
+      src="/logo/HIRAMEKI.DEV.svg"
       alt="hirameki.dev"
     >
     <!-- </a> -->
