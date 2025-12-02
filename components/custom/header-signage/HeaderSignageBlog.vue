@@ -16,10 +16,11 @@
       >
     </a> -->
 
+    <span>半年チャレンジ途中経過は</span>
     <a
-      class="underline font-medium ml-2"
+      class="underline font-medium"
       href="/ja/blog/tag/半年チャレンジ/"
-    >半年チャレンジ途中経過はこちら</a>
+    >こちら</a>
 
     <!-- <a class="underline font-medium ml-2" href="/p/journal/">日常</a> -->
     <!-- <a class="underline font-medium ml-2" href="/p/tech/">開発</a> -->
