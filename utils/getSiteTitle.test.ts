@@ -2,11 +2,11 @@ import { describe, it, expect } from 'vitest';
 import { getSiteTitle } from './getSiteTitle';
 
 describe('getSiteTitle', () => {
-  it('ja/blog パスの場合、かいがらブログを返す', () => {
-    expect(getSiteTitle('/p/')).toBe('かいがらブログ');
-    expect(getSiteTitle('/p/tech')).toBe('かいがらブログ');
-    expect(getSiteTitle('/p/journal')).toBe('かいがらブログ');
-    expect(getSiteTitle('/p/tech/category')).toBe('かいがらブログ');
+  it('ja/blog パスの場合、HIRAMEKI.DEVを返す', () => {
+    expect(getSiteTitle('/p/')).toBe('HIRAMEKI.DEV');
+    expect(getSiteTitle('/p/tech')).toBe('HIRAMEKI.DEV');
+    expect(getSiteTitle('/p/journal')).toBe('HIRAMEKI.DEV');
+    expect(getSiteTitle('/p/tech/category')).toBe('HIRAMEKI.DEV');
   });
 
   it('en パスの場合、hirameki.devを返す', () => {

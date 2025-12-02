@@ -4,8 +4,8 @@
 export const articleStructuredDataConfig = {
   common: {
     authorName: 'かい(@takasqr)',
-    publisherName: 'かいがらブログ',
-    publisherLogoUrl: 'https://hirameki.dev/かいがらブログ.webp',
-    siteUrl: 'https://kaigara.blog/p/',
+    publisherName: 'HIRAMEKI.DEV',
+    publisherLogoUrl: 'https://hirameki.dev/logo/hirameki.dev.webp',
+    siteUrl: 'https://hirameki.dev/',
   },
 }

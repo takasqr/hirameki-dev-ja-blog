@@ -227,7 +227,7 @@ useHead({
 })
 
 useSetHead({
-  title: 'かいがらブログ',
+  title: 'HIRAMEKI.DEV',
   description: 'ソフトウェアエンジニアが運営するブログ。技術的な記事や思ったことを投稿します。',
   cover: 'https://asset.hirameki.dev/img%2Fblog%2Fogp_image.webp?alt=media',
   path: route.path,

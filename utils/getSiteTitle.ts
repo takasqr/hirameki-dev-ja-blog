@@ -1,6 +1,6 @@
 export function getSiteTitle(path: string): string {
   if (path.includes('/ja/blog') || path.startsWith('/p/')) {
-    return 'かいがらブログ'
+    return 'HIRAMEKI.DEV'
   }
   else if (path.startsWith('/n/ja/')) {
     return 'ランダムツール'
@@ -39,12 +39,12 @@ export function getSiteTitle(path: string): string {
     return 'Spin The Wheel'
   }
   else if (path.includes('/en/')) {
-    return 'hirameki.dev'
+    return 'HIRAMEKI.DEV'
   }
   else if (path.includes('/e/ja/')) {
-    return 'hirameki.dev'
+    return 'HIRAMEKI.DEV'
   }
   else {
-    return 'hirameki.dev'
+    return 'HIRAMEKI.DEV'
   }
 }
