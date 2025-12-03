@@ -2,7 +2,11 @@
   <div class="not-prose">
     <SpacerLadder v-if="props.showBreadcrumb">
       <WHorizontalScroll :scrollbar-width="'none'">
-        <w-breadcrumb :trailing-slash="true" />
+        <w-breadcrumb
+          :trailing-slash="true" 
+          :hide-words="['ja', 'blog', 'journal', 'tech', '2021', '2022', '2023', '2024', '2025', '2026']"
+          :classes="{ text: { base: 'ml-4 text-sm font-medium text-gray-500 hover:text-gray-700 whitespace-nowrap' } }"
+        />
       </WHorizontalScroll>
     </SpacerLadder>
 
