@@ -18,8 +18,7 @@ recommend: false
 dockerfileでvim等のテキストエディタをひらくことはできないので、ファイルを編集するためにechoを使います。
 
 
-::self-introduction
-::
+
 
 ## コード
 echoの内容をファイルに書き込むことで、編集する。

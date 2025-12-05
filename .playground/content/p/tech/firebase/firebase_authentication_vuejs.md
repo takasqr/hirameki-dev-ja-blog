@@ -22,8 +22,7 @@ FirebaseのSDKのバージョンが9に変わって実装方法が変わった�
 
 Vuetifyを使ってない人でも`script`の部分を見てもらえればわかると思います。
 
-::self-introduction
-::
+
 
 ## Firebase Authenticationとは？
 Firebase Authenticationは、一言で言うと「ログイン機能を簡単に作ることが出来るクラウドサービス」です。

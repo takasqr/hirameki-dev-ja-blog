@@ -28,8 +28,7 @@ recommend: true
 
 ただ、テストケースを大幅に減らせることはかなりのメリットになると思います。
 
-::self-introduction
-::
+
 
 ## PICT でテストケースを作る
 

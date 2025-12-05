@@ -11,8 +11,7 @@ recommend: true
 ---
 Windows でのセキュリティ対策を紹介します。
 
-::self-introduction
-::
+
 
 ## Autoruns で PC がマルウェアに感染してないか確認する
 

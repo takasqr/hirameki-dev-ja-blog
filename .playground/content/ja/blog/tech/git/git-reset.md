@@ -17,6 +17,5 @@ Git でコミットする直前の状態に戻るテクニックです。コミ�
 git reset --soft HEAD^
 ```
 
-::self-introduction
-::
+
 

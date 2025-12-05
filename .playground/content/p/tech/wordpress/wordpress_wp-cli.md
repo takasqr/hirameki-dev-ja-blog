@@ -14,8 +14,7 @@ alt: wp-cliのインストールと使い方【WordPressコマンドツール】
 
 WordPressに対する変更をLinuxのコマンドラインで行うことができるツールです。WordPressのインストールから記事の投稿まで様々なことがコマンド上でできます。
 
-::self-introduction
-::
+
 
 ## WP-CLIをインストールする
 pharファイルをダウンロードします。

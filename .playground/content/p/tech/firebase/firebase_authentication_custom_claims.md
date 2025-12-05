@@ -18,8 +18,7 @@ recommend: false
 
 といった、Authenticationのユーザーにラベルを付けたい時に`Firebase Admin SDK`のクレームを使うと便利です。
 
-::self-introduction
-::
+
 
 ## 導入
 カスタムクレームをセットする。

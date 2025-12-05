@@ -17,8 +17,7 @@ Nuxtは`create-nuxt-app`を使うことで、簡単にプロジェクトを作�
 
 今回は`create-nuxt-app`を使ってNuxtのプロジェクトを立ち上げる方法を紹介します。
 
-::self-introduction
-::
+
 
 ## Nuxtのプロジェクトを作成
 

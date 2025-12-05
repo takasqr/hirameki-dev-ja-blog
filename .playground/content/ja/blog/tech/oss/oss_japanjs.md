@@ -17,8 +17,7 @@ homepage: true
 
 [JapanJS](https://github.com/japanjsorg/japanjs)
 
-::self-introduction
-::
+
 
 ## 特徴
 

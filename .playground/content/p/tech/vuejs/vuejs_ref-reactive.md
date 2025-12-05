@@ -16,8 +16,7 @@ recommend: false
 
 `Option API`の`data`に相当します。
 
-::self-introduction
-::
+
 
 ## refとreactiveの使い方
 ### refの使い方

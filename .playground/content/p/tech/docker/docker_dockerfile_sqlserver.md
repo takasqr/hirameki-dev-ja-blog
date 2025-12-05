@@ -18,8 +18,7 @@ SQL Serverのdockerfileを作ります。
 FROM mcr.microsoft.com/mssql/server
 ```
 
-::self-introduction
-::
+
 
 ## 2. dockerfileをビルドする
 dockerfileビルドする。

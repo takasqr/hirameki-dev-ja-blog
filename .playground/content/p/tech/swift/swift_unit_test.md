@@ -52,5 +52,3 @@ class BoolExtensionTests: XCTestCase {
 
 テストコードがあると安心感があるのでいいですね。
 
-::self-introduction
-::

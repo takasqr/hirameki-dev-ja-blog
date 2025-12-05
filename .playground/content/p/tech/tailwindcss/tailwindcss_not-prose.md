@@ -33,5 +33,3 @@ Tailwind CSS Typography 便利ですよね。手っ取り早く、整ったス�
 [GitHub - tailwindlabs/tailwindcss-typography: Beautiful typographic defaults for HTML you don't control.](https://github.com/tailwindlabs/tailwindcss-typography?tab=readme-ov-file#undoing-typography-styles)
 
 
-::self-introduction
-::

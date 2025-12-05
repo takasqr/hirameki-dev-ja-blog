@@ -20,8 +20,7 @@ Vueは`vue-cli`を使うことで、簡単にプロジェクトを作成して�
 
 [https://cli.vuejs.org/](https://cli.vuejs.org/)
 
-::self-introduction
-::
+
 
 ## Vue.jsとは？
 

@@ -16,8 +16,7 @@ recommend: true
 
 今では、かなりストレスなく２つのマシンを行き来しながら作業ができるようになりました。この記事はその記録です。
 
-::self-introduction
-::
+
 
 ## Windows と Mac 両使いの課題
 

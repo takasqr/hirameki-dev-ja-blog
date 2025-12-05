@@ -10,8 +10,7 @@ alt: Linux のセキュリティ対策
 recommend: true
 ---
 
-::self-introduction
-::
+
 
 ## パーミッションを適切に設定する
 

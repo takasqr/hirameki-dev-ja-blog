@@ -30,5 +30,3 @@ dll ファイルを`C:¥Windows¥System32`に配置する。
 
 dll ファイルを`C:¥Windows¥System32`に配置する。
 
-::self-introduction
-::

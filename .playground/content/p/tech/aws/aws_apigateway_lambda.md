@@ -12,8 +12,7 @@ recommend: true
 
 個人開発で AWS のサービスを使って、Web API を作りました。構成を紹介します。
 
-::self-introduction
-::
+
 
 ## 技術構成
 

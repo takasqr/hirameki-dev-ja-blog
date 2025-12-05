@@ -38,8 +38,7 @@ recomended: true
 
 `.vue`コンポーネントの部分はVue.jsでも使えると思います。
 
-::self-introduction
-::
+
 
 ## 手順
 

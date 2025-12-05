@@ -17,8 +17,7 @@ recommend: false
 
 最近、文章を単語に分割して、単語ごとに類語を表示するWebアプリを作ったのですが、文章を単語に分割する時にkuromoji.jsを使って形態素解析できるWeb APIを作りました。
 
-::self-introduction
-::
+
 
 
 ### 形態素解析ってなに?

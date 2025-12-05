@@ -21,8 +21,7 @@ recommend: false
 
 OSはAmazon Linuxを使ってました。
 
-::self-introduction
-::
+
 
 ## やること
 ### 1. エラーコードを確認してネットで検索

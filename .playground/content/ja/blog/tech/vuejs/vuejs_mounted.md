@@ -13,8 +13,7 @@ recommend: false
 
 vueのライフサイクルフックの中で`created`の次に呼び出されます。
 
-::self-introduction
-::
+
 
 ## mountedの使い方
 

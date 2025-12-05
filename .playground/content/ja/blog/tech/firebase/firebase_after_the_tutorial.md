@@ -17,8 +17,7 @@ recommend: false
 
 ※まだまだ書きたい事がありますが、時間がなくなってしまったので次回書き足したいと思います。
 
-::self-introduction
-::
+
 
 ## Firebase Functions
 ### 環境変数

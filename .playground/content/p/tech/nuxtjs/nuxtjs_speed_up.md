@@ -28,8 +28,7 @@ ssr true
 ```
 です。
 
-::self-introduction
-::
+
 
 ## やったこと
 

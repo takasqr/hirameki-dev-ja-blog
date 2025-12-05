@@ -18,8 +18,7 @@ recommend: true
 
 非常に簡単でした。
 
-::self-introduction
-::
+
 
 ## 作り方
 

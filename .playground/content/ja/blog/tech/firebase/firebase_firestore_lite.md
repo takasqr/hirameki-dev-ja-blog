@@ -29,8 +29,7 @@ Firebaseの公式Youtubeチャンネルで紹介されていました。
 
 の制約があります。
 
-::self-introduction
-::
+
 
 ## 使ってみるには
 

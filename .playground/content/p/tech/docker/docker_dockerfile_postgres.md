@@ -18,8 +18,7 @@ SQL Serverのdockerfileを作ります。
 FROM postgres
 ```
 
-::self-introduction
-::
+
 
 ## 2. dockerfileをビルドする
 dockerfileビルドする。

@@ -12,8 +12,7 @@ recommend: true
 
 Git のセキュリティ対策を４つ紹介します。
 
-::self-introduction
-::
+
 
 ##  Git の最新バージョンを使う
 

@@ -9,8 +9,7 @@ cover: 'https://res.cloudinary.com/takasqr/image/upload/l_text:Sawarabi%20Gothic
 ---
 
 
-::self-introduction
-::
+
 
 ## なんで作ったのか？
 

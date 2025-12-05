@@ -16,8 +16,7 @@ recommend: false
 gitで管理しているプロジェクトでログファイルやキャッシュに関するフォルダなど、Gitのリポジトリに含めたくないリソースがあると思います。
 それらは`.gitignore`を設定することでgitで管理する対象から外すことができます。
 
-::self-introduction
-::
+
 
 ## `.gitignore`の書き方
 

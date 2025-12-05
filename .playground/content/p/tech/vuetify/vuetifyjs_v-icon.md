@@ -27,8 +27,7 @@ Nuxtで行う方法も紹介します。
 
 `Font Awesome`などを使いたい場合は、[こちら](https://vuetifyjs.com/ja/features/icon-fonts/#install-font-awesome-5-icons)に変更方法が書いてあります。
 
-::self-introduction
-::
+
 
 ## 使い方
 

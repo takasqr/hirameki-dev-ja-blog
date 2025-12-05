@@ -15,8 +15,7 @@ recommend: false
 
 Nuxtでmetaタグを出力する2つの方法を紹介します。
 
-::self-introduction
-::
+
 
 ## nuxt.config.js
 

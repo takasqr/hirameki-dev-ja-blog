@@ -15,8 +15,7 @@ recommend: false
 
 javascriptのpopメソッドについて噛み砕いて説明します。
 
-::self-introduction
-::
+
 
 ## popメソッドとは何か
 `pop`はjavascriptのメソッドです。

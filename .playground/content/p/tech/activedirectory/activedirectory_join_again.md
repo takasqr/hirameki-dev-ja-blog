@@ -20,5 +20,4 @@ recommend: false
 でもADの設定によっては消えるかもしれないので自己責任。
 
 
-::self-introduction
-::
+

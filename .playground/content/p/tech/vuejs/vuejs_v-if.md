@@ -13,8 +13,7 @@ recommend: false
 `v-if`とは条件付きでhtml(DOM)を表示するときに使用するディレクティブ(vue独自の属性)です。
 
 
-::self-introduction
-::
+
 
 
 ## 使い方

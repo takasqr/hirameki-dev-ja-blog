@@ -11,8 +11,7 @@ recommend: true
 ---
 
 
-::self-introduction
-::
+
 
 ## Color Hunt
 

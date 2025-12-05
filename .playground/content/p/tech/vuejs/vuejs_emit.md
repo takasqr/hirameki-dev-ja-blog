@@ -15,8 +15,7 @@ recommend: false
 
 そんな時はemitを使うと、データを渡すことがどきます。
 
-::self-introduction
-::
+
 
 ## emitの使い方
 
