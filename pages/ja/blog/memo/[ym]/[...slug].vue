@@ -25,7 +25,7 @@ import { useSetHead } from '../../../../../composables/useSetHead'
 import Pagination from '@takasqr/tw-vue-ui/basic/pagination/Pagination.vue'
 
 definePageMeta({
-  layout: 'ja-memo',
+  layout: 'ja-article-with-side',
   middleware: ['trailing-slash', 'redirect-router'],
 })
 

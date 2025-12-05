@@ -38,12 +38,12 @@
 
 <script setup lang="ts">
 import { useSetHead } from '../../../../../composables/useSetHead'
-import ArticlesRecommended from '../../../../../components/content/articles-recommended/ArticlesRecommended.vue';
+import ArticlesRecommended from '../../../../../components/content/articles-recommended/ArticlesRecommendedWithBorder.vue';
 import MyProfileCard from '../../../../../components/custom/my-profile-card/MyProfileCard.vue'
 import SpacerIsland from '@takasqr/tw-vue-ui/template/spacer-island/SpacerIsland.vue';
 
 definePageMeta({
-  layout: 'ja-article',
+  layout: 'ja-article-with-side',
   middleware: ['trailing-slash', 'redirect-router']
 })
 
