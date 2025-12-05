@@ -12,8 +12,7 @@ recommend: true
 
 GitHub のセキュリティ対策を紹介します。
 
-::self-introduction
-::
+
 
 ## Dependabot alerts を有効にする
 

@@ -15,8 +15,7 @@ recommend: false
 
 javascriptのshiftメソッドについて噛み砕いて説明します。
 
-::self-introduction
-::
+
 
 ## shiftメソッドとは何か
 `shift`はjavascriptのメソッドです。

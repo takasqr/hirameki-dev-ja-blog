@@ -40,8 +40,7 @@ create-nuxt-app v3.7.1
 ? Version control system: Git
 ```
 
-::self-introduction
-::
+
 
 ## やり方
 ### 1. Nuxt2をアップグレード

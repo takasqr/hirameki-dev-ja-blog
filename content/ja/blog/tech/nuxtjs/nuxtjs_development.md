@@ -32,8 +32,7 @@ Firebaseも一緒にインストールします。
 
 今回はNuxtの開発環境として書いてますが、この方法はdockerfile、docker-compose.ymlで表現できる環境ならどんな言語、構成でも使うことができます。
 
-::self-introduction
-::
+
 
 ## インストール
 

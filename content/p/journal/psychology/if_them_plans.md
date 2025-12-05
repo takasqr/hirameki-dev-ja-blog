@@ -26,8 +26,7 @@ recommend: false
 
 時間もお金も掛からないので是非やってみて下さい。
 
-::self-introduction
-::
+
 
 ## if then プランニングとは?
 

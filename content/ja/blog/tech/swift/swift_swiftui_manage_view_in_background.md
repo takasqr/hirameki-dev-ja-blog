@@ -27,5 +27,3 @@ DispatchQueue.main.async {
 ```
 
 
-::self-introduction
-::

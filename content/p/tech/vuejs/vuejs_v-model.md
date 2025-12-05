@@ -24,8 +24,7 @@ v-modelが使える要素は、
 
 があります。
 
-::self-introduction
-::
+
 
 ## 使い方
 

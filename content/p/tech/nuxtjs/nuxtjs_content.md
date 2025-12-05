@@ -32,8 +32,7 @@ NUXTのコンテンツ管理用のモジュールです。
 markdownの他にも対応しているようですね。
 
 
-::self-introduction
-::
+
 
 ## @nuxt/contentのメリット
 メリットは[公式ページ](https://content.nuxtjs.org/ja)で紹介されていますが主に、

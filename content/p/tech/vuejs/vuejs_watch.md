@@ -12,8 +12,7 @@ recommend: false
 ## vuejsのwatchとは
 `data`や`props`などの値が変更された時に別の処理を実行したいことがあると思います。そんなときには`watch`オプションを使います。
 
-::self-introduction
-::
+
 
 ## watchオプションの使い方
 以下のように書いてきます。

@@ -12,8 +12,7 @@ homepage: false
 ---
 SQL Server でのセキュリティ対策を紹介します。
 
-::self-introduction
-::
+
 
 ## データを暗号化して保存する
 

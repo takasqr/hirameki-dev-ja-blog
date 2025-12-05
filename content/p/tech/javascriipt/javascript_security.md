@@ -12,8 +12,7 @@ recommend: true
 
 JavaScript でアプリケーションを開発する時に気をつけるべきセキュリティ対策を紹介します。
 
-::self-introduction
-::
+
 
 ## ユーザーからの入力値を`href`で直接使わない
 

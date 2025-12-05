@@ -12,8 +12,7 @@ recommend: true
 
 Vue でアプリケーションを開発する時に気をつけるべきセキュリティ対策を紹介します。
 
-::self-introduction
-::
+
 
 ## ユーザーからの入力値を`template`で直接使わない
 

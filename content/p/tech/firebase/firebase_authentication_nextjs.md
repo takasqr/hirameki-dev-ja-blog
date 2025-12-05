@@ -17,8 +17,7 @@ FirebaseのSDKのバージョンが9に変わって実装方法が変わった�
 
 <img src="https://firebasestorage.googleapis.com/v0/b/litely-f6e0d.appspot.com/o/post%2Ftech%2Ffirebase%2Fguide%2FE0BE6755-B4CA-4148-B506-2C31D9DA127C_600x600.png?alt=media"></img>
 
-::self-introduction
-::
+
 
 ### 構成
 * Firebase Authentication(v9)

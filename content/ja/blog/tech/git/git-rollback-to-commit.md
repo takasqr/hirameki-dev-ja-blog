@@ -15,8 +15,7 @@ homepage: true
 
 Git を使っていて、特定のコミットに戻ってビルドし直したい時などに使えるテクニックです。
 
-::self-introduction
-::
+
 
 ## やり方
 

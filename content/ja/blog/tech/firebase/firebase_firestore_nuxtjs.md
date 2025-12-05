@@ -15,8 +15,7 @@ recommend: false
 
 FirebaseのSDKのバージョンが9に変わって実装方法が変わったので記事を書くことにしました。
 
-::self-introduction
-::
+
 
 ### 構成
 * Firebase Authentication(v9)

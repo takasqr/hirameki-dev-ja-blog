@@ -13,8 +13,7 @@ recommend: false
 
 `created`は`vue`インスタンスが作られたすぐ後に呼び出されます。
 
-::self-introduction
-::
+
 
 
 

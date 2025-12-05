@@ -14,8 +14,7 @@ recommend: false
 
 そんな時は、`v-slot`ディレクティブを使って、名前付きスロットを作ると便利です。
 
-::self-introduction
-::
+
 
 
 ## 使い方

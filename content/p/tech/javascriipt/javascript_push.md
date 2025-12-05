@@ -15,8 +15,7 @@ recommend: false
 
 javascriptのpushメソッドについて噛み砕いて説明します。
 
-::self-introduction
-::
+
 
 ## pushメソッドとは何か
 `push`はjavascriptのメソッドです。

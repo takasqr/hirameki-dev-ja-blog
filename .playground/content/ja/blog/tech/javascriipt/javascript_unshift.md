@@ -15,8 +15,7 @@ recommend: false
 
 javascriptのunshiftメソッドについて噛み砕いて説明します。
 
-::self-introduction
-::
+
 
 ## unshiftメソッドとは何か
 `unshift`はjavascriptのメソッドです。

@@ -10,8 +10,7 @@ alt: Docker execでコンテナ外からコマンドを実行する
 recommend: false
 ---
 
-::self-introduction
-::
+
 
 ## コンテナ外からコマンドを実行したい
 

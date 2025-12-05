@@ -20,8 +20,7 @@ Let’s Encryptは無料でホームページをHTTPS化できるツールです
 
 [https://certbot.eff.org](https://certbot.eff.org)
 
-::self-introduction
-::
+
 
 ## WordPressコンテナにLet’s Encryptをインストール
 dockerで作ったWordPress(apache2)のコンテナにLet's Encryptをインストールします。

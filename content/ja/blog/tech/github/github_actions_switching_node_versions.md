@@ -29,5 +29,3 @@ with:
 
 `setup-node`で切り替えて実行する。
 
-::self-introduction
-::

@@ -12,8 +12,7 @@ recommend: true
 
 WordPress のセキュリティ対策を紹介します。
 
-::self-introduction
-::
+
 
 ## WordPress 本体をバージョンアップして脆弱性に対応する
 

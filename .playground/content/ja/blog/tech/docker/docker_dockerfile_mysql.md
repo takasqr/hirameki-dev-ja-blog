@@ -24,8 +24,7 @@ dockerhubのwordpressページでもmysqlは5.7で作るようにサンプルコ
 [wordpress | dockerhub](https://hub.docker.com/_/wordpress)
 
 
-::self-introduction
-::
+
 
 ## 2. dockerfileをビルドする
 dockerfileビルドする。

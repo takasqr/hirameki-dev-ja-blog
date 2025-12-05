@@ -21,8 +21,7 @@ docker cp [file_name] [container_id]:[path]
 * [file_name]は拡張子まで書く
 * [path]はファイル名までいれない。/tmpのような形
 
-::self-introduction
-::
+
 
 ## コンテナからファイルを送る
 第1引数と第2引数を逆にする

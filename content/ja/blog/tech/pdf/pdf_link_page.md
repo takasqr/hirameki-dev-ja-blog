@@ -28,5 +28,3 @@ https://www.example.com/myfile.pdf#page=4
 
 [特定のページで PDF ファイルを開く URL を作成する | Adobe](https://helpx.adobe.com/jp/acrobat/kb/link-html-pdf-page-acrobat.html)
 
-::self-introduction
-::

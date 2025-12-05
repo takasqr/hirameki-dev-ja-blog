@@ -10,8 +10,7 @@ alt: お世話になっている外部サービス達【運用編】
 recommend: false
 ---
 
-::self-introduction
-::
+
 
 ## draw.io
 

@@ -24,6 +24,5 @@ Web サイトを分析するための基盤を作りました。
 - __Google Looker Studio__: Google Analytics などと連携して自由にレポートを作ることができるツール
 
 
-::self-introduction
-::
+
 

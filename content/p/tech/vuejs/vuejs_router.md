@@ -24,8 +24,7 @@ Vue Routerと使うことで、
 
 といったことができます。
 
-::self-introduction
-::
+
 
 ## インストール方法
 

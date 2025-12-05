@@ -16,8 +16,7 @@ recommend: true
 
 ライトウェイトマイグレーションは、attribute の追加、削除などを自動的に検知して CoreData をマイグレーションしてくれる機能です。
 
-::self-introduction
-::
+
 
 ## やり方
 
