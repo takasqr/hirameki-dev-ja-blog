@@ -26,7 +26,7 @@ import { useTotalPostCount } from '../../../../composables/content/useTotalPostC
 import { getNextPage, getPreviousPage } from '../../../../utils/pagination'
 
 definePageMeta({
-  layout: 'ja-blog-default',
+  layout: 'ja-border',
   middleware: ['trailing-slash', 'redirect-router'],
 })
 

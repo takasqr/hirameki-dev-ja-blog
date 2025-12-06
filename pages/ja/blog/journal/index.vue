@@ -17,7 +17,7 @@
 
 <script setup lang="ts">
 import { withTrailingSlash } from 'ufo'
-import ArticleList from '../../../../components/content/article-list/ArticleList.vue';
+import ArticleList from '../../../../components/content/article-list/ArticleListWithBorder.vue';
 import type { Article } from '../../../../components/types/Article';
 import Pagination from '@takasqr/tw-vue-ui/basic/pagination/Pagination.vue'
 import { useSetHead } from '../../../../composables/useSetHead'
@@ -25,7 +25,7 @@ import { useTotalPostCount } from '../../../../composables/content/useTotalPostC
 import { getNextPage, getPreviousPage } from '../../../../utils/pagination'
 
 definePageMeta({
-  layout: 'ja-blog-default',
+  layout: 'ja-border',
   middleware: ['trailing-slash', 'redirect-router']
 })
 

@@ -18,7 +18,7 @@ const { tag } = useRoute().params
 const tagString = tag as unknown as string
 
 definePageMeta({
-  layout: 'ja-blog-default',
+  layout: 'ja-border',
   middleware: ['trailing-slash', 'redirect-router']
 })
 

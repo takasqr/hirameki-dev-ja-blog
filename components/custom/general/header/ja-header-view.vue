@@ -1,11 +1,11 @@
 <template>
-  <div class="bg-white">
+  <div class="bg-white border-b-2 border-black">
     <header class="inset-x-0 top-0 z-50">
       <nav
         class=""
         aria-label="Global"
       >
-        <div class="mx-auto max-w-4xl">
+        <div class="mx-auto max-w-3xl">
           <div class="flex items-center justify-between pt-6 pb-2 px-4 md:px-0">
             <div class="flex lg:flex-1">
               <a
@@ -16,7 +16,7 @@
                 <img
                   class="h-8 w-auto rounded"
                   :src="imagePath"
-                  alt="FontLogo"
+                  alt=""
                 >
               </a>
             </div>
@@ -51,9 +51,11 @@
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="px-4 md:px-0 flex items-center">
-            <HeaderSignageBlog />
+        <div class="bg-black py-1 mt-2 px-4 lg:px-0">
+          <div class="mx-auto max-w-3xl spx-4 md:px-0 flex items-center">
+            <HeaderSignageJaWithSide />
           </div>
         </div>
       </nav>
@@ -111,8 +113,8 @@
 import { ref } from 'vue'
 import { Dialog, DialogPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
-// import { CustomHeaderSignageBlog } from '../../header-signage/HeaderSignageBlog.vue'
-import HeaderSignageBlog from '../../header-signage/HeaderSignageBlog.vue'
+// import LanguageButton from '../language-button/LanguageButton.vue'
+import HeaderSignageJaWithSide from '../../header-signage/HeaderSignageJaWithSide.vue'
 
 const lang = 'ja'
 const imagePath = '/logo/HIRAMEKI.DEV.svg'
@@ -120,7 +122,7 @@ const logoUrl = '/ja/'
 
 const navigation = [
   // { name: 'ログイン', href: `https://hirameki.dev/${lang}/signin/` },
-  { name: 'お問い合わせ', href: `https://hirameki.dev/${lang}/contact/` },
+  { name: 'お問い合わせ', href: `/${lang}/contact/` },
 ]
 
 const mobileMenuOpen = ref(false)
