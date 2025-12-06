@@ -4,7 +4,7 @@
 
 <script setup lang="ts">
 import { withTrailingSlash } from 'ufo'
-import ArticleList from '../../../components/content/article-list/ArticleList.vue';
+import ArticleList from '../../../components/content/article-list/ArticleListWithBorder.vue';
 import type { Article } from '../../../components/types/Article';
 
 const props = defineProps({
