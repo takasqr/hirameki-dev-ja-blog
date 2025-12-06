@@ -6,7 +6,7 @@
       </div>
     </template>
 
-    <div>
+    <div class="border-2 border-black rounded-2xl bg-white p-4">
       <ArticleListTextOnly :articles="articlesData" />
 
       <div class="mt-10">
@@ -18,7 +18,7 @@
 
 <script setup lang="ts">
 import { withTrailingSlash } from 'ufo'
-import ArticleListTextOnly from '../../../../components/content/article-list/ArticleListTextOnly.vue';
+import ArticleListTextOnly from '../../../../components/content/article-list/ArticleListTextOnlyWithBorder.vue';
 import type { Article } from '../../../../components/types/Article';
 import Pagination from '@takasqr/tw-vue-ui/basic/pagination/Pagination.vue'
 import { useSetHead } from '../../../../composables/useSetHead'
