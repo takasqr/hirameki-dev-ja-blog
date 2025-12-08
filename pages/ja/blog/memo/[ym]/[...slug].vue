@@ -36,7 +36,8 @@ useSetHead({
   title: article.title,
   description: article.description,
   cover: article.cover,
-  path: route.fullPath
+  path: route.fullPath,
+  noindex: true
 })
 
 // createDate → YYYYMMDD 数値キー（比較用）
