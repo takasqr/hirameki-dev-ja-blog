@@ -1,5 +1,5 @@
 <template>
-  <span>
+  <!-- <span> -->
     <!-- <a class="underline font-medium" href="/p/journal/2025/20250309_built-custom-keyboard/">キーボードを自作した話</a> -->
 
     <!-- <br class="md:hidden"> -->
@@ -16,14 +16,14 @@
       >
     </a> -->
 
-    <span>半年チャレンジ途中経過は</span>
-    <a
-      class="underline font-medium"
-      href="/ja/blog/tag/半年チャレンジ/"
-    >こちら</a>
+  <HeaderSignageGame/>
 
     <!-- <a class="underline font-medium ml-2" href="/p/journal/">日常</a> -->
     <!-- <a class="underline font-medium ml-2" href="/p/tech/">開発</a> -->
     <!-- <a class="underline font-medium ml-2" href="/p/memo/">メモ</a> -->
-  </span>
+  <!-- </span> -->
 </template>
+
+<script setup lang="ts">
+import HeaderSignageGame from './HeaderSignageGame.vue';
+</script>

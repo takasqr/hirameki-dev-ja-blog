@@ -12,12 +12,7 @@
                 :href="logoUrl"
                 class="-m-1.5 p-1.5"
               >
-                <span class="sr-only">hirameki.dev</span>
-                <img
-                  class="h-8 w-auto rounded"
-                  :src="imagePath"
-                  alt="FontLogo"
-                >
+                <LogoImage />
               </a>
             </div>
 
@@ -70,12 +65,7 @@
               :href="logoUrl"
               class="-m-1.5 p-1.5"
             >
-              <span class="sr-only">hirameki.dev</span>
-              <img
-                class="h-8 w-auto rounded"
-                :src="imagePath"
-                alt=""
-              >
+              <LogoImage />
             </a>
             <button
               type="button"
@@ -112,9 +102,9 @@ import { ref } from 'vue'
 import { Dialog, DialogPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 import HeaderSignageBlog from '../../header-signage/HeaderSignageBlog.vue'
+import LogoImage from '../LogoImage.vue'
 
 const lang = 'ja'
-const imagePath = '/logo/HIRAMEKI.DEV.svg'
 const logoUrl = '/ja/'
 
 const navigation = [

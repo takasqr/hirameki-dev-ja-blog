@@ -1,5 +1,5 @@
 <template>
-  <span class="text-white">
+  <!-- <span class="text-white"> -->
     <!-- <span class="mr-1">by</span> -->
 
     <!-- <a href="/ja/"> -->
@@ -11,10 +11,10 @@
       height="44"
     > -->
     <!-- </a> -->
-    <span>半年チャレンジ途中経過は</span>
-    <a
-      class="underline font-medium"
-      href="/ja/blog/tag/半年チャレンジ/"
-    >こちら</a>
-  </span>
+    <header-signage-game />
+  <!-- </span> -->
 </template>
+
+<script setup lang="ts">
+import HeaderSignageGame from './HeaderSignageGame.vue';
+</script>
