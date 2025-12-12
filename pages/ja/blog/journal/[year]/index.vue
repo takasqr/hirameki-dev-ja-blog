@@ -16,6 +16,10 @@ import { getJournalBlogCategoryHeadParams } from '../../../../../composables/use
 const { year } = useRoute().params
 const yearString = year as unknown as string
 
+throw createError({
+  statusCode: 404,
+  statusMessage: 'Page Not Found',
+})
 
 definePageMeta({
   layout: 'ja-border',
