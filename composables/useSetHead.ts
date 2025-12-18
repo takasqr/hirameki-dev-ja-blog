@@ -107,8 +107,9 @@ export function getTechBlogCategoryHeadParams(category: string): HeadParams {
   // Note: This Cloudinary URL structure might be better handled by a dedicated utility if it becomes complex or reused often.
   const cover = `'https://res.cloudinary.com/takasqr/image/upload/l_text:MPLUS1p-Black.ttf_60_bold:${category}の記事一覧,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'`
   const path = `/p/tech/${category}`
+  const noindex = true
 
-  return { title, description, cover, path }
+  return { title, description, cover, path, noindex }
 }
 
 /**
@@ -124,8 +125,9 @@ export function getJournalBlogCategoryHeadParams(year: string): HeadParams {
   // Note: This Cloudinary URL structure might be better handled by a dedicated utility if it becomes complex or reused often.
   const cover = `'https://res.cloudinary.com/takasqr/image/upload/l_text:MPLUS1p-Black.ttf_60_bold:${year}年の記事一覧,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'`
   const path = `/p/journal/${year}`
+  const noindex = true
 
-  return { title, description, cover, path }
+  return { title, description, cover, path, noindex }
 }
 
 
@@ -139,6 +141,7 @@ export function getTagHeadParams(tag: string): HeadParams {
   // Note: This Cloudinary URL structure might be better handled by a dedicated utility if it becomes complex or reused often.
   const cover = `'https://res.cloudinary.com/takasqr/image/upload/l_text:MPLUS1p-Black.ttf_60_bold:${tag}の記事一覧,co_rgb:fff,w_620,c_fit/v1712091289/ogp_image_zorhlz.png'`
   const path = `/p/tag/${tag}`
+  const noindex = true
 
-  return { title, description, cover, path }
+  return { title, description, cover, path, noindex }
 }
