@@ -3,10 +3,10 @@ import { getSiteTitle } from './getSiteTitle';
 
 describe('getSiteTitle', () => {
   it('ja/blog パスの場合、HIRAMEKI.DEVを返す', () => {
-    expect(getSiteTitle('/p/')).toBe('HIRAMEKI.DEV');
-    expect(getSiteTitle('/p/tech')).toBe('HIRAMEKI.DEV');
-    expect(getSiteTitle('/p/journal')).toBe('HIRAMEKI.DEV');
-    expect(getSiteTitle('/p/tech/category')).toBe('HIRAMEKI.DEV');
+    expect(getSiteTitle('/ja/blog/')).toBe('HIRAMEKI.DEV');
+    expect(getSiteTitle('/ja/blog/tech')).toBe('HIRAMEKI.DEV');
+    expect(getSiteTitle('/ja/blog/journal')).toBe('HIRAMEKI.DEV');
+    expect(getSiteTitle('/ja/blog/tech/category')).toBe('HIRAMEKI.DEV');
   });
 
   it('en パスの場合、hirameki.devを返す', () => {
@@ -19,7 +19,7 @@ describe('getSiteTitle', () => {
     expect(getSiteTitle('/')).toBe('ひらめき開発');
     expect(getSiteTitle('/about')).toBe('ひらめき開発');
     expect(getSiteTitle('/contact')).toBe('ひらめき開発');
-    expect(getSiteTitle('/p/tech')).toBe('ひらめき開発');
+    expect(getSiteTitle('/ja/blog/tech')).toBe('ひらめき開発');
   });
 
   it('空文字列の場合、ひらめき開発を返す', () => {
@@ -27,7 +27,7 @@ describe('getSiteTitle', () => {
   });
 
   it('大文字小文字を区別する（実装に合わせて修正）', () => {
-    expect(getSiteTitle('/P/')).toBe('ひらめき開発'); // 大文字は含まれていないので
+    expect(getSiteTitle('/ja/blog/')).toBe('ひらめき開発'); // 大文字は含まれていないので
     expect(getSiteTitle('/EN/')).toBe('ひらめき開発'); // 大文字は含まれていないので
   });
 });

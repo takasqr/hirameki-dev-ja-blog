@@ -1,6 +1,6 @@
 <template>
   <span>
-    <!-- <a class="underline font-medium" href="/p/journal/2025/20250309_built-custom-keyboard/">キーボードを自作した話</a> -->
+    <!-- <a class="underline font-medium" href="/ja/blog/journal/2025/20250309_built-custom-keyboard/">キーボードを自作した話</a> -->
 
     <!-- <br class="md:hidden"> -->
 
@@ -13,8 +13,8 @@
     >
     <!-- </a> -->
 
-    <!-- <a class="underline font-medium ml-2" href="/p/journal/">日常</a> -->
-    <!-- <a class="underline font-medium ml-2" href="/p/tech/">開発</a> -->
-    <!-- <a class="underline font-medium ml-2" href="/p/memo/">メモ</a> -->
+    <!-- <a class="underline font-medium ml-2" href="/ja/blog/journal/">日常</a> -->
+    <!-- <a class="underline font-medium ml-2" href="/ja/blog/tech/">開発</a> -->
+    <!-- <a class="underline font-medium ml-2" href="/ja/blog/memo/">メモ</a> -->
   </span>
 </template>

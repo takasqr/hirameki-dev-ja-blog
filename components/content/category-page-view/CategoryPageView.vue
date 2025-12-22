@@ -18,7 +18,7 @@ const props = defineProps({
 
 // 非同期データ取得のための一意のキーを作成
 const asyncDataKey = `articles-category-${props.category}`
-const path = '/p/'
+const path = '/ja/blog/'
 
 const { data: articles } = await useAsyncData(asyncDataKey, async () => {
   const rawContent = await queryContent(withTrailingSlash(path))

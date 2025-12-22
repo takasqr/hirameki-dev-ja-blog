@@ -19,7 +19,7 @@
 
             <div class="flex flex-1 justify-end m-2">
               <a
-                href="/p/journal/2025/20250513_about-this-blog/"
+                href="/ja/blog/journal/2025/20250513_about-this-blog/"
                 class="text-sm font-semibold leading-6 text-gray-900"
               >このブログについて <span aria-hidden="true">&rarr;</span></a>
             </div>
@@ -43,7 +43,7 @@
 
           <div class="flex flex-1 justify-end m-2">
             <a
-              href="/p/tech/"
+              href="/ja/blog/tech/"
               class="text-sm font-semibold leading-6 text-gray-900"
             >もっと読む <span aria-hidden="true">&rarr;</span></a>
           </div>
@@ -66,7 +66,7 @@
 
           <div class="flex flex-1 justify-end m-2">
             <a
-              href="/p/memo/"
+              href="/ja/blog/memo/"
               class="text-sm font-semibold leading-6 text-gray-900"
             >もっと読む <span aria-hidden="true">&rarr;</span></a>
           </div>
@@ -159,7 +159,7 @@
 
           <div class="flex flex-1 justify-end m-2">
             <a
-              href="/p/tech/"
+              href="/ja/blog/tech/"
               class="text-sm font-semibold leading-6 text-gray-900"
             >もっと読む <span aria-hidden="true">&rarr;</span></a>
           </div>
@@ -236,7 +236,7 @@ useSetHead({
 // memo
 // 非同期データ取得のための一意のキーを作成
 const asyncDataKey = `memo-all`
-const path = '/p/memo/'
+const path = '/ja/blog/memo/'
 const perPage = 6
 
 const { data: articles } = await useAsyncData(asyncDataKey, async () => {

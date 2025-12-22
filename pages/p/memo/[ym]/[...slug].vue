@@ -58,9 +58,9 @@ type Memo = {
   createDate: string | number | Date
 }
 
-const BASE_DIR = '/p/memo'
+const BASE_DIR = '/ja/blog/memo'
 
-// /p/memo 配下すべて（再帰）
+// /ja/blog/memo 配下すべて（再帰）
 const allPosts = await queryContent<Memo>(BASE_DIR)
   .where({ _partial: false })
   .only(['_path', 'title', 'createDate'])

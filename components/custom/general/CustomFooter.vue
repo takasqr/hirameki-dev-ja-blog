@@ -9,7 +9,7 @@
 import FooterTemplate from '@takasqr/tw-vue-ui/template/footer-template/FooterTemplate.vue'
 import { useFooterNavigation } from '~/composables/useFooterNavigation'
 
-const rssUrl = '/p/feed.xml'
+const rssUrl = '/ja/blog/feed.xml'
 
 const navigations = useFooterNavigation()
 </script>

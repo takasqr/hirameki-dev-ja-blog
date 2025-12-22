@@ -19,7 +19,7 @@ const props = defineProps({
 
 // 非同期データ取得のための一意のキーを作成
 const asyncDataKey = `articles-year-${props.year}`
-const path = '/p/journal'
+const path = '/ja/blog/journal'
 
 const start = new Date(`${props.year}-01-01T00:00:00.000Z`).getTime()
 const end = new Date(`${props.year}-12-31T23:59:59.999Z`).getTime()

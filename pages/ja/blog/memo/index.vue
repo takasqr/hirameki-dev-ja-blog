@@ -35,7 +35,7 @@ const page = Number(route.query.page ? String(route.query.page) : '1')
 
 // 非同期データ取得のための一意のキーを作成
 const asyncDataKey = `memo-all`
-const path = '/p/memo/'
+const path = '/ja/blog/memo/'
 const perPage = 12
 const totalPostCount = await useTotalPostCount(path)
 
@@ -67,7 +67,7 @@ function getPagePath(pageNumber: number | null): string | null {
   if (pageNumber == null) {
     return null
   } else {
-    return `/p/memo/?page=${pageNumber}`
+    return `/ja/blog/memo/?page=${pageNumber}`
   }
 }
 

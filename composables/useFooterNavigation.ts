@@ -35,7 +35,7 @@ export const useFooterNavigation = () => {
   {
     name: '私について', items: [
       { name: 'プロフィール', href: 'https://hirameki.dev/ja/about/' },
-      // { name: 'かいがらブログ', href: 'https://kaigara.blog/p/' },
+      // { name: 'かいがらブログ', href: 'https://kaigara.blog/ja/blog/' },
       // { name: 'CodeDrip', href: 'https://codedrip.app/' }
     ],
   },
