@@ -14,7 +14,7 @@ const path = '/ja/blog/'
 const { data: articles } = await useAsyncData(asyncDataKey, async () => {
   const rawContent = await queryContent(withTrailingSlash(path))
     .where({
-      _path: { $not: /^\/p\/memo/ },
+      _path: { $not: /^\/ja\/blog\/memo/ },
     })
     .sort({ createDate: -1 })
     .limit(8)
