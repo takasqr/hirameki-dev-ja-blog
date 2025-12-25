@@ -49,7 +49,7 @@ const { data: articles } = await useAsyncData(asyncDataKey, async () => {
     .where({ _partial: false })
     .skip((Number(page) - 1) * perPage)
     .limit(perPage)
-    .sort({ createDate: -1 })
+    .sort({ updated: -1 })
     .find()
 
   // ParsedContent を Article にマッピング

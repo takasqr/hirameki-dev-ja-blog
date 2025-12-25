@@ -112,12 +112,6 @@
         </w-section>
       </w-page-block>
 
-      <!-- <w-page-block class="bg-gray-50">
-        <w-section>
-          <AdPomodoroTree />
-        </w-section>
-      </w-page-block> -->
-
       <w-page-block>
         <w-section>
           <div class="text-xl font-semibold flex justify-center mb-2 text-gray-800">
@@ -146,25 +140,6 @@
           </NewsLetterForm>
         </w-section>
       <!-- </w-page-block> -->
-
-      <!-- <w-page-block>
-        <w-section>
-          <template #title>
-            <h2>
-              読まれている
-            </h2>
-          </template>
-
-          <ArticlesHomepage :path="lang" />
-
-          <div class="flex flex-1 justify-end m-2">
-            <a
-              href="/ja/blog/tech/"
-              class="text-sm font-semibold leading-6 text-gray-900"
-            >もっと読む <span aria-hidden="true">&rarr;</span></a>
-          </div>
-        </w-section>
-      </w-page-block> -->
     </SpacerIsland>
   </NuxtLayout>
 </template>
@@ -243,7 +218,7 @@ const { data: articles } = await useAsyncData(asyncDataKey, async () => {
   const rawContent = await queryContent(withTrailingSlash(path))
     .where({ _partial: false })
     .limit(perPage)
-    .sort({ createDate: -1 })
+    .sort({ updated: -1 })
     .find()
 
   // ParsedContent を Article にマッピング

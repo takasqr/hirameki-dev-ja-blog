@@ -59,7 +59,7 @@ const topicTitle = computed(() => {
 // 🔽 複数メモを取得（新しい順）
 const memos = await queryContent<Memo>(BASE_DIR)
   .where({ topic })
-  .sort({ createDate: -1 })
+  .sort({ updated: -1 })
   .find()
 
 useSetHead({ 

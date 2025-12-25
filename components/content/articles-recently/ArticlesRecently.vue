@@ -16,7 +16,7 @@ const { data: articles } = await useAsyncData(asyncDataKey, async () => {
     .where({
       _path: { $not: /^\/ja\/blog\/memo/ },
     })
-    .sort({ createDate: -1 })
+    .sort({ updated: -1 })
     .limit(8)
     .find()
 

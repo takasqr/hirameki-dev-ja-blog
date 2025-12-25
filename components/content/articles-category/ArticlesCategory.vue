@@ -21,7 +21,7 @@ const path = '/ja/blog/'
 const { data: articles } = await useAsyncData(asyncDataKey, async () => {
   const rawContent = await queryContent(withTrailingSlash(path))
     .where({ _partial: false, category: props.category })
-    .sort({ createDate: -1 })
+    .sort({ updated: -1 })
     .find()
 
   // ParsedContent を Article にマッピング

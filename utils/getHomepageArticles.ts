@@ -16,7 +16,7 @@ function getHomepageArticles(): Promise<Article[]> {
   return useAsyncData(asyncDataKey, async () => {
     const rawContent = await queryContent(withTrailingSlash(path))
       .where({ homepage: true })
-      .sort({ createDate: -1 })
+      .sort({ updated: -1 })
       .find()
 
     return rawContent.map(content => ({
