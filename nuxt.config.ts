@@ -9,7 +9,6 @@ export default defineNuxtConfig({
 
   modules: [
     "@nuxt/content",
-    // "@nuxtjs/storybook",
     "@pinia/nuxt",
   ],
 
@@ -34,7 +33,24 @@ export default defineNuxtConfig({
         default: 'github-dark',
         dark: 'github-dark'
       },
-      preload: ['json', 'js', 'ts', 'html', 'css', 'vue', 'diff', 'shell', 'markdown', 'yaml', 'bash', 'ini', 'c', 'cpp', 'sql']
+      preload: [
+        'json',
+        'js',
+        'ts',
+        'html',
+        'css',
+        'dockerfile',
+        'bat',
+        'xml',
+        'vue',
+        'diff',
+        'shell',
+        'markdown',
+        'yaml',
+        'bash',
+        'sql',
+        'swift',
+      ]
     }
   },
 
@@ -50,14 +66,9 @@ export default defineNuxtConfig({
     name: 'blg'
   },
 
-  // storybook: {
-  //   url: 'http://localhost:6006',
-  //   storybookRoute: '/__storybook__',
-  //   port: 6006,
-  // },
   extends: [
-    'github:takasqr/nuxt-layer-common',
-    'github:takasqr/nuxt-layer-takasqr',
+    // 'github:takasqr/nuxt-layer-common',
+    // 'github:takasqr/nuxt-layer-takasqr',
   ],
 
   compatibilityDate: '2025-10-16',
