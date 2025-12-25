@@ -1,8 +1,10 @@
 import { defineConfig, devices } from '@playwright/test';
 
+const desktopChrome = { ...devices['Desktop Chrome'] }
+
 export default defineConfig({
   // Look for test files in the "tests" directory, relative to this configuration file.
-  testDir: './test/e2e',
+  testDir: '.',
 
   // Run all tests in parallel.
   fullyParallel: true,
@@ -29,8 +31,14 @@ export default defineConfig({
   // Configure projects for major browsers.
   projects: [
     {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      name: 'pages:Desktop Chrome',
+      testDir: 'pages',
+      use: desktopChrome,
+    },
+    {
+      name: 'e2e:Desktop Chrome',
+      testDir: 'test/e2e',
+      use: desktopChrome,
     },
   ],
   // Run your local dev server before starting the tests.
