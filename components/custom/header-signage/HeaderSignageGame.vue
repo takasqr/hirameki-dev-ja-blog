@@ -1,8 +1,8 @@
 <template>
   <GameDialog
-      text="ITエンジニア９年目、全知識をPVに変える半年"
-      link='/ja/blog/tag/半年チャレンジ/'
-      link-label='こちら'
+      text="アプリ + 文章で「体験できるメディア」"
+      link='/ja/blog/journal/2025/20250513_about-this-blog/'
+      link-label='詳しく'
       :speed=130
       :auto-start="true"
   />
