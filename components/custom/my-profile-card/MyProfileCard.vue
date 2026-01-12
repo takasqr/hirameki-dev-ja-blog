@@ -1,6 +1,11 @@
 <template>
   <div class="w-64">
-    <ProfileCard name="かい (@takasqr)" role="ソフトウェアエンジニア。個人的にアプリを作って得た知見をブログに書いています。" image-url="/profile.webp" x-url="https://x.com/takasqr" />
+    <ProfileCard
+      name="かい (@takasqr)"
+      role="記事とアプリが合体した、Webメディアのようなものを運営しています。コーディング、ライティング、デザイン全部一人でやってます。AIをフル活用。職業はソフトウェアエンジニア。"
+      image-url="/profile.webp"
+      x-url="https://x.com/takasqr"
+    />
   </div>
 </template>
 
